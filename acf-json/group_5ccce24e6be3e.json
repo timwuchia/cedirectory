@@ -683,9 +683,10 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "page_attributes"
     ],
     "active": 1,
     "description": "",
-    "modified": 1595696479
+    "modified": 1596158905
 }
