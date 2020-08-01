@@ -1,32 +1,59 @@
-#site-navigation {
-    .navbar-brand {
-        img {
-            max-width: 125px;
-            height: auto;
+header {
+    .nav-top {
+        a {
+            color: theme-color('body-text');
         }
-    }
-    #header-search-form {
-        display: flex;
-        align-self: center;
-        align-items: stretch;
-    }
-    .navbar-toggler {
-        border-color: #fff;
-        > i {
-            color: #fff;
+        .nav-top-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            .header-phone {
+                margin-right: 1rem;
+            }
         }
-        &:hover {
-            background-color: #fff;
-            > i {
-                color: theme-color('primary');
+        @include media-breakpoint-up(md){
+            .nav-top-wrapper {
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                max-width: 600px;
+                padding: 2rem;
+                background-color: theme-color('light-gray');
+                .header-phone {
+                    margin-right: 0;
+                }
             }
         }
     }
-    #navbarNavDropdown {
-        ul.navbar-nav {
-            >.nav-item {
-                > .nav-link {
-                    color: #fff;
+    #site-navigation {
+        .navbar-brand {
+            img {
+                max-width: 125px;
+                height: auto;
+            }
+        }
+        #header-search-form {
+            display: flex;
+            align-self: center;
+            align-items: stretch;
+        }
+        .navbar-toggler {
+            border-color: #fff;
+            > i {
+                color: #fff;
+            }
+            &:hover {
+                background-color: #fff;
+                > i {
+                    color: theme-color('primary');
+                }
+            }
+        }
+        #navbarNavDropdown {
+            ul.navbar-nav {
+                >.nav-item {
+                    > .nav-link {
+                        color: #fff;
+                    }
                 }
             }
         }

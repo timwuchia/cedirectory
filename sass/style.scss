@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Bootstrap
 --------------------------------------------------------------*/
+@import "custom/color";
 @import "bootstrap/bootstrap";
 @import "custom/slick";
 @import "custom/slick-theme";

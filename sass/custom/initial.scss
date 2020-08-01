@@ -12,6 +12,7 @@ $secondary_color:green;
 
 body {
 	font-family: $font_family;
+	color: theme-color('body-text');
 }
 
 p {
