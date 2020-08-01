@@ -189,6 +189,8 @@ function register_my_menus() {
 		array(
 			'footer-nav' => __( 'Footer Menu' ),
 			'user-nav' => __( 'User Menu' ),
+			'footer-nav' => __( 'Footer Menu' ),
+			'company-nav' => __( 'Company Menu' ),
 		)
 	);
 }

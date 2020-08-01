@@ -1,0 +1,16 @@
+footer {
+    a {
+        color: #fff;
+        &:hover {
+            color: theme-color('secondary');
+        }
+    }
+    .menu {
+        margin-bottom: 0;
+        li {
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
