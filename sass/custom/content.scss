@@ -1,3 +1,10 @@
+//
+.skip-link.screen-reader-text {
+    position: absolute;
+    left: 9999;
+    visibility: hidden;
+}
+
 // single image slider
 .single-image-slider-wrapper {
     .slide-image {

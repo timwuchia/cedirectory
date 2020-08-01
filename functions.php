@@ -146,7 +146,9 @@ function cedirectory_scripts() {
 	wp_enqueue_style( 'cedirectory-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'cedirectory-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'cedirectory-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'cedirectory-slick', get_template_directory_uri() . '/src/js/slick.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'cedirectory-custom-script', get_template_directory_uri() . '/src/js/custom.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'cedirectory-bootstrapjs', get_template_directory_uri() . '/src/js/bootstrap.js', array('jquery'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -181,3 +183,41 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//register menus
+function register_my_menus() {
+	register_nav_menus(
+		array(
+			'footer-nav' => __( 'Footer Menu' ),
+			'user-nav' => __( 'User Menu' ),
+		)
+	);
+}
+add_action( 'init', 'register_my_menus' );
+
+// add options page
+if( function_exists('acf_add_options_page') ) {
+	
+	if( function_exists('acf_add_options_page') ) {
+	
+		acf_add_options_page(array(
+			'page_title' 	=> 'Company Info',
+			'menu_title'	=> 'Company Info',
+			'menu_slug' 	=> 'company-info',
+			'position'		=> 10,
+			'capability'	=> 'edit_posts',
+			'icon_url'      => 'dashicons-megaphone',
+		));
+
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'About Nathan',
+	// 	'menu_title'	=> 'About Nathan',
+	// 	'menu_slug' 	=> 'about-nathan',
+	// 	'capability'	=> 'edit_posts',
+	// 	'parent_slug'	=> 'general-options',
+	// 	'position'      => false
+	// ));
+	}
+}
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';

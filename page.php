@@ -16,6 +16,7 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<?php get_template_part('inc/top-banner')?>
 			<?php if(have_rows("flexible_layout")) : ?>
 				<?php while(have_rows("flexible_layout")) : the_row(); ?>
 					<?php get_template_part("layouts/flexible-layout"); ?>

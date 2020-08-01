@@ -4,5 +4,9 @@
             arrows: true,
             dots: true
         });
+        $('.top-banner').slick({
+            arrows: true,
+            dots: true
+        });
     });
 }(jQuery));

@@ -1,0 +1,34 @@
+#site-navigation {
+    .navbar-brand {
+        img {
+            max-width: 125px;
+            height: auto;
+        }
+    }
+    #header-search-form {
+        display: flex;
+        align-self: center;
+        align-items: stretch;
+    }
+    .navbar-toggler {
+        border-color: #fff;
+        > i {
+            color: #fff;
+        }
+        &:hover {
+            background-color: #fff;
+            > i {
+                color: theme-color('primary');
+            }
+        }
+    }
+    #navbarNavDropdown {
+        ul.navbar-nav {
+            >.nav-item {
+                > .nav-link {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
