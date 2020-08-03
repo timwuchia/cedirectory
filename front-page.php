@@ -18,16 +18,34 @@ get_header();
 		<main id="main" class="site-main">
             <?php get_template_part('inc/top-banner')?>
             <?php
-            $post_type = ('product'); 
-            $terms = get_terms( array(
-                'taxonomy' => 'product-category',
-                'hide_empty' => false,
-                'parent' => 0
-            ) );
-            ?>  
-            <?php foreach($terms as $key => $term) :?>
-            <?php echo '<p>' . $term->name . '</p>'; ?>
-            <?php endforeach; ?>
+                $post_type = ('product'); 
+                $terms = get_terms( array(
+                    'taxonomy' => 'product-category',
+                    'hide_empty' => false,
+                    'parent' => 0
+                ) );
+            ?>
+            <div class='product-categories bg-light-gray py-4'>
+                <div class='container'>
+                    <div class='product-cat-slider'> 
+                        <?php foreach($terms as $key => $term) :?>
+                        <? 
+                            $link = get_term_link($term);
+                            $featured_image = get_field("product_category_featured_image", 'product-category_' . $term->term_id);
+                            $excerpt = get_field("product_category_excerpt", 'product-category_' . $term->term_id);
+                        ?>
+                        <a class='product-cat-slide d-block' href="<?php echo $link; ?>">
+                            <span class='image d-block'>
+                                <?php echo wp_get_attachment_image($featured_image['id'], 'full'); ?>
+                            </span>
+                            <h3 class='content'>
+                                <span><?php echo $term->name; ?></span>
+                            </h3>
+                        </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php
