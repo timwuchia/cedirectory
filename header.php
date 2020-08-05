@@ -26,9 +26,10 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cedirectory' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<?php get_template_part('template-parts/header/nav-top'); ?>
+
 		<div class='main-nav-wrapper bg-primary px-3'>
 			<nav id="site-navigation" class="navbar navbar-expand-lg px-0">
+
 				<?php if(get_field('ce_logo', 'options')) :?>
 					<a class='navbar-brand' href="/"><? echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'full')?></a>
 				<?php endif;?>
