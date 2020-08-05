@@ -1,61 +1,100 @@
 header {
-    .nav-top {
-        a {
-            color: theme-color('body-text');
-        }
-        .nav-top-wrapper {
-            display: flex;
-            justify-content: flex-end;
-            .header-phone {
-                margin-right: 1rem;
-            }
-        }
-        @include media-breakpoint-up(md){
-            .nav-top-wrapper {
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-end;
-                max-width: 600px;
-                padding: 2rem;
-                background-color: theme-color('light-gray');
-                .header-phone {
-                    margin-right: 0;
-                }
-            }
-        }
+    padding-left: 10em;
+    .navbar{
+        padding: 5px !important;
+        padding-left: 10em !important;
     }
-    #site-navigation {
-        .navbar-brand {
-            img {
-                max-width: 125px;
-                height: auto;
-            }
-        }
-        #header-search-form {
-            display: flex;
-            align-self: center;
-            align-items: stretch;
-        }
-        .navbar-toggler {
-            border-color: #fff;
-            > i {
-                color: #fff;
-            }
-            &:hover {
-                background-color: #fff;
-                > i {
-                    color: theme-color('primary');
-                }
-            }
-        }
-        #navbarNavDropdown {
-            ul.navbar-nav {
-                >.nav-item {
-                    > .nav-link {
-                        color: #fff;
-                    }
-                }
-            }
-        }
+    a{
+        color: white;
     }
+ 
+   .navbar-bottom{
+       background-color: white !important;
+       height: 20px;
+   }
+
+
+   .main-nav-wrapper{
+       background-color: #004aac ;
+   }
+     .top-navbar-stripes{
+       height: 60px;
+       background: linear-gradient(0deg, #febc5a 40%, white 25%);
+   }
+
+   .bottom-navbar-stripes{
+       height: 10px;
+       background: linear-gradient(0deg, #A3A4A5 80%, white 50%);
+   }
+
+    .navbar-brand{
+        position: absolute;
+        z-index: 5;
+        width: 25em;
+        height: auto;
+        left: -5em;
+        top: -3.3em;
+    }
+    .navbar-brand img{
+        width: 25%;
+        height: auto;
+    }
+
+
+
+
+
+
+
+    // .nav-top {
+    //     a {
+    //         color: theme-color('body-text');
+    //     }
+   
+    //     @include media-breakpoint-up(md){
+    //         .nav-top-wrapper {
+    //             flex-direction: column;
+    //             justify-content: center;
+    //             align-items: flex-end;
+    //             max-width: 600px;
+    //             padding: 2rem;
+    //             background-color: theme-color('light-gray');
+              
+    //         }
+    //     }
+    // }
+    // #site-navigation {
+    //     .navbar-brand {
+    //         img {
+    //             max-width: 125px;
+    //             height: auto;
+    //         }
+    //     }
+    //     #header-search-form {
+    //         display: flex;
+    //         align-self: center;
+    //         align-items: stretch;
+    //     }
+    //     .navbar-toggler {
+    //         border-color: #fff;
+    //         > i {
+    //             color: #fff;
+    //         }
+    //         &:hover {
+    //             background-color: #fff;
+    //             > i {
+    //                 color: theme-color('primary');
+    //             }
+    //         }
+    //     }
+    //     #navbarNavDropdown {
+    //         ul.navbar-nav {
+    //             >.nav-item {
+    //                 > .nav-link {
+    //                     color: #fff;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }

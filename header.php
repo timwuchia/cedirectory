@@ -26,13 +26,18 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cedirectory' ); ?></a>
 
 	<header id="masthead" class="site-header">
-
-		<div class='main-nav-wrapper bg-primary px-3'>
+		<div class='top-navbar-stripes'>
+		</div>
+		<div class='bottom-navbar-stripes'>
+		</div>
+		<div class='main-nav-wrapper  '>
 			<nav id="site-navigation" class="navbar navbar-expand-lg px-0">
 
 				<?php if(get_field('ce_logo', 'options')) :?>
-					<a class='navbar-brand' href="/"><? echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'full')?></a>
+					<a class='navbar-brand' href="/"><? echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'custom-logo')?></a>
 				<?php endif;?>
+				
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-bars"></i>
 				</button>
@@ -66,7 +71,11 @@
 				?>
 			</nav><!-- #site-navigation -->
 		</div>
-		<div class='nav-bar-bottom d-none d-lg-block bg-secondary py-4'>
+		<!-- <div class='nav-bar-bottom d-none d-lg-block bg-secondary py-4'> -->
+					<div class='navbar-bottom '> 
+	
+	
+			
 
 		</div>
 	</header><!-- #masthead -->
