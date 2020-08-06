@@ -2,7 +2,7 @@ header {
     padding-left: 10em;
     .navbar{
         padding: 5px !important;
-        padding-left: 10em !important;
+        padding-left: 5em !important;
     }
     a{
         color: white;
@@ -15,7 +15,7 @@ header {
 
 
    .main-nav-wrapper{
-       background-color: #004aac ;
+       background-color: #004aac;
    }
      .top-navbar-stripes{
        height: 60px;
@@ -28,15 +28,16 @@ header {
    }
 
     .navbar-brand{
-        position: absolute;
+            position: absolute;
         z-index: 5;
-        width: 25em;
+        width: 7em;
         height: auto;
         left: -5em;
         top: -3.3em;
     }
     .navbar-brand img{
-        width: 25%;
+      
+        width: 100%;
         height: auto;
     }
 
