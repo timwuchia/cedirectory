@@ -223,3 +223,23 @@ if( function_exists('acf_add_options_page') ) {
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+// adding menu items to the account page menu
+if( current_user_can( 'seller' ) || current_user_can('administrator') ) {
+	add_filter( 'wpuf_account_sections', 'wpuf_account_products' );
+
+	function wpuf_account_products( $sections ) {
+		$sections = array_merge( $sections, array( array( 'slug' => 'products', 'label' => ' Products' ) ) );
+		
+		return $sections;
+	}
+		
+	add_action( 'wpuf_account_content_products', 'wpuf_account_porducts_section', 1, 2 );
+		
+	function wpuf_account_porducts_section( $sections, $current_section ) {
+	wpuf_load_template(
+		'dashboard/products.php',
+		array( 'sections' => $sections, 'current_section' => $current_section )
+	);
+	}
+}
