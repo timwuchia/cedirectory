@@ -37,5 +37,29 @@
               }
             ]
           });
+
+          // single product slider
+          $('#single-product-slider').slick({
+            // autoplay: true,
+            speed: 1000,
+            asNavFor: '#thumbnail-slider',
+            focusOnSelect: true,
+            arrows: false
+          });
+          $('#thumbnail-slider').slick({
+            slidesToShow: 3,
+            speed: 1000, 
+            asNavFor: '#single-product-slider',
+            focusOnSelect: true,
+            arrows: true,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                }
+              },
+            ]
+          });
     });
 }(jQuery));

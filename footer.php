@@ -10,7 +10,7 @@
  */
 
 ?>
-
+	<?php get_template_part('template-parts/footer/before'); ?>
 	<footer id="colophon" class="site-footer">
 		<div class='footer-main bg-primary pt-4'>
 			<div class='container'>
