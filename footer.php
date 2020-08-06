@@ -16,7 +16,7 @@
 			<div class='container'>
 				<div class='row'>
 					<div class='footer-column mb-3 col-md-4 col-xl-2'>
-						<h2 class='text-secondary'>Navigate</h2>
+						<h3 class='text-secondary'>Navigate</h3>
 						<?php
 							wp_nav_menu(
 								array(
@@ -26,7 +26,7 @@
 						?>
 					</div>
 					<div class='footer-column mb-3 col-md-4 col-xl-2'>
-						<h2 class='text-secondary'>Company</h2>
+						<h3 class='text-secondary'>Company</h3>
 						<?php
 							wp_nav_menu(
 								array(
@@ -36,7 +36,7 @@
 						?>
 					</div>
 					<div class='footer-column mb-3 col-md-4 col-xl-2'>
-						<h2 class='text-secondary'>Support</h2>
+						<h3 class='text-secondary'>Support</h3>
 						<div class='d-flex'>
 							<?php if(get_field('ce_phone', 'options')) :?>
 								<a class='mr-2' href="tel: <?php echo get_field('ce_phone', 'options'); ?>"><i class="fas fa-phone-square"></i></a>
@@ -47,7 +47,7 @@
 						</div>
 					</div>
 					<div class='footer-column mb-3 col-md-4 col-xl-2'>
-						<h2 class='text-secondary'>Follow Us</h2>
+						<h3 class='text-secondary'>Follow Us</h3>
 						<?php if(have_rows('ce_social_media', 'options')) : ?>
 							<div class='footer-social-media'>
 								<?php while(have_rows('ce_social_media', 'options')) : the_row(); ?>
@@ -61,13 +61,13 @@
 						<?php endif;?>
 					</div>
 					<div class='footer-column col-md-4 col-xl-4'>
-						<h2 class='text-secondary'>Newsletter</h2>
+						<h3 class='text-secondary'>Newsletter</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class='footer-creds bg-primary px-3 p-2'>
-			<p class='text-white'>Web Design By Nessie and Tim</p>
+			<p class='text-white' style= 'font-size: 8px; right: 0; display: flex; flex-direction: row-reverse; ' >Web Design By Nessie and Tim</p>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
