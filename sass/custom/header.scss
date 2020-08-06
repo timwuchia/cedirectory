@@ -1,5 +1,6 @@
 header {
     padding-left: 10em;
+    
     .navbar{
         padding: 5px !important;
         padding-left: 5em !important;
@@ -12,7 +13,6 @@ header {
        background-color: white !important;
        height: 35px;
    }
-
 
    .main-nav-wrapper{
        background-color: #004aac;
@@ -28,7 +28,7 @@ header {
    }
 
     .navbar-brand{
-            position: absolute;
+        position: absolute;
         z-index: 5;
         width: 7em;
         height: auto;
