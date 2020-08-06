@@ -7,7 +7,6 @@
         esc_url( wp_logout_url( get_permalink() ) )
      );
 ?></p>
-test
 <p><?php
 
     $tabs = apply_filters( 'wpuf_my_account_tab_links', [

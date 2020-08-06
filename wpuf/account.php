@@ -1,4 +1,5 @@
-<div class="wpuf-dashboard-container">
+<?php get_template_part('template-parts/account/profile-banner'); ?>
+<div class="wpuf-dashboard-container container">
     <nav class="wpuf-dashboard-navigation">
         <ul>
             <?php

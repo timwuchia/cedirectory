@@ -1,7 +1,6 @@
 <?php 
     $general_settings = get_sub_field("general_settings");
     $container = $general_settings["container"];
-    $background_image = $general_settings["background_image"];
     $background_color = $general_settings["background_color"];
     $padding_top = $general_settings["padding_top"];
     $padding_bottom = $general_settings["padding_bottom"];
