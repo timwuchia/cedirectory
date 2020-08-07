@@ -22,7 +22,40 @@ get_header();
                 <?php endif; ?>
                 </div>
                 <div class='contact-box-right col-md-4 bg-dark-gray p-4'>
-
+                    <h2 class='text-primary'>CE Directory</h2>
+                    <?php 
+                    if(get_field('ce_address', 'options')){
+                        echo '<p>';
+                        the_field('ce_address', 'options');
+                        echo '</p>';
+                    }
+                    if(get_field('ce_phone', 'options')){
+                        echo '<p><a href="tel:';
+                        the_field('ce_phone', 'options');
+                        echo '">';
+                        the_field('ce_phone', 'options');
+                        echo '</a></p>';
+                    }
+                    if(get_field('ce_email', 'options')){
+                        echo '<p><a href="mailto:';
+                        the_field('ce_email', 'options');
+                        echo '">';
+                        the_field('ce_email', 'options');
+                        echo '</a></p>';
+                    }
+                    ?>
+                    <?php if(have_rows('ce_social_media', 'options')) : ?>
+            
+                    <div class='social-media'>
+                        <?php while(have_rows('ce_social_media', 'options')) : the_row(); ?>
+                        <?php
+                            $link = get_sub_field('link','options');
+                            $icon = get_sub_field('icon','options');
+                        ?>
+                        <a href='<?php echo $link; ?>' target='_blank'><?php echo $icon; ?></a>
+                        <?php endwhile;?>
+                    </div>
+                    <?php endif;?>
                 </div>
             </div>
         </div>

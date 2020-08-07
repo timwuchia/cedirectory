@@ -58,6 +58,7 @@ get_header();
                     }
                     ?>
                     </div>
+                    <p class='text-center'>Read our <a href="/privacy-policy">Privacy Policy</a></p>
                 </div>
             </div>
             <?php endif; ?>
