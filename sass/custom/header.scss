@@ -41,61 +41,43 @@ header {
         height: auto;
     }
 
-
-
-
-
-
-
-    // .nav-top {
-    //     a {
-    //         color: theme-color('body-text');
-    //     }
-   
-    //     @include media-breakpoint-up(md){
-    //         .nav-top-wrapper {
-    //             flex-direction: column;
-    //             justify-content: center;
-    //             align-items: flex-end;
-    //             max-width: 600px;
-    //             padding: 2rem;
-    //             background-color: theme-color('light-gray');
-              
-    //         }
-    //     }
-    // }
-    // #site-navigation {
-    //     .navbar-brand {
-    //         img {
-    //             max-width: 125px;
-    //             height: auto;
-    //         }
-    //     }
-    //     #header-search-form {
-    //         display: flex;
-    //         align-self: center;
-    //         align-items: stretch;
-    //     }
-    //     .navbar-toggler {
-    //         border-color: #fff;
-    //         > i {
-    //             color: #fff;
-    //         }
-    //         &:hover {
-    //             background-color: #fff;
-    //             > i {
-    //                 color: theme-color('primary');
-    //             }
-    //         }
-    //     }
-    //     #navbarNavDropdown {
-    //         ul.navbar-nav {
-    //             >.nav-item {
-    //                 > .nav-link {
-    //                     color: #fff;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 }
+
+// -----------------------------------------------------
+// Account Dashboard
+
+
+.wpuf-column{
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 990px) {
+
+    header{
+        padding-left: 0;
+
+        .top-navbar-stripes{
+            background: #febc5a;
+            height: 25px;
+        }
+        .navbar{
+            padding-left: 0 !important;
+        
+            .navbar-nav{
+                padding-left: 2em;
+            }
+            .navbar-brand{
+            position: static !important;
+            padding-left: 1em;
+        
+                img{
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
