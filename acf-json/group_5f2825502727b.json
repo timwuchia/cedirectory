@@ -83,7 +83,14 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "product-category"
+                "value": "directory"
+            }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "industry"
             }
         ]
     ],
@@ -95,5 +102,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1596466744
+    "modified": 1596903949
 }
