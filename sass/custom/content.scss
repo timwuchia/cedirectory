@@ -26,7 +26,6 @@
     background: #F4F4F4;
     width: 90%;
     margin: auto;
-
     .profile-banner{
         background: rgba(0, 0, 0, 0.253);
         height: 10em;
@@ -66,55 +65,47 @@
 
     }
     
-        .wpuf-dashboard-content{
-            margin-top: 5em;
-            margin-bottom: 5em;
+    .wpuf-dashboard-content{
+        margin-top: 5em;
+        margin-bottom: 5em;
+        width: 80%;
+        height: auto;
+      
+        float: none !important;
+        form{
             width: 80%;
             height: auto;
-            background: #A3A4A5 ;
-            float: none !important;
-            form{
-                width: 80%;
-                height: auto;
-                margin: auto;
-                padding-top: 3em;
-                padding-bottom: 3em;
-            
-                .wpuf-submit-button{
-                    background: #febc5a !important;
-                    border: 0px solid white !important;
-                    border-radius: 0 !important;
-                    box-shadow: 0 !important;
-                    padding: 0.375rem 0.75rem;
-                    text-shadow: none !important;
-                    color: #222222 !important;
-                }
-                .profile_image, .profile_banner {
-                    display: flex;
-                    flex-direction: column;
-                }
-                
-                li .wpuf-label{
-                    width: 50% !important;
-                }
-                .wpuf-fields{
-                    .textareafield{
-                        width: 100%;
-                    }
-                    .textfield, .textareafield, .password{
-                        background: none;
-                        border: none;
-                        border-bottom: 1px solid black;
-                    }
-                }
-             
-              
-                
+            margin: auto;
+            padding-top: 3em;
+            padding-bottom: 3em;
+            .wpuf-submit-button{
+                background: #004aac !important;
+                border: 0px solid white !important;
+                border-radius: 0 !important;
+                box-shadow: 0 !important;
+                padding: 0.375rem 0.75rem;
+                text-shadow: none !important;
+                color: white !important;
             }
-    
-        
-    
-    
+            .profile_image, .profile_banner {
+                display: flex;
+                flex-direction: column;
+            }
+            li .wpuf-label{
+                width: 50% !important;
+            }
+            .wpuf-fields{
+                .textareafield{
+                    width: 100%;
+                    }
+                .textfield, .textareafield, .password{
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+            }
+             
         }
+    }
 }
 
