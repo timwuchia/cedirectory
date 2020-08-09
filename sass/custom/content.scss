@@ -26,6 +26,7 @@
     background: #F4F4F4;
     width: 90%;
     margin: auto;
+    margin-bottom: 2em;
     .profile-banner{
         background: rgba(0, 0, 0, 0.253);
         height: 10em;
@@ -103,6 +104,19 @@
                     border: none;
                     border-bottom: 1px solid black;
                 }
+            }
+            .pass-strength-result {
+            
+                border-bottom: 1px solid black;
+                float: left;
+                margin: 0;
+                padding: 3px 5px;
+                text-align: center;
+                width: 200px;
+                display: none;
+                background-color: none !important;
+                border-color: none !important;
+               
             }
              
         }
