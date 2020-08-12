@@ -44,7 +44,25 @@ header {
 }
 
 
-
+@media screen and (max-width: 514px) {
+    header{
+        .navbar{
+            .navbar-brand{
+                width: 8em;
+                padding-left: 0 !important;
+                margin: auto;
+            }
+            .mobile-search{
+                width: 85%!important;
+                margin: auto;
+                .is-form-style{
+                    width: 95%;
+                    margin: auto;
+                }
+                }
+            }
+    }
+}
 
 
 
@@ -68,9 +86,14 @@ header {
             padding-left: 1em;
         
                 img{
-                    width: 70%;
+                    width: 100%;
                     height: auto;
                 }
+            }
+            .mobile-search{
+                width: 60%;
+                position: inherit;
+                margin-left: 0;
             }
         }
     }

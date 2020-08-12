@@ -42,7 +42,11 @@ get_header();
 	$directories = get_categories( $directory_args );
 	$industries = get_categories( $industry_args );
 	?>
+
 		<!-- Directories -->
+		<div class='categories-title'>
+		<h2> Directives </h2>
+		</div>
 		<div class='product-categories d-flex flex-wrap'>
 			<?php foreach ($directories as $cat) : ?>
 				<div class='product-category col-12 col-md-6 col-lg-4'>
@@ -59,13 +63,18 @@ get_header();
 							?>
 						</a>
 					<?php endif; //end of if image?>
+					<div class="product-category-name">
 					<h3><a href="<?php echo get_term_link($cat->slug, 'directory'); ?>"><?php echo $cat->name; ?></a></h3>
+					</div>
 					<div class='product-description'><?php echo $excerpt; ?></div>
 				</div>
 			<?php endforeach;  //end of foreach($all_categories as $cat)?>
 		</div>
 
 		<!-- Industries -->
+		<div class='categories-title'>
+		<h2> Industries </h2>
+		</div>
 		<div class='product-categories d-flex flex-wrap'>
 			<?php foreach ($industries as $cat) : ?>
 				<div class='product-category col-12 col-md-6 col-lg-4'>
@@ -82,7 +91,9 @@ get_header();
 							?>
 						</a>
 					<?php endif; //end of if image?>
+							<div class="product-category-name">
 					<h3><a href="<?php echo get_term_link($cat->slug, 'industry'); ?>"><?php echo $cat->name; ?></a></h3>
+					</div>
 					<div class='product-description'><?php echo $excerpt; ?></div>
 				</div>
 			<?php endforeach;  //end of foreach($all_categories as $cat)?>

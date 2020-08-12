@@ -29,8 +29,32 @@
     margin-bottom: 2em;
     .profile-banner{
         background: rgba(0, 0, 0, 0.253);
-        height: 10em;
+        height: 15em;
         position: relative;
+        overflow: hidden;
+        img:first-child{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        img:nth-child(2){
+             position: absolute;
+            width: 11em;
+            height: auto;
+            left: 5%;
+            border-radius: 100%;
+            margin-top: 1em;
+        }
+        .profile-welcome{
+            width: 50%;
+            position: absolute;
+            top: 2em;
+            left: 25%;
+            h2{
+                color: white;
+                font-size: 3rem;
+            }
+        }
     
         .wpuf-dashboard-navigation{
             width: 100%;
@@ -43,13 +67,10 @@
                 height: auto;
                 margin: auto;
                     :hover{
-                        background: #004aac;
-                        a{
-                            color: white;
-                        }
+                        background:#004aac;
                     }
                 li{
-                    background: #febc5a;
+                    background: #222222;
                     width: 100%;
                     height: auto;
                     margin: auto;
@@ -57,7 +78,7 @@
                     margin-right: 5px;
                 
                     a{
-                        color: #222222;
+                        color: white;
                     }
                 }
                 
@@ -78,9 +99,9 @@
             margin: auto;
             padding: 3em;
            
-            .wpuf-submit-button{
-                background: #004aac !important;
-                border: 0px solid white !important;
+             .wpuf-submit-button{
+                background: #222222 !important;
+                border: 0px !important;
                 border-radius: 0 !important;
                 box-shadow: 0 !important;
                 padding: 0.375rem 0.75rem;
@@ -88,6 +109,9 @@
                 color: white !important;
                 width: auto;
                 margin: auto;
+                :hover{
+                    background: #004aac;
+                }
             }
             .profile_image, .profile_banner {
                 display: flex;
@@ -124,6 +148,67 @@
         }
     }
 }
+// end of Dashboard -----------
+
+// Start of Product / Industry --------
+
+
+@media only screen and (min-width: 325px){
+      .categories-title{
+        width: 10em;
+        border-bottom: 1px solid #222222;
+        margin: 2em;
+        margin-top: 5em;
+    }
+    .product-categories{
+        .product-category{
+            position: relative;
+            max-width: 100%;
+            height: auto;
+            z-index: 1;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .product-category-name{
+                position: relative !important;
+                z-index: 2;
+                max-width: 100%;
+                height: 35%;
+                background: #004bace8;
+                top: -35%;
+                h3{
+                    padding: .5em;
+                    text-align: center;
+                    padding-top: 1em;
+                    a{
+                        color:#febc5a;
+                        bottom: 0;
+                        font-size: 1.2rem;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+        .product-description{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px){
+  
+    .product-categories{
+        margin: 2em;
+        .product-category{
+            flex: 0 0 25% !important;
+       
+        }
+    }
+}
+
+
+
 
 
 
@@ -146,6 +231,12 @@
                     width: 95% !important;
                 }
             }
+            .profile-welcome{
+                left: 40%;
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
         }
         
         .wpuf-dashboard-content{
@@ -154,6 +245,9 @@
                 .wpuf-column-inner-fields{
                     width: 100% !important;
                 } 
+                .wpuf-label{
+                    width: 100% !important;
+                }
                 .wpuf-fields{
                     width: 100% !important;
                 }      
@@ -170,8 +264,9 @@
         ul.wpuf-form li .wpuf-fields{
             display: inline;
              ul.wpuf-attachment-list li {
-            width: 25%;
+            width: auto !important;
             height: auto;
+            margin: auto;
             }
         }
     }
@@ -182,6 +277,16 @@
         .wpuf-dashboard-container{
             max-width: 100% !important;
             .profile-banner{
+                height: 10em ;
+                img:nth-child(2){
+                    width: 6em;
+                }
+                .profile-welcome{
+                    h2{
+                        color: white;
+                        font-size: 2rem;
+                    }
+                }
                 .wpuf-dashboard-navigation{
                     margin-bottom: 0px !important;
                     ul{

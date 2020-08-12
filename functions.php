@@ -100,6 +100,18 @@ if ( ! function_exists( 'cedirectory_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+			add_theme_support(
+			'profile-banner',
+			array(
+				'height'      => 250,
+				'width'       => 900,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
+
+
 	}
 endif;
 add_action( 'after_setup_theme', 'cedirectory_setup' );

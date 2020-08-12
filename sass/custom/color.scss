@@ -2,10 +2,11 @@ $colors: ();
 $colors: map-merge((
   "primary": #004aac,
   "secondary": #febc5a,
+  "tertiary": #9a9a9a,
   "light-gray": #F4F4F4,
   "dark-gray": #A3A4A5,
   "black": #222222,
-  "body-text": #212529
+  "body-text": #222222
 ), $colors);
 
 $theme-colors: ();
