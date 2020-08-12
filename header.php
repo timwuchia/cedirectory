@@ -38,8 +38,11 @@
 				<?php if(get_field('ce_logo', 'options')) :?>
 					<a class='navbar-brand' href="/"><? echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'logo')?></a>
 				<?php endif;?>
-				
-
+				<div class='mobile-search d-lg-none'>
+				<?php
+					echo do_shortcode('[ivory-search id="111" title="Default Search Form"]');
+				?>
+				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-bars"></i>
 				</button>

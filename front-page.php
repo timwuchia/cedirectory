@@ -57,7 +57,7 @@ get_header();
             <?php
                 $post_type = ('product'); 
                 $terms = get_terms( array(
-                    'taxonomy' => 'product-category',
+                    'taxonomy' => 'directory',
                     'hide_empty' => false,
                     'parent' => 0
                 ) );
@@ -66,15 +66,18 @@ get_header();
                 <div class='container'>
                     <div class='product-cat-slider'> 
                         <?php foreach($terms as $key => $term) :?>
-                        <? 
-                            $link = get_term_link($term);
-                            $featured_image = get_field("product_category_featured_image", 'product-category_' . $term->term_id);
-                            $excerpt = get_field("product_category_excerpt", 'product-category_' . $term->term_id);
+                        <?php 
+                        $link = get_term_link($term);
+                        $featured_image = get_field("product_category_featured_image", 'directory_' . $term->term_id);
+                        $excerpt = get_field("product_category_excerpt", 'directory_' . $term->term_id);
+                        print_r($featured_image);
                         ?>
                         <a class='product-cat-slide d-block' href="<?php echo $link; ?>">
+                            <?php if($featured_image) : ?>
                             <span class='image d-block'>
                                 <?php echo wp_get_attachment_image($featured_image['id'], 'full'); ?>
                             </span>
+                            <?php endif; ?>
                             <h3 class='content'>
                                 <span><?php echo $term->name; ?></span>
                             </h3>
