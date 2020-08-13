@@ -163,7 +163,7 @@ form{
 
 @media only screen and (min-width: 325px){
 // Custom Container-----------------------------------------
-.custom-container{
+.custom-container, .single-product-container{
     max-width: 100% !important;
 }
 // ---------------------------------------------------------
@@ -341,7 +341,7 @@ form{
 
 @media only screen and (min-width: 768px){
 
-    .custom-container{
+    .custom-container, .single-product-container{
         max-width: 90% !important;
     }
 // Add Product Page Start-------------------------------
@@ -462,7 +462,7 @@ form{
 
 // Custom Container ---------------
   
-    .custom-container {
+    .custom-container, .single-product-container {
         max-width: 60% !important;
      
     }
