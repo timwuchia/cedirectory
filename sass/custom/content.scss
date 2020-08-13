@@ -156,9 +156,16 @@
 
 @media only screen and (min-width: 325px){
 
+//  Buttons---------------
+.btn, .wpuf-submit-button, .btn-secondary{
+    border-radius: 0;
+    border: none;
+}
+
 
 // Home Page ---------------
     .front-page-container{
+     
         .featured-product{
             position: relative;
             width: 100%;
@@ -185,8 +192,9 @@
     }
 
 
-// Home Page End -----------
+// Home Page End ---------------------------------------------------------------------------------------------------------------------------
 
+// Categories Page Start --------------------------------------------------------------------------------------------------------------------------
       .categories-title{
         width: 10em;
         border-bottom: 1px solid #222222;
@@ -200,7 +208,7 @@
             height: auto;
             z-index: 1;
             img{
-                max-width: 100%;
+                width: 100%;
                 height: auto;
             }
             .product-category-name{
@@ -208,7 +216,7 @@
                 z-index: 2;
                 max-width: 100%;
                 height: 35%;
-                background: #004bace8;
+                background: #004bac94;
                 top: -35%;
                 h3{
                     padding: .5em;
@@ -227,22 +235,47 @@
             display: none;
         }
     }
+// Single Product Page Start -----------------------------------
+    .single-product-container{
+        #thumbnail-slider{
+            display: none;
+        }
+        .single-product-description-container{
+            background-color: #dadadb !important;
+        }
+    }
+// Single Product Page Ends ------------------------------------
+
+
+// Categories Page Ends -------------------------------------------------------------------------------------------------------------------------------
+
+.wpuf-form-add{
+    padding: .5em;
+    padding-top: 3em;
+    background: #dadadb;
 }
+
+
+//  Add Product Page Start ------------------------------------------------------------------------------------------------------
+
+
+
+
+}
+// @media 325px Ends ---------------------------------------------------------------------------------------------------------------
 
 
 
 
 
 @media only screen and (min-width: 768px){
-    // Home Page ---------------
+// Home Page ---------------
   
     .front-page-container{
         max-width: 660px !important;
-    
-     
+  
     }
-
-
+    
 // Home Page End -----------
 
 }
@@ -315,9 +348,16 @@
         max-width: 100% !important;
      
     }
-
-
 // Home Page End -----------
+
+// Single Product Page Start -----------------------------------
+    .single-product-container{
+        #thumbnail-slider{
+            display: block;
+        }
+    }
+// Single Product Page Ends ------------------------------------
+
 
 }
 

@@ -36,7 +36,9 @@ get_header();
                         </ul>
                     <?php endif; ?>
                 </div>
-                <div class='bg-dark-gray col-lg-4 p-4'>
+                <div class='
+                single-product-description-container bg-dark-gray col-lg-4 p-4'>
+                <div class='single-product-description'>
                     <h2><?php the_title(); ?></h2>
                     <?php the_content(); ?>
                     <?php
@@ -58,6 +60,7 @@ get_header();
                     ?>
 
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email', $author_id);  ?>">Contact Seller</a>
+                    </div>
                 </div>
             </div>
         </div>
