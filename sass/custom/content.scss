@@ -42,7 +42,6 @@
             width: 11em;
             height: auto;
             left: 5%;
-            border-radius: 100%;
             margin-top: 1em;
         }
         .profile-welcome{
@@ -150,10 +149,40 @@
 }
 // end of Dashboard -----------
 
+
+
 // Start of Product / Industry --------
 
 
 @media only screen and (min-width: 325px){
+
+
+// Home Page ---------------
+    .front-page-container{
+        .featured-product{
+            position: relative;
+            width: 100%;
+            height: auto;
+            .featured-product-content{
+                position: relative;
+                height: 35%;
+                background: #004bace8;
+                top: -35%;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                // color: #222222;
+                .btn{
+                    border-radius: 0;
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+
+
+// Home Page End -----------
+
       .categories-title{
         width: 10em;
         border-bottom: 1px solid #222222;
@@ -196,26 +225,27 @@
     }
 }
 
-@media only screen and (min-width: 1400px){
+
+
+
+
+@media only screen and (min-width: 768px){
+    // Home Page ---------------
   
-    .product-categories{
-        margin: 2em;
-        .product-category{
-            flex: 0 0 25% !important;
-       
-        }
+    .front-page-container{
+        max-width: 660px !important;
+     
     }
+
+
+// Home Page End -----------
+
 }
 
 
 
 
-
-
-
-
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     // User Dashboard Content
     .wpuf-dashboard-container{
@@ -272,6 +302,20 @@
     }
 }
 
+
+@media only screen and (min-width: 992px){
+    // Home Page ---------------
+  
+    .front-page-container {
+        max-width: 100% !important;
+     
+    }
+
+
+// Home Page End -----------
+
+}
+
 @media screen and (max-width: 991px){
     
         .wpuf-dashboard-container{
@@ -290,7 +334,7 @@
                 .wpuf-dashboard-navigation{
                     margin-bottom: 0px !important;
                     ul{
-                        width: 70% !important;
+                        width: 100% !important;
                     }
                 }
             }
@@ -298,3 +342,13 @@
 }
 
 
+@media only screen and (min-width: 1400px){
+  
+    .product-categories{
+        margin: 2em;
+        .product-category{
+            flex: 0 0 25% !important;
+       
+        }
+    }
+}
