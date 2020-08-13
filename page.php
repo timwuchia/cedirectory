@@ -20,7 +20,7 @@ get_header();
 
 		<?php while ( have_posts() ) :the_post(); ?>
 
-            <div class='container py-5'>
+            <div class='custom-container container py-5'>
 				<?php the_content(); ?>
             </div>
 			

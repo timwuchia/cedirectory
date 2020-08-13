@@ -15,6 +15,14 @@
 }
 
 // -----------------------------------------------------
+
+// Forms------------------------------------------------
+form{
+    background: #F4F4F4;
+}
+// -----------------------------------------------------
+
+
 // Account Dashboard
 
 
@@ -97,7 +105,6 @@
             height: auto;
             margin: auto;
             padding: 3em;
-           
              .wpuf-submit-button{
                 background: #222222 !important;
                 border: 0px !important;
@@ -155,16 +162,21 @@
 
 
 @media only screen and (min-width: 325px){
+// Custom Container-----------------------------------------
+.custom-container{
+    max-width: 100% !important;
+}
+// ---------------------------------------------------------
 
-//  Buttons---------------
+//  Buttons-------------------------------------------------
 .btn, .wpuf-submit-button, .btn-secondary{
     border-radius: 0;
     border: none;
 }
+// ---------------------------------------------------------
 
-
-// Home Page ---------------
-    .front-page-container{
+// Home Page -----------------------------------------------
+    .custom-container{
      
         .featured-product{
             position: relative;
@@ -247,41 +259,95 @@
 // Single Product Page Ends ------------------------------------
 
 
-// Categories Page Ends -------------------------------------------------------------------------------------------------------------------------------
+// Categories Page Ends --------------------------------------------------------------
 
+
+
+
+//  Add Product Page Start --------------------------------------------------------------
 .wpuf-form-add{
-    padding: .5em;
+    padding: 1em;
     padding-top: 3em;
-    border: 1px solid #2222220f;
+    // border: 1px solid #2222220f;
+    .wpuf-form{
+        display: grid;
+        .wpuf-label{
+            width: 60%;
+        }
+        .wpuf-fields{
+            width: 100%;
+            .textfield{
+                width: auto !important;
+                border-color: #2222220f;
+            }
+            .textareafield{
+                border: 1px solid #2222220f !important;
+           
+            }
+        }
+    } 
+}
+
+// Form Color Over Ride
+
+    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .mce-statusbar, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .mce-toolbar-grp, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .wp-editor-container{
+            border-color: #2222220f !important;
+        }
+
+        .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
+            font-size: 15px;
+        }
+
+    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
+        border-color: #2222220f !important;
+    }
+   
+
+    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li.wpuf-submit input[type=submit]{
+        background: #222222 !important;
+        border-color: #222222 !important;
+        -moz-box-shadow: 0 1px 0 #8726d3 !important;
+        -webkit-box-shadow: 0 1px 0 #8726d3 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        border-radius: 0 !important;
+    }
+    .wpuf-form-add li .wpuf-submit:active{
+        background: #004aac;
+    }
     
+    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited{
+        
+        background: #004aac;
+    }
+
+    .mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset , .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wpuf-fields a.file-selector{
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
+        display: grid;
+    }
+// ----------------------------------------------------
+
 }
-
-
-//  Add Product Page Start ------------------------------------------------------------------------------------------------------
-
-
-
-
-}
-// @media 325px Ends ---------------------------------------------------------------------------------------------------------------
-
-
-
+// @media 325px Ends ----------------------------------
 
 
 @media only screen and (min-width: 768px){
-// Home Page ---------------
-  
-    .front-page-container{
-        max-width: 660px !important;
-  
+
+    .custom-container{
+        max-width: 90% !important;
+    }
+// Add Product Page Start-------------------------------
+    .wpuf-form-add{
+        padding: 3em;
     }
     
-// Home Page End -----------
-
+  
+// -----------------------------------------------------
 }
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -307,7 +373,6 @@
                 }
             }
         }
-        
         .wpuf-dashboard-content{
             .wpuf-column{
                 display: block;
@@ -321,8 +386,6 @@
                     width: 100% !important;
                 }      
             }
-        
-        
             .wpuf-submit{
                 width: 50%;
                 margin: auto;
@@ -343,13 +406,7 @@
 
 
 @media only screen and (min-width: 992px){
-    // Home Page ---------------
-  
-    .front-page-container {
-        max-width: 100% !important;
-     
-    }
-// Home Page End -----------
+
 
 // Single Product Page Start -----------------------------------
     .single-product-container{
@@ -357,12 +414,21 @@
             display: block;
         }
     }
-// Single Product Page Ends ------------------------------------
+// ------------------------------------
+// Add Product Page -------------------------------------
+      .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
+        display: block;
+    }
+
+
+
+
+// -------------------------------------------------------
 
 
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px){
     
         .wpuf-dashboard-container{
             max-width: 100% !important;
@@ -389,9 +455,18 @@
 
 
 @media only screen and (min-width: 1400px){
-    // Home Page Start------------
 
-    .front-page-container{
+// Custom Container ---------------
+  
+    .custom-container {
+        max-width: 60% !important;
+     
+    }
+// -----------
+
+// Home Page Start------------
+
+    .custom-container{
             .featured-product-content{
                 position: relative;
                 height: 35%;
