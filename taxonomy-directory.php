@@ -20,9 +20,11 @@ get_header();
                 $image = get_field("product_category_featured_image", $term);
                 $excerpt = get_field('product_category_excerpt', $term);
             ?>
+            <?php get_template_part('inc/post-filter'); ?>
             <?php if(have_posts()) : ?>
             <div class='row category-products'>
             <?php while(have_posts()) : the_post(); ?>
+        
             <div class='col-md-6 col-lg-4 product'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                 <div class='product-desc'>

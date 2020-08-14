@@ -255,3 +255,44 @@ if( current_user_can( 'seller' ) || current_user_can('administrator') ) {
 	);
 	}
 }
+
+// array of filters (field key => field name)
+$GLOBALS['my_query_filters'] = array( 
+	'country'	=> 'country', 
+);
+
+//function to modify default WordPress query
+// Hook our custom query function to the pre_get_posts 
+add_action( 'pre_get_posts', 'ce_custom_query', 10, 1 );
+function ce_custom_query( $query ) {
+   
+	if( $query->is_main_query() && ! is_admin() && $query->is_tax()) {
+		if (isset($_GET['orderby'])){
+			$orderby = $_GET['orderby'];
+			$query->set( 'orderby', $orderby );
+		}
+		if (isset($_GET['sortby'])){
+			$sortby = $_GET['sortby'];
+			$query->set( 'sortby', $sortby );
+		}
+		// get meta query
+	$meta_query = $query->get('meta_query');
+	if(isset($_GET['country'])){
+		$country = explode(',', $_GET[ 'country' ]);
+		print_r($country[0]);
+		$meta_query = array(
+			array(
+				'key'		=> 'country',
+				'value'		=> $_GET['country'],
+				'compare'	=> 'LIKE',
+			),
+		);
+	}	
+	
+	// update meta query
+	$query->set('meta_query',$meta_query);
+	
+	}
+	return;
+}
+	
