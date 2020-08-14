@@ -9,49 +9,97 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package cedirectory
+ * @package test
  */
 
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
+<div class='custom-container'> 
 		<?php
-		if ( have_posts() ) :
+			$args = array(
+				'numberposts' => 1,
+				'offset' => 0,
+				'category' => 0,
+				'orderby' => 'post_date',
+				'order' => 'DESC',
+				'include' => '',
+				'exclude' => '',
+				'meta_key' => '',
+				'meta_value' =>'',
+				'post_type' => 'post',
+				'post_status' => 'draft, publish, future, pending, private',
+				'suppress_filters' => true
+			);
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+		$recent_posts = wp_get_recent_posts( $args, ARRAY_A );
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+	?>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+<div class = 'blog-container d-flex flex-wrap'>
+	<?php
+	foreach( $recent_posts as $recent ){	
+			
+			echo '<div class = "latest-blog-container">';
+			echo get_the_post_thumbnail($recent['ID'],'featured-large');
+			echo  '<a href="' . get_permalink() . '">';
+			echo "<div class ='latest-blog-title'>";
+			echo '<h1>';
+			echo $recent['post_title'];
+			echo '</h1>';
+			echo "<h2>Recent Blog</h2>";
+			echo "</div>";
+			echo "</a>";
+			echo '</div>';//end of latest-blog-container
 
-			endwhile;
+		wp_reset_query();
 
-			the_posts_navigation();
+		}
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
 		?>
 
-	</main><!-- #main -->
+	
+
+			<?php
+			if ( have_posts() ) :
+
+				while ( have_posts() ) :
+						echo "<div class = 'blog-wrapper' >";
+						echo the_post();
+						echo "<div class = 'blog-images' >";
+						echo '<a class="blog-img-sec" href="';
+						echo the_permalink($post->ID);
+						echo '">';
+						echo the_post_thumbnail('work-img');
+						echo '<h2>';
+						echo get_the_title();
+						echo '</h2>';
+						echo '</a>';
+						echo "</div>";// end of blog-images
+						echo '<br>';
+						echo '<div class = "blog-content" >';
+						echo '<h4>';
+						echo get_the_date();
+						echo '</h4>';
+						echo '<p>';
+						echo the_excerpt();
+						echo '</p>';
+						echo '</div>';
+						echo "</div>";//end of blog-wrapper
+			endwhile; 
+			endif;
+			?>
+	</div><!--end of blog container	-->
+</div>
+<!-- end of custom container 
+
+
+		</main> 
+	</div><!-- #primary -->
 
 <?php
-// get_sidebar();
+
 get_footer();

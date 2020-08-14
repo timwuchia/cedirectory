@@ -32,7 +32,7 @@
 
 .wpuf-dashboard-container{
     background: #F4F4F4;
-    width: 90%;
+    max-width: 100%;
     margin: auto;
     margin-bottom: 2em;
     .profile-banner{
@@ -176,8 +176,8 @@
 // ---------------------------------------------------------
 
 // Home Page -----------------------------------------------
-    .custom-container{
-     
+    .featured-product-container {
+    
         .featured-product{
             position: relative;
             width: 100%;
@@ -198,14 +198,15 @@
                 .btn{
                     border-radius: 0;
                     margin-bottom: 0 !important;
+                    padding: .5em;
                 }
             }
         }
     }
 
 
-// Home Page End ---------------------------------------------------------------------------------------------------------------------------
 
+// -------------------------------------------------------------------------------
 // Categories Page Start --------------------------------------------------------------------------------------------------------------------------
       .categories-title{
         width: 10em;
@@ -336,9 +337,7 @@
 // ----------------------------------------------------
 
 // Contact Us Page ------------------------------------
-    
         .contact-container{
-          
             .contact-box{
                 display: flex !important;
                 flex-wrap: wrap-reverse !important;
@@ -373,10 +372,10 @@
 
 
 @media only screen and (min-width: 768px){
-
-    .custom-container{
-        max-width: 65% !important;
-    }
+    .featured-product-container{
+            max-width: 65% !important;
+        }
+    
 // Add Product Page Start-------------------------------
     .wpuf-form-add{
         padding: 3em;
@@ -460,33 +459,34 @@
 
 @media only screen and (min-width: 992px){
 
-    .single-product-container{
-        max-width: 80% !important;
-    }
-  .custom-container{
-        max-width: 100% !important;
-        .wpuf-form-add{
-            max-width: 80% !important;
-            margin: auto;
+// Home Page -----------------------------------------------------
+    .featured-product-container{
+            max-width: 90% !important;
         }
-    }
+    
+  
 // Single Product Page Start -----------------------------------
     .single-product-container{
         #thumbnail-slider{
             display: block;
         }
     }
+        .wpuf-form-add{
+            max-width: 80% !important;
+            margin: auto;
+        }
 // ------------------------------------
 // Add Product Page -------------------------------------
       .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
         display: block;
     }
 
-
-
-
 // -------------------------------------------------------
 
+// Dashboard Page --------------------------------------------------
+.wpuf-dashboard-container{
+    max-width: 90% !important;
+}
 
 }
 
@@ -519,31 +519,26 @@
 @media only screen and (min-width: 1400px){
 
 // Custom Container -------------------------
-    .single-product-container{
-        max-width: 70% !important;
+
+    .wpuf-form-add{
+         max-width: 85% !important;
+        margin: auto;
     }
-    .custom-container {
-        max-width: 90% !important;
-            .wpuf-form-add{
-            max-width: 85% !important;
-            margin: auto;
-        }
-    }
+    
 
 // ------------------------------------------
 
 // Home Page Start-------------------------------
 
     .custom-container{
-            .featured-product-content{
-                position: relative;
-                height: 35%;
-                background: #004bace8;
-                top: -35%;
-                padding: 1em;
-                display: flex;
-                flex-direction: column;
-                // color: #222222;
+        .featured-product-content{
+            position: relative;
+            height: 35%;
+            background: #004bace8;
+            top: -35%;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
         }
     }
 
