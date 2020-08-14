@@ -163,10 +163,10 @@ form{
 
 @media only screen and (min-width: 325px){
 // Custom Container-----------------------------------------
-.custom-container, .single-product-container{
-    max-width: 100% !important;
-}
-// ---------------------------------------------------------
+// .custom-container, .single-product-container{
+//     max-width: 100% !important;
+// }
+// // ---------------------------------------------------------
 
 //  Buttons-------------------------------------------------
 .btn, .wpuf-submit-button, .btn-secondary{
@@ -342,7 +342,7 @@ form{
 @media only screen and (min-width: 768px){
 
     .custom-container, .single-product-container{
-        max-width: 90% !important;
+        max-width: 60% !important;
     }
 // Add Product Page Start-------------------------------
     .wpuf-form-add{
@@ -411,7 +411,9 @@ form{
 
 @media only screen and (min-width: 992px){
 
-
+  .custom-container, .single-product-container{
+        max-width: 100% !important;
+    }
 // Single Product Page Start -----------------------------------
     .single-product-container{
         #thumbnail-slider{
@@ -463,9 +465,9 @@ form{
 // Custom Container ---------------
   
     .custom-container, .single-product-container {
-        max-width: 60% !important;
-     
+        max-width: 90% !important;
     }
+
 // -----------
 
 // Home Page Start------------
