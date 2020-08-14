@@ -341,8 +341,8 @@ form{
 
 @media only screen and (min-width: 768px){
 
-    .custom-container, .single-product-container{
-        max-width: 60% !important;
+    .custom-container{
+        max-width: 65% !important;
     }
 // Add Product Page Start-------------------------------
     .wpuf-form-add{
@@ -411,8 +411,15 @@ form{
 
 @media only screen and (min-width: 992px){
 
-  .custom-container, .single-product-container{
+    .single-product-container{
+        max-width: 80% !important;
+    }
+  .custom-container{
         max-width: 100% !important;
+        .wpuf-form-add{
+            max-width: 80% !important;
+            margin: auto;
+        }
     }
 // Single Product Page Start -----------------------------------
     .single-product-container{
@@ -463,9 +470,15 @@ form{
 @media only screen and (min-width: 1400px){
 
 // Custom Container ---------------
-
-    .custom-container, .single-product-container {
-        max-width: 100% !important;
+    .single-product-container{
+        max-width: 70% !important;
+    }
+    .custom-container {
+        max-width: 85% !important;
+            .wpuf-form-add{
+            max-width: 80% !important;
+            margin: auto;
+        }
     }
 
 // -----------
