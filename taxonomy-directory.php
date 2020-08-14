@@ -36,6 +36,9 @@ get_header();
             <?php endwhile; ?>
             </div>
             <?php endif; ?>
+            
+            <?php ce_pagination(); ?>
+
             </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

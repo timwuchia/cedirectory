@@ -63,6 +63,10 @@
     });
 
     // post filter query update
+
+    // initialize select value by params
+    var postFilterURL = window.location.href;
+
     function replaceUrlParam(url, paramName, paramValue) {
       if (paramValue == null) {
         paramValue = "";
@@ -77,27 +81,21 @@
       );
     }
 
-    var postFilterURL = window.location.href;
-    console.log(postFilterURL);
-
     $(".sort-options").on("change", function (e) {
-      var valueSelected = e.target.value;
+      const valueSelected = e.target.value;
       postFilterURL;
       // var urlParams = new URLSearchParams(window.location.search);
       postFilterURL = replaceUrlParam(postFilterURL, "sortby", valueSelected);
-      console.log(postFilterURL);
     });
     $(".order-options").on("change", function (e) {
-      var valueSelected = e.target.value;
+      const valueSelected = e.target.value;
       // var urlParams = new URLSearchParams(window.location.search);
       postFilterURL = replaceUrlParam(postFilterURL, "orderby", valueSelected);
-      console.log(postFilterURL);
     });
     $(".country-options").on("change", function (e) {
-      var valueSelected = e.target.value;
+      const valueSelected = e.target.value;
       // var urlParams = new URLSearchParams(window.location.search);
       postFilterURL = replaceUrlParam(postFilterURL, "country", valueSelected);
-      console.log(postFilterURL);
     });
     $(".post-filters").submit(function (e) {
       e.preventDefault();

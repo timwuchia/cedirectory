@@ -39,6 +39,9 @@ get_header();
             </div>
             <?php endif; ?>
             </div>
+
+            <?php ce_pagination(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
