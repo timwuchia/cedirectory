@@ -279,7 +279,6 @@ function ce_custom_query( $query ) {
 	$meta_query = $query->get('meta_query');
 	if(isset($_GET['country'])){
 		$country = explode(',', $_GET[ 'country' ]);
-		print_r($country[0]);
 		$meta_query = array(
 			array(
 				'key'		=> 'country',
