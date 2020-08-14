@@ -17,9 +17,9 @@
 // -----------------------------------------------------
 
 // Forms------------------------------------------------
-form{
-    background: #F4F4F4;
-}
+// form{
+//     background: #dadadb;
+// }
 // -----------------------------------------------------
 
 
@@ -31,7 +31,7 @@ form{
   }
 
 .wpuf-dashboard-container{
-    background: #dadadb;
+    background: #F4F4F4;
     width: 90%;
     margin: auto;
     margin-bottom: 2em;
@@ -335,6 +335,39 @@ form{
     }
 // ----------------------------------------------------
 
+// Contact Us Page ------------------------------------
+    
+        .contact-container{
+          
+            .contact-box{
+                display: flex !important;
+                flex-wrap: wrap-reverse !important;
+                width: 90% !important;
+                margin: auto;
+                .wpcf7-form{
+                    margin: auto;
+                    width: 90%;
+                    .wpcf7-submit{
+                        width: 7em;
+                        height: auto;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        background-color: #222222 !important;
+                        border: none !important;
+                        color: white;
+                        :focus{
+                            background: #004aac !important;
+
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+  
+    
+
 }
 // @media 325px Ends ----------------------------------
 
@@ -351,6 +384,22 @@ form{
     
   
 // -----------------------------------------------------
+// Contact Us Page--------------------------------------
+    .contact-box{
+        max-width: 100% !important;
+        .contact-box-left{
+            max-width: 100% !important;
+            flex: auto !important;
+            .contact-form-name{
+                display: block !important;
+                max-width: 100% !important;
+            }
+        }
+        .contact-information-wrapper{
+            max-width: 100% !important;
+            flex: auto !important;
+        }
+    }
 }
 
 
@@ -469,21 +518,21 @@ form{
 
 @media only screen and (min-width: 1400px){
 
-// Custom Container ---------------
+// Custom Container -------------------------
     .single-product-container{
         max-width: 70% !important;
     }
     .custom-container {
-        max-width: 85% !important;
+        max-width: 90% !important;
             .wpuf-form-add{
-            max-width: 80% !important;
+            max-width: 85% !important;
             margin: auto;
         }
     }
 
-// -----------
+// ------------------------------------------
 
-// Home Page Start------------
+// Home Page Start-------------------------------
 
     .custom-container{
             .featured-product-content{
@@ -499,8 +548,9 @@ form{
     }
 
 
-    // Home Page Ends ------------
-  
+// -----------------------------
+
+// Product Page 
     .product-categories{
         margin: 2em;
         .product-category{
@@ -508,4 +558,42 @@ form{
        
         }
     }
+// ---------------------------------------------------------
+
+// Contact Page -------------------------------------------
+    .contact-container{
+        max-width: 70% !important;
+        .contact-box {
+            flex-wrap: nowrap!important;
+            width: 100% !important;
+            .contact-box-left{
+                .wpcf7-form{
+                    width: 75% !important;
+                    padding: 1em;
+                       textarea{
+                            background: none !important;
+                            border: none !important;
+                            border-bottom: 1px solid #222222 !important;
+                        }
+                    .contact-form-name{
+                        display: flex !important;
+                        line-height: 3em;
+                        .wpcf7-text{
+                            width: 90%;
+                            width: 90%;
+                            border: none;
+                            background: none;
+                            border-bottom: 1px solid #222222;
+                        }
+                      
+                       
+                    }
+                }
+            }
+            .contact-information-wrapper{
+                max-width: 40% !important;
+            }
+        }
+    }
+
 }

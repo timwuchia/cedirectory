@@ -10,8 +10,10 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <div class='py-5 container'>
+        <div class='py-5 container contact-container'>
+            <h1>Inquire</h1>
             <div class='contact-box row'>
+                
                 <div class='contact-box-left col-md-8 bg-light-gray p-4'>
                 <?php if(function_exists('get_field')) : ?>
                 <?php 
@@ -21,7 +23,7 @@ get_header();
                 ?>
                 <?php endif; ?>
                 </div>
-                <div class='contact-box-right col-md-4 bg-dark-gray p-4'>
+                <div class='contact-box-right contact-information-wrapper col-md-4 bg-dark-gray p-4'>
                     <h2 class='text-primary'>CE Directory</h2>
                     <?php 
                     if(get_field('ce_address', 'options')){
