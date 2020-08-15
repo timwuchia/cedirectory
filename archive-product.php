@@ -44,13 +44,13 @@ get_header();
                     <?php if($directory_link) : ?>
                         <a class="d-block col-md-6" href="<?php echo esc_url( $directory_link_url ); ?>" target="<?php echo esc_attr( $directory_link_target ); ?>">
                         <?php echo wp_get_attachment_image($directory_image['ID'], 'general-large'); ?>
-                        <h3><?php echo esc_html( $directory_link_title ); ?></h3>
+                        <h3 class='mt-3 text-center'><?php echo esc_html( $directory_link_title ); ?></h3>
                         </a>
                     <?php endif; ?>
                     <?php if($industry_link) : ?>
                         <a class="d-block col-md-6" href="<?php echo esc_url( $industry_link_url ); ?>" target="<?php echo esc_attr( $industry_link_target ); ?>">
                         <?php echo wp_get_attachment_image($industry_image['ID'], 'general-large'); ?>
-                        <h3><?php echo esc_html( $industry_link_title ); ?></h3>
+                        <h3 class='mt-3 text-center'><?php echo esc_html( $industry_link_title ); ?></h3>
                         </a>
                     <?php endif; ?>
                 </div>
