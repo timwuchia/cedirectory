@@ -34,7 +34,7 @@ get_header();
                         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
                             <div class='featured-product col-lg-4'>
                                 <div class='featured-product-image'>
-                                    <?php the_post_thumbnail(); ?>
+                                    <?php the_post_thumbnail('general'); ?>
                                 </div>
                                 <div class='featured-product-content d-flex justify-content-between align-items-center'>
                                     <div>
@@ -75,7 +75,7 @@ get_header();
                         <a class='product-cat-slide d-block' href="<?php echo $link; ?>">
                             <?php if($featured_image) : ?>
                             <span class='image d-block'>
-                                <?php echo wp_get_attachment_image($featured_image['id'], 'full'); ?>
+                                <?php echo wp_get_attachment_image($featured_image['id'], 'general'); ?>
                             </span>
                             <?php endif; ?>
                             <h3 class='content'>

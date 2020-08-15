@@ -14,6 +14,11 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); ?>
         <div class='single-product-container container py-5'>
+            <div class='site-breadcrumb mb-4'>
+            <?php
+                echo do_shortcode( '[wpseo_breadcrumb]');
+            ?>
+            </div>
             <div class='row'>
                 <div class='bg-light-gray col-lg-8 p-4'>
                     <?php 
@@ -63,6 +68,8 @@ get_header();
                     </div>
                 </div>
             </div>
+            <?php // echo do_shortcode('[wpuf_dashboard post_type="product"]')?>
+            <?php echo do_shortcode('[wpuf_edit]')?>
         </div>
 
         <?php   // If comments are open or we have at least one comment, load up the comment template.
