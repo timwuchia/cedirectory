@@ -18,7 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-<div class='custom-container'> 
+<div class=' blog-container d-flex flex-wrap'> 
 		<?php
 			$args = array(
 				'numberposts' => 1,
@@ -39,7 +39,7 @@ get_header();
 
 	?>
 
-<div class = 'blog-container d-flex flex-wrap'>
+<div class = 'blog col-12 col-md-6 col-lg-4'>
 	<?php
 	foreach( $recent_posts as $recent ){	
 			
@@ -62,7 +62,7 @@ get_header();
 		?>
 
 	
-
+<div class="">
 			<?php
 			if ( have_posts() ) :
 

@@ -207,7 +207,7 @@
 
 
 // -------------------------------------------------------------------------------
-// Categories Page Start --------------------------------------------------------------------------------------------------------------------------
+// Categories Page Start -------------------------------------------------------------------------
       .categories-title{
         width: 10em;
         border-bottom: 1px solid #222222;
@@ -293,7 +293,7 @@
     } 
 }
 
-// Form Color Over Ride
+// Form Color Over Ride--------------------------------------------------------
 
     .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .mce-statusbar, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .mce-toolbar-grp, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .wp-editor-container{
             border-color: #2222220f !important;
@@ -364,7 +364,34 @@
 
             }
         }
-  
+
+// Dashboard Blog Page ------------------------------------------------
+
+    .current-user-posts{
+        height: auto;
+        margin: auto;
+        .blog-container {
+            margin-bottom: 3em;
+            padding: .5em;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .the-blog-post{
+                background: #004aac; 
+                max-width: 100%;
+                height: auto;
+                padding: 1em;
+                h2{
+                    text-align: center;
+                    a{
+                        color: #222222;
+                        text-align: center;
+                    }
+                }   
+            }
+        }
+    }
     
 
 }
@@ -372,6 +399,7 @@
 
 
 @media only screen and (min-width: 768px){
+    
     .featured-product-container{
             max-width: 65% !important;
         }
@@ -399,6 +427,20 @@
             flex: auto !important;
         }
     }
+
+
+// Dashboard Blog Page ------------------------------------------------
+
+    .current-user-posts {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+// ----------------------------------------------------------------------
+
+
+
+
 }
 
 
