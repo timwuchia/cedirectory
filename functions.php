@@ -249,15 +249,17 @@ if( current_user_can( 'seller' ) || current_user_can('administrator') ) {
 		return $sections;
 	}
 		
-	add_action( 'wpuf_account_content_products', 'wpuf_account_porducts_section', 1, 2 );
+	add_action( 'wpuf_account_content_products', 'wpuf_account_products_section', 1, 2 );
 		
-	function wpuf_account_porducts_section( $sections, $current_section ) {
+	function wpuf_account_products_section( $sections, $current_section ) {
 	wpuf_load_template(
 		'dashboard/products.php',
 		array( 'sections' => $sections, 'current_section' => $current_section )
 	);
 	}
 }
+
+add_action( 'wpuf_account_content_products', 'wpuf_account_products_section', 1, 2 );
 
 // array of filters (field key => field name)
 $GLOBALS['my_query_filters'] = array( 
