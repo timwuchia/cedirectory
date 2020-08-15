@@ -23,19 +23,19 @@ get_header();
                 <div class='bg-light-gray col-lg-8 p-4'>
                     <?php 
                     $product_gallery = get_field('product_gallery');
-                    $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                    $size = 'general'; // (thumbnail, medium, large, full or custom size)
                     if( $product_gallery ): ?>
                         <ul id="single-product-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $image_id['id'], $size ); ?>
+                                    <?php echo wp_get_attachment_image( $image_id['ID'], $size ); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
                         <ul id="thumbnail-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $image_id['id'], $size ); ?>
+                                    <?php echo wp_get_attachment_image( $image_id['ID'], $size ); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -68,8 +68,12 @@ get_header();
                     </div>
                 </div>
             </div>
-            <?php // echo do_shortcode('[wpuf_dashboard post_type="product"]')?>
-            <?php echo do_shortcode('[wpuf_edit]')?>
+            <?php //echo do_shortcode('[wpuf_dashboard post_type="product"]')?>
+            <?php //echo do_shortcode('[wpuf_edit]')?>
+            <?php
+            echo 'test';
+            edit_post_link('edit');
+            ?>
         </div>
 
         <?php   // If comments are open or we have at least one comment, load up the comment template.

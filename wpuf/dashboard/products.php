@@ -20,5 +20,7 @@ if ( is_user_logged_in() ):
             endwhile; 
             wp_reset_query();
         ?>
+        
     </div>
+    <?php echo do_shortcode( '[wpuf_dashboard post_type="product"]' ); ?>
 <?php endif; ?>

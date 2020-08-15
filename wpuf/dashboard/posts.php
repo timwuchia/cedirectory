@@ -17,4 +17,5 @@ if ( is_user_logged_in() ):
             wp_reset_query();
         ?>
     </div>
+    <?php echo do_shortcode( '[wpuf_dashboard]' ); ?>
 <?php endif; ?>
