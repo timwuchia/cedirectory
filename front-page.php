@@ -28,7 +28,7 @@ get_header();
             
                 $products = new WP_Query( $productArgs ); ?>
                 <?php if($products->have_posts()) : ?>
-                <div class=' custom-container container '>
+                <div class='featured-product-container container'>
                         <div class='d-flex flex-wrap featured-products'>
                         
                         <?php while ( $products->have_posts() ) : $products->the_post(); ?>

@@ -1,0 +1,109 @@
+{
+    "key": "group_5f36ebec46be5",
+    "title": "Blog",
+    "fields": [
+        {
+            "key": "field_5f36ebf6c0b66",
+            "label": "Blog",
+            "name": "blog",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5f36ec10c0b67",
+                    "label": "Blog Body",
+                    "name": "blog_body",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "write blog here",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5f36ec2dc0b68",
+                    "label": "Blog Image",
+                    "name": "blog_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "8"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "199"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "9"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "263"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1597435152
+}
