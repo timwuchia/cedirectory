@@ -15,6 +15,11 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
             <div class='container py-5'>
+            <div class='site-breadcrumb mb-4'>
+            <?php
+                echo do_shortcode( '[wpseo_breadcrumb]');
+            ?>
+            </div>
             <?php
                 $term = get_queried_object();
                 $image = get_field("product_category_featured_image", $term);
@@ -26,7 +31,7 @@ get_header();
             <?php while(have_posts()) : the_post(); ?>
         
             <div class='col-md-6 col-lg-4 product'>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('general'); ?></a>
                 <div class='product-desc'>
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3>
                     <p><?php the_excerpt(); ?></p>

@@ -7,7 +7,7 @@
         ?>
             <div class='top-banner__inner'>
                 <div class='image'>
-                    <?php echo wp_get_attachment_image($image['id'], 'full'); ?>
+                    <?php echo wp_get_attachment_image($image['id'], 'banner'); ?>
                 </div>
                 <div class='content'>
                     <div class='container'>

@@ -46,6 +46,8 @@ if ( ! function_exists( 'cedirectory_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size('general', 480, 360, true);
+		add_image_size('banner', 1920, 600, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -364,3 +366,9 @@ function ce_pagination() {
     echo '</ul></div>' . "\n";
  
 }
+
+// Update CSS within in Admin
+function admin_style() {
+	wp_enqueue_style('admin-styles', get_template_directory_uri().'/admin/admin.css');
+  }
+add_action('admin_enqueue_scripts', 'admin_style');
