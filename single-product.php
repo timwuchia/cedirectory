@@ -23,7 +23,7 @@ get_header();
                 <div class='bg-light-gray col-lg-8 p-4'>
                     <?php 
                     $product_gallery = get_field('product_gallery');
-                    $size = 'general'; // (thumbnail, medium, large, full or custom size)
+                    $size = 'product'; // (thumbnail, medium, large, full or custom size)
                     if( $product_gallery ): ?>
                         <ul id="single-product-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>

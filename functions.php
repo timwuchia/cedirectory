@@ -48,6 +48,7 @@ if ( ! function_exists( 'cedirectory_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 		add_image_size('general', 480, 360, true);
 		add_image_size('general-large', 600, 450, true);
+		add_image_size('product', 800, 500, true);
 		add_image_size('banner', 1920, 600, true);
 
 		// This theme uses wp_nav_menu() in one location.
