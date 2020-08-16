@@ -21,6 +21,7 @@ if ( is_user_logged_in() ):
             wp_reset_query();
         ?>
     </div>
+    <?php echo do_shortcode( '[wpuf_dashboard]' ); ?>
     <?php 
     $add_blog_link = get_field('add_blog_link');
     if( $add_blog_link ): 
