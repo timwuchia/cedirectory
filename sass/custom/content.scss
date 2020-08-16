@@ -161,7 +161,7 @@
 // Start of Product / Industry --------
 
 
-@media only screen and (min-width: 325px){
+@media screen and (min-width: 325px){
 // Custom Container-----------------------------------------
 // .custom-container, .single-product-container{
 //     max-width: 100% !important;
@@ -365,12 +365,13 @@
             }
         }
 
-// Dashboard Blog Page ------------------------------------------------
+// Dashboard Blog/product Page ------------------------------------------------
 
     .current-user-posts{
         height: auto;
         margin: auto;
-        .blog-container {
+    }
+        .blog-container{
             margin-bottom: 3em;
             padding: .5em;
             img{
@@ -384,6 +385,9 @@
                 padding: 1em;
                 h2{
                     text-align: center;
+                    :hover{
+                        color: #febc5a ;
+                    }
                     a{
                         color: #222222;
                         text-align: center;
@@ -391,18 +395,115 @@
                 }   
             }
         }
-    }
+        .product-container{ 
+            margin-bottom: 3em;
+            padding: .5em;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .the-product-description{
+                background: #004aac; 
+                max-width: 100%;
+                height: auto;
+                padding: 1em;
+                h2{
+                    text-align: center;
+                    :hover{
+                        color: #febc5a ;
+                    }
+                    a{
+                        color: #222222;
+                        text-align: center;
+                    }
+                }   
+            }
+        }
     
+    
+// Register User Page - Welcome Registration -------------
+
+    .register-box-right{
+        h2 .text-center{
+            margin-bottom: 3em;
+        }
+        .row {
+            margin-top: 2em;
+            .text-center{
+                margin-bottom: 1em;
+            }
+        }
+        .wpuf-column{
+            display: block;
+        }
+
+    }
+
+
+// Search Result Page -----------------------------------
+   
+
+    .search-result-container{
+        max-width: 100%;
+        background: #F4F4F4;
+        margin-right: 15px;
+        margin-left: 15px;
+        header{
+            text-align: center;
+            text-decoration: underline;
+            
+            .entry-title{
+                a{
+                    color: #222222;
+                }
+            }
+        }
+        .search-result-content{
+            padding: 1em;
+            img{
+                width: 100% !important;
+                height: auto !important;
+            }
+            .entry-summary{
+                background: #004aac;
+                padding: .5em;
+            }
+        }
+    }
+
+
 
 }
 // @media 325px Ends ----------------------------------
 
+@media screen and (min-width: 576px){
+// Search Result Page -----------------------------------
 
-@media only screen and (min-width: 768px){
+    .search-result-content{
+        display: grid;
+        /* width: 50%; */
+        height: auto;
+        grid-template-columns: 1fr 1fr;
     
-    .featured-product-container{
-            max-width: 65% !important;
+        article{
+            padding: 1em;
+            .entry-footer{
+                a{color: #febc5a}
+            }
         }
+        .screen-reader-text{
+            display: none;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    
+// Search Result Page ------------------------------------
+
+
     
 // Add Product Page Start-------------------------------
     .wpuf-form-add{
@@ -442,6 +543,7 @@
 
 
 }
+// end of @media min-width 768px----------------------
 
 
 @media screen and (max-width: 768px) {
@@ -500,6 +602,17 @@
 
 
 @media only screen and (min-width: 992px){
+
+// Search Result page -------------------------------
+
+        .search-result-content{
+        display: grid;
+        /* width: 50%; */
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+// -----------------------------------------------------
 
 // Home Page -----------------------------------------------------
     .featured-product-container{

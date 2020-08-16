@@ -7,9 +7,9 @@ if ( is_user_logged_in() ):
     <?php
     $author_query = array('posts_per_page' => '-1','author' => $current_user->ID);
     $author_posts = new WP_Query($author_query);?>
-    <div class='current-user-posts'>
+    <div class='current-user-posts d-flex flex-wrap'>
         <?php while($author_posts->have_posts()) : $author_posts->the_post(); ?>
-        <div class='blog-container'>
+        <div class='blog-container col-12 col-md-6 col-lg-4'>
             <div class='blog-image'>
             <?php the_post_thumbnail('medium');?>
             </div>
