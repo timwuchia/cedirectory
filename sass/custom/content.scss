@@ -1,17 +1,35 @@
 //
 .skip-link.screen-reader-text {
-    position: absolute;
-    left: 9999;
-    visibility: hidden;
+  position: absolute;
+  left: 9999;
+  visibility: hidden;
 }
 
 // single image slider
 .single-image-slider-wrapper {
-    .slide-image {
-        img {
-            width: 100%;
-        }
+  .slide-image {
+    img {
+      width: 100%;
     }
+  }
+}
+
+.wpuf-column {
+  flex-wrap: wrap;
+}
+
+// slick general style
+
+.slick-next:before {
+  content: "\f054";
+  font-weight: 900;
+  font-family: "Font awesome\ 5 Free";
+}
+
+.slick-prev:before {
+  content: "\f053";
+  font-weight: 900;
+  font-family: "Font awesome\ 5 Free";
 }
 
 // -----------------------------------------------------
@@ -22,814 +40,790 @@
 // }
 // -----------------------------------------------------
 
-
 // Account Dashboard
 
+.wpuf-column {
+  display: flex;
+}
 
-.wpuf-column{
-    display: flex;
+.wpuf-dashboard-container {
+  background: #f4f4f4;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 2em;
+  .profile-banner {
+    background: rgba(0, 0, 0, 0.253);
+    height: 15em;
+    position: relative;
+    overflow: hidden;
+    img:first-child {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      width: 11em;
+      height: auto;
+      left: 5%;
+      margin-top: 1em;
+    }
+    .profile-welcome {
+      width: 50%;
+      position: absolute;
+      top: 2em;
+      left: 25%;
+      h2 {
+        color: white;
+        font-size: 3rem;
+      }
+    }
+
+    .wpuf-dashboard-navigation {
+      width: 100%;
+      margin-top: 5em;
+      position: absolute;
+      bottom: 0;
+      ul {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: auto;
+        :hover {
+          background: #004aac;
+        }
+        li {
+          background: #222222;
+          width: 100%;
+          height: auto;
+          margin: auto;
+          text-align: center;
+          margin-right: 5px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
   }
 
-.wpuf-dashboard-container{
-    background: #F4F4F4;
-    max-width: 100%;
-    margin: auto;
-    margin-bottom: 2em;
-    .profile-banner{
-        background: rgba(0, 0, 0, 0.253);
-        height: 15em;
-        position: relative;
-        overflow: hidden;
-        img:first-child{
-            width: 100%;
-            height: auto;
-            position: relative;
+  .wpuf-dashboard-content {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 100% !important;
+    height: auto;
+    float: none !important;
+    form {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      padding: 3em;
+      .wpuf-submit-button {
+        background: #222222 !important;
+        border: 0px !important;
+        border-radius: 0 !important;
+        box-shadow: 0 !important;
+        padding: 0.375rem 0.75rem;
+        text-shadow: none !important;
+        color: white !important;
+        width: auto;
+        margin: auto;
+        :hover {
+          background: #004aac;
         }
-        img:nth-child(2){
-             position: absolute;
-            width: 11em;
-            height: auto;
-            left: 5%;
-            margin-top: 1em;
+      }
+      .profile_image,
+      .profile_banner {
+        display: flex;
+        flex-direction: column;
+      }
+      li .wpuf-label {
+        width: 50% !important;
+      }
+      .wpuf-fields {
+        .textareafield {
+          width: 100%;
         }
-        .profile-welcome{
-            width: 50%;
-            position: absolute;
-            top: 2em;
-            left: 25%;
-            h2{
-                color: white;
-                font-size: 3rem;
-            }
+        .textfield,
+        .textareafield,
+        .password {
+          background: none;
+          border: none;
+          border-bottom: 1px solid black;
         }
-    
-        .wpuf-dashboard-navigation{
-            width: 100%;
-            margin-top: 5em;
-            position: absolute;
-            bottom: 0;
-            ul{
-                display: flex;
-                width: 50%;
-                height: auto;
-                margin: auto;
-                    :hover{
-                        background:#004aac;
-                    }
-                li{
-                    background: #222222;
-                    width: 100%;
-                    height: auto;
-                    margin: auto;
-                    text-align: center;
-                    margin-right: 5px;
-                
-                    a{
-                        color: white;
-                    }
-                }
-                
-            }
-        }
-
+      }
+      .pass-strength-result {
+        border-bottom: 1px solid black;
+        float: left;
+        margin: 0;
+        padding: 3px 5px;
+        text-align: center;
+        width: 200px;
+        display: none;
+        background-color: none !important;
+        border-color: none !important;
+      }
     }
-    
-    .wpuf-dashboard-content{
-        margin-top: 5em;
-        margin-bottom: 5em;
-        width: 100% !important;
-        height: auto;
-        float: none !important;
-        form{
-            width: 100%;
-            height: auto;
-            margin: auto;
-            padding: 3em;
-             .wpuf-submit-button{
-                background: #222222 !important;
-                border: 0px !important;
-                border-radius: 0 !important;
-                box-shadow: 0 !important;
-                padding: 0.375rem 0.75rem;
-                text-shadow: none !important;
-                color: white !important;
-                width: auto;
-                margin: auto;
-                :hover{
-                    background: #004aac;
-                }
-            }
-            .profile_image, .profile_banner {
-                display: flex;
-                flex-direction: column;
-            }
-            li .wpuf-label{
-                width: 50% !important;
-            }
-            .wpuf-fields{
-                .textareafield{
-                    width: 100%;
-                    }
-                .textfield, .textareafield, .password{
-                    background: none;
-                    border: none;
-                    border-bottom: 1px solid black;
-                }
-            }
-            .pass-strength-result {
-            
-                border-bottom: 1px solid black;
-                float: left;
-                margin: 0;
-                padding: 3px 5px;
-                text-align: center;
-                width: 200px;
-                display: none;
-                background-color: none !important;
-                border-color: none !important;
-                
-               
-            }
-             
-        }
-    }
+  }
 }
 // end of Dashboard -----------
 
-
-
 // Start of Product / Industry --------
 
+@media screen and (min-width: 325px) {
+  // Custom Container-----------------------------------------
+  // .custom-container, .single-product-container{
+  //     max-width: 100% !important;
+  // }
+  // // ---------------------------------------------------------
 
-@media screen and (min-width: 325px){
-// Custom Container-----------------------------------------
-// .custom-container, .single-product-container{
-//     max-width: 100% !important;
-// }
-// // ---------------------------------------------------------
-
-//  Buttons-------------------------------------------------
-.btn, .wpuf-submit-button, .btn-secondary{
+  //  Buttons-------------------------------------------------
+  .btn,
+  .wpuf-submit-button,
+  .btn-secondary {
     border-radius: 0;
     border: none;
-}
-// ---------------------------------------------------------
+  }
+  // ---------------------------------------------------------
 
-// Home Page -----------------------------------------------
-    .featured-product-container {
-    
-        .featured-product{
-            position: relative;
-            width: 100%;
-            height: auto;
-            margin-bottom: 2em;
-            .featured-product-image{
-                img{
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            .featured-product-content{
-                background: #004bace8;
-                padding: .5em;
-                display: flex;
-                flex-direction: column;
-              
-                .btn{
-                    border-radius: 0;
-                    margin-bottom: 0 !important;
-                    padding: .5em;
-                }
-            }
+  // Home Page -----------------------------------------------
+  .featured-product-container {
+    .featured-product {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-bottom: 2em;
+      .featured-product-image {
+        img {
+          width: 100%;
+          height: auto;
         }
-    }
+      }
+      .featured-product-content {
+        background: #004bace8;
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
 
-
-
-// -------------------------------------------------------------------------------
-// Categories Page Start ---------------------------------------------------------------
-
-      .categories-title{
-        width: 10em;
-        border-bottom: 1px solid #222222;
-        margin: 0 auto !important;
-        text-align: center !important;
-        margin-top: 3em !important;
-        margin-bottom: 2em !important;
-    }
-    .product-categories{
-        .product-category{
-            position: relative;
-            max-width: 100%;
-            height: auto;
-            z-index: 1;
-            img{
-                width: 100%;
-                height: auto;
-            }
-            .product-category-name{
-                position: relative !important;
-                z-index: 2;
-                max-width: 100%;
-                height: 35%;
-                background: #004bac94;
-                top: -35%;
-                h3{
-                    padding: .5em;
-                    text-align: center;
-                    padding-top: 1em;
-                    a{
-                        color:#febc5a;
-                        bottom: 0;
-                        font-size: 1.2rem;
-                        font-weight: 100;
-                    }
-                }
-            }
+        .btn {
+          border-radius: 0;
+          margin-bottom: 0 !important;
+          padding: 0.5em;
         }
-        .product-description{
-            display: none;
-        }
+      }
     }
-// Single Product Page Start ------------------------------------------
-    .single-product-container{
-        #single-product-slider img {
+  }
+
+  // -------------------------------------------------------------------------------
+  // Categories Page Start ---------------------------------------------------------------
+
+  .categories-title {
+    width: 10em;
+    border-bottom: 1px solid #222222;
+    margin: 0 auto !important;
+    text-align: center !important;
+    margin-top: 3em !important;
+    margin-bottom: 2em !important;
+  }
+  .product-categories {
+    .product-category {
+      position: relative;
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+      img {
         width: 100%;
         height: auto;
-    }
-        #thumbnail-slider{
-            display: none;
+      }
+      .product-category-name {
+        position: relative !important;
+        z-index: 2;
+        max-width: 100%;
+        height: 35%;
+        background: #004bac94;
+        top: -35%;
+        h3 {
+          padding: 0.5em;
+          text-align: center;
+          padding-top: 1em;
+          a {
+            color: #febc5a;
+            bottom: 0;
+            font-size: 1.2rem;
+            font-weight: 100;
+          }
         }
-        .single-product-description-container{
-            background-color: #dadadb !important;
-        }
+      }
     }
-// ----------------------------------------
+    .product-description {
+      display: none;
+    }
+  }
+  // Single Product Page Start ------------------------------------------
+  .single-product-container {
+    #single-product-slider img {
+      width: 100%;
+      height: auto;
+    }
+    #thumbnail-slider {
+      display: none;
+    }
+    .single-product-description-container {
+      background-color: #dadadb !important;
+    }
+  }
+  // ----------------------------------------
 
-
-
-//  Add Product Page Start --------------------------------------------------------------
-.wpuf-form-add{
+  //  Add Product Page Start --------------------------------------------------------------
+  .wpuf-form-add {
     padding: 1em;
     padding-top: 3em;
     // border: 1px solid #2222220f;
-    .wpuf-form{
-        display: grid;
-        .wpuf-label{
-            width: 60%;
+    .wpuf-form {
+      display: grid;
+      .wpuf-label {
+        width: 60%;
+      }
+      .wpuf-fields {
+        width: 100%;
+        .textfield {
+          // width: auto !important;
+          border-color: #2222220f;
         }
-        .wpuf-fields{
-            width: 100%;
-            .textfield{
-                width: auto !important;
-                border-color: #2222220f;
-            }
-            .textareafield{
-                border: 1px solid #2222220f !important;
-           
-            }
+        .textareafield {
+          border: 1px solid #2222220f !important;
         }
-    } 
-}
+      }
+    }
+  }
 
-// Form Color Over Ride--------------------------------------------------------
+  // Form Color Over Ride--------------------------------------------------------
 
-    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .mce-statusbar, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .mce-toolbar-grp, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wp-editor-wrap:hover .wp-editor-container{
-            border-color: #2222220f !important;
+  .wpuf-form-add.wpuf-form-layout3
+    ul.wpuf-form
+    li
+    .wp-editor-wrap:hover
+    .mce-statusbar,
+  .wpuf-form-add.wpuf-form-layout3
+    ul.wpuf-form
+    li
+    .wp-editor-wrap:hover
+    .mce-toolbar-grp,
+  .wpuf-form-add.wpuf-form-layout3
+    ul.wpuf-form
+    li
+    .wp-editor-wrap:hover
+    .wp-editor-container {
+    border-color: #2222220f !important;
+  }
+
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
+    font-size: 15px;
+  }
+
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
+    border-color: #2222220f !important;
+  }
+
+  .wpuf-form-add.wpuf-form-layout3
+    ul.wpuf-form
+    li.wpuf-submit
+    input[type="submit"] {
+    background: #222222 !important;
+    border-color: #222222 !important;
+    -moz-box-shadow: 0 1px 0 #8726d3 !important;
+    -webkit-box-shadow: 0 1px 0 #8726d3 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  .wpuf-form-add li .wpuf-submit:active {
+    background: #004aac;
+  }
+
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
+    background: #004aac;
+  }
+
+  .mce-container,
+  .mce-container *,
+  .mce-widget,
+  .mce-widget *,
+  .mce-reset,
+  .wpuf-form-add.wpuf-form-layout3
+    ul.wpuf-form
+    li
+    .wpuf-fields
+    a.file-selector {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
+    display: grid;
+  }
+  // ----------------------------------------------------
+
+  // Contact Us Page ------------------------------------
+  .contact-container {
+    .contact-box {
+      display: flex !important;
+      flex-wrap: wrap-reverse !important;
+      width: 100% !important;
+      margin: auto;
+      .the-contact-info {
+        max-width: 100% !important;
+        margin-left: 1em;
+      }
+      .wpcf7-form {
+        margin: auto;
+        width: 100% !important;
+        .wpcf7-submit {
+          width: 7em;
+          height: auto;
+          padding-left: 1em;
+          padding-right: 1em;
+          background-color: #004aac !important;
+          border: none !important;
+          color: white;
+          :focus {
+            background: #febc5a !important;
+          }
         }
-
-        .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
-            font-size: 15px;
-        }
-
-    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
-        border-color: #2222220f !important;
+      }
     }
-   
+  }
+  .wpcf7-form.textarea {
+    width: 80% !important;
+  }
 
-    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li.wpuf-submit input[type=submit]{
-        background: #222222 !important;
-        border-color: #222222 !important;
-        -moz-box-shadow: 0 1px 0 #8726d3 !important;
-        -webkit-box-shadow: 0 1px 0 #8726d3 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-        border-radius: 0 !important;
-    }
-    .wpuf-form-add li .wpuf-submit:active{
-        background: #004aac;
-    }
-    
-    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus, .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited{
-        
-        background: #004aac;
-    }
-
-    .mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset , .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wpuf-fields a.file-selector{
-        border: none !important;
-        box-shadow: none !important;
-    }
-
-    .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
-        display: grid;
-    }
-// ----------------------------------------------------
-
-// Contact Us Page ------------------------------------
-        .contact-container{
-            .contact-box{
-                display: flex !important;
-                flex-wrap: wrap-reverse !important;
-                width: 100% !important;
-                margin: auto;
-                .the-contact-info{
-                    max-width: 100% !important;
-                    margin-left: 1em;
-                    
-                    
-                }
-                .wpcf7-form{
-                     
-                    margin: auto;
-                    width: 100% !important;
-                    .wpcf7-submit{
-                        width: 7em;
-                        height: auto;
-                        padding-left: 1em;
-                        padding-right: 1em;
-                        background-color: #004aac !important;
-                        border: none !important;
-                        color: white;
-                        :focus{
-                            background: #febc5a !important;
-                        }
-                    }   
-                }
-            }
-        }
-        .wpcf7-form.textarea{
-            width: 80% !important;
-        }
-
-.contact-container .contact-box .contact-box-left .wpcf7-form .contact-form-name .wpcf7-text {
+  .contact-container
+    .contact-box
+    .contact-box-left
+    .wpcf7-form
+    .contact-form-name
+    .wpcf7-text {
     width: 90%;
     border: none;
     background: none;
     border-bottom: 1px solid #222222;
-}
+  }
 
+  // Dashboard Blog/product Page ------------------------------------------------
 
-
-// Dashboard Blog/product Page ------------------------------------------------
-
-    .current-user-posts{
-        height: auto;
-        margin: auto;
+  .current-user-posts {
+    height: auto;
+    margin: auto;
+  }
+  .post-container {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    img {
+      width: 100%;
+      height: auto;
     }
-        .post-container{
-            margin-bottom: 3em;
-            padding: .5em;
-            img{
-                width: 100%;
-                height: auto;
-            }
-            .post-title{
-                background: #004aac; 
-                max-width: 100%;
-                height: auto;
-                padding: 1em;
-                h2{
-                    text-align: center;
-                    :hover{
-                        color: #febc5a ;
-                    }
-                    a{
-                        color: #222222 !important;
-                        text-align: center;
-                    }
-                }   
-            }
+    .post-title {
+      background: #004aac;
+      max-width: 100%;
+      height: auto;
+      padding: 1em;
+      h2 {
+        text-align: center;
+        :hover {
+          color: #febc5a;
         }
-        .product-container{ 
-            margin-bottom: 3em;
-            padding: .5em;
-            img{
-                width: 100%;
-                height: auto;
-            }
-            .the-product-description{
-                background: #004aac; 
-                max-width: 100%;
-                height: auto;
-                padding: 1em;
-                h2{
-                    text-align: center;
-                    :hover{
-                        color: #febc5a ;
-                    }
-                    a{
-                        color: #222222;
-                        text-align: center;
-                    }
-                }   
-            }
+        a {
+          color: #222222 !important;
+          text-align: center;
         }
-    
-    
-// Register User Page - Welcome Registration -------------
-
-    .register-box-right{
-        h2 .text-center{
-            margin-bottom: 3em;
-        }
-        .row {
-            margin-top: 2em;
-            .text-center{
-                margin-bottom: 1em;
-            }
-        }
-        .wpuf-column{
-            display: block;
-        }
-
+      }
     }
-
-
-// Search Result Page -----------------------------------
-   
-
-    .search-result-container{
-        max-width: 100%;
-        background: #F4F4F4;
-        margin-right: 15px;
-        margin-left: 15px;
-        header{
-            text-align: center;
-            text-decoration: underline;
-            
-            .entry-title{
-                a{
-                    color: #222222;
-                }
-            }
-        }
-        .search-result-content{
-            padding: 1em;
-            img{
-                width: 100% !important;
-                height: auto !important;
-            }
-            .entry-summary{
-                background: #004aac;
-                padding: .5em;
-                
-            }
-        }
+  }
+  .product-container {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    img {
+      width: 100%;
+      height: auto;
     }
-     article{
-            padding: 1em;
-            .entry-footer{
-                a{color: #febc5a}
-            }
+    .the-product-description {
+      background: #004aac;
+      max-width: 100%;
+      height: auto;
+      padding: 1em;
+      h2 {
+        text-align: center;
+        :hover {
+          color: #febc5a;
         }
+        a {
+          color: #222222;
+          text-align: center;
+        }
+      }
+    }
+  }
 
-            #post-93{
-                position: relative;
-                bottom: 0;
-                margin: auto;
-                width: 100%;
-                height: auto;
-                h2{font-size: 1.5em;}
-                a{color: #febc5a;}
-                .entry-summary{
-                    display: none;
-                }   
-                .screen-reader-text{
-                    display: none;
-                }
-                footer a{
-                    display: none;
-                }
-            }
-// -----------------------------------------------------
+  // Register User Page - Welcome Registration -------------
 
-// Single Blog Page-------------------------------------
+  .register-box-right {
+    h2 .text-center {
+      margin-bottom: 3em;
+    }
+    .row {
+      margin-top: 2em;
+      .text-center {
+        margin-bottom: 1em;
+      }
+    }
+    .wpuf-column {
+      display: block;
+    }
+  }
 
-//     .post-container{
-//         background: #F4F4F4;
-//         margin: 1em;
-//            a{color:#febc5a;}
+  // Search Result Page -----------------------------------
 
-//             a:hover{
-//                 color: #004aac ;
-//             }
-            
-//             .screen-reader-text{
-//                 display: none;
-//             }
-//             .post-navigation{
-//                  .nav-links{
-//                     margin-bottom: 2em;
-//                 }
-//             }
-//             }
-//             footer{
-//                 .cat-links{
-//                     display: none;
-//                 }
-//             }
+  .search-result-container {
+    max-width: 100%;
+    background: #f4f4f4;
+    margin-right: 15px;
+    margin-left: 15px;
+    header {
+      text-align: center;
+      text-decoration: underline;
 
-//    .acf-fields{
-//                 display: none;
-//             }
+      .entry-title {
+        a {
+          color: #222222;
+        }
+      }
+    }
+    .search-result-content {
+      padding: 1em;
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
+      .entry-summary {
+        background: #004aac;
+        padding: 0.5em;
+      }
+    }
+  }
+  article {
+    padding: 1em;
+    .entry-footer {
+      a {
+        color: #febc5a;
+      }
+    }
+  }
 
+  #post-93 {
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    h2 {
+      font-size: 1.5em;
+    }
+    a {
+      color: #febc5a;
+    }
+    .entry-summary {
+      display: none;
+    }
+    .screen-reader-text {
+      display: none;
+    }
+    footer a {
+      display: none;
+    }
+  }
+  // Search Result Page--------------------------------
 }
 // @media 325px Ends ----------------------------------
 
-@media screen and (min-width: 576px){
-// Search Result Page -----------------------------------
+@media screen and (min-width: 576px) {
+  // Search Result Page -----------------------------------
 
-    .search-result-content{
-        display: grid;
-        /* width: 50%; */
-        height: auto;
-        grid-template-columns: 1fr 1fr;
+  .search-result-content {
+    display: grid;
+    /* width: 50%; */
+    height: auto;
+    grid-template-columns: 1fr 1fr;
 
-        .screen-reader-text{
-            display: none;
-        }
-
+    .screen-reader-text {
+      display: none;
     }
-
+  }
 }
 
-@media screen and (min-width: 768px){
-    
-    
-//Home Page -----------------------------------------------
-    .featured-product-container{
-        max-width: 55% !important;
-    }
+@media screen and (min-width: 768px) {
+  //Home Page -----------------------------------------------
+  .featured-product-container {
+    max-width: 55% !important;
+  }
 
+  // Search Result Page ------------------------------------
 
-// Search Result Page ------------------------------------
+  // Add Product Page Start-------------------------------
+  .wpuf-form-add {
+    padding: 3em;
+  }
 
-
-    
-// Add Product Page Start-------------------------------
-    .wpuf-form-add{
-        padding: 3em;
-    }
-    
-  
-// -----------------------------------------------------
-// Contact Us Page--------------------------------------
-    .contact-box{
+  // -----------------------------------------------------
+  // Contact Us Page--------------------------------------
+  .contact-box {
+    max-width: 100% !important;
+    .contact-box-left {
+      max-width: 100% !important;
+      flex: auto !important;
+      .contact-form-name {
+        display: block !important;
         max-width: 100% !important;
-        .contact-box-left{
-            max-width: 100% !important;
-            flex: auto !important;
-            .contact-form-name{
-                display: block !important;
-                max-width: 100% !important;
-            }
-        }
-        .contact-information-wrapper{
-            max-width: 100% !important;
-            flex: auto !important;
-        }
+      }
     }
-
-    .wpcf7-form{
-        width: 60%;
+    .contact-information-wrapper {
+      max-width: 100% !important;
+      flex: auto !important;
     }
+  }
 
-
-
-
-
-
+  .wpcf7-form {
+    width: 60%;
+  }
 }
 // end of @media min-width 768px----------------------
 
-
 @media screen and (max-width: 768px) {
-
-    // User Dashboard Content
-    .wpuf-dashboard-container{
-        margin-top: 0 ;
-        max-width: 100% !important;
-        form{
-            padding: 0 !important;
-        }
-        .profile-banner{
-            .wpuf-dashboard-navigation{
-                margin-bottom: 0px !important;
-                ul{
-                    width: 95% !important;
-                }
-            }
-            .profile-welcome{
-                left: 40%;
-                h2{
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        .wpuf-dashboard-content{
-            .wpuf-column{
-                display: block;
-                .wpuf-column-inner-fields{
-                    width: 100% !important;
-                } 
-                .wpuf-label{
-                    width: 100% !important;
-                }
-                .wpuf-fields{
-                    width: 100% !important;
-                }      
-            }
-            .wpuf-submit{
-                width: 50%;
-                margin: auto;
-                padding-top: 3em;
-            }
-        
-        }
-        ul.wpuf-form li .wpuf-fields{
-            display: inline;
-             ul.wpuf-attachment-list li {
-            width: auto !important;
-            height: auto;
-            margin: auto;
-            }
-        }
+  // User Dashboard Content
+  .wpuf-dashboard-container {
+    margin-top: 0;
+    max-width: 100% !important;
+    form {
+      padding: 0 !important;
     }
+    .profile-banner {
+      .wpuf-dashboard-navigation {
+        margin-bottom: 0px !important;
+        ul {
+          width: 95% !important;
+        }
+      }
+      .profile-welcome {
+        left: 40%;
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .wpuf-dashboard-content {
+      .wpuf-column {
+        display: block;
+        .wpuf-column-inner-fields {
+          width: 100% !important;
+        }
+        .wpuf-label {
+          width: 100% !important;
+        }
+        .wpuf-fields {
+          width: 100% !important;
+        }
+      }
+      .wpuf-submit {
+        width: 50%;
+        margin: auto;
+        padding-top: 3em;
+      }
+    }
+    ul.wpuf-form li .wpuf-fields {
+      display: inline;
+      ul.wpuf-attachment-list li {
+        width: auto !important;
+        height: auto;
+        margin: auto;
+      }
+    }
+  }
 }
 
+@media only screen and (min-width: 992px) {
+  // Search Result page -------------------------------
 
-@media only screen and (min-width: 992px){
+  .search-result-content {
+    display: grid;
+    /* width: 50%; */
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-// Search Result page -------------------------------
+  // -----------------------------------------------------
 
-        .search-result-content{
-        display: grid;
-        /* width: 50%; */
-        height: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        }
-        
-// -----------------------------------------------------
+  // Home Page -----------------------------------------------------
+  .featured-product-container {
+    max-width: 90% !important;
+  }
 
-// Home Page -----------------------------------------------------
-    .featured-product-container{
-            max-width: 90% !important;
-        }
-    
-  
-// Single Product Page Start -----------------------------------
-    .single-product-container{
-        #thumbnail-slider{
-            display: block;
-        }
+  // Single Product Page Start -----------------------------------
+  .single-product-container {
+    #thumbnail-slider {
+      display: block;
     }
-        .wpuf-form-add{
-            max-width: 80% !important;
-            margin: auto;
-        }
-// ------------------------------------
-// Add Product Page -------------------------------------
-      .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li{
-        display: block;
-    }
+  }
+  .wpuf-form-add {
+    max-width: 80% !important;
+    margin: auto;
+  }
+  // ------------------------------------
+  // Add Product Page -------------------------------------
+  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
+    display: block;
+  }
 
-// -------------------------------------------------------
+  // -------------------------------------------------------
 
-// Dashboard Page --------------------------------------------------
-    .wpuf-dashboard-container{
-        max-width: 90% !important;
-    }
-    .contact-container .contact-box {
+  // Dashboard Page --------------------------------------------------
+  .wpuf-dashboard-container {
+    max-width: 90% !important;
+  }
+  .contact-container .contact-box {
     -ms-flex-wrap: nowrap !important;
     flex-wrap: nowrap !important;
     width: 100% !important;
-}
+  }
 
-// Contact Page-------------------------------------------
-    .the-contact-info{
-        width: 100% !important;
-        margin: auto;
-        padding-left: 5em;
-        padding-top: 10em;
-    }
-
+  // Contact Page-------------------------------------------
+  .the-contact-info {
+    width: 100% !important;
+    margin: auto;
+    padding-left: 5em;
+    padding-top: 10em;
+  }
 }
 // ----------------------------------------------------------
 
-
-
-
-@media screen and (max-width: 992px){
-    
-        .wpuf-dashboard-container{
-            max-width: 100% !important;
-            .profile-banner{
-                height: 10em ;
-                img:nth-child(2){
-                    width: 6em;
-                }
-                .profile-welcome{
-                    h2{
-                        color: white;
-                        font-size: 2rem;
-                    }
-                }
-                .wpuf-dashboard-navigation{
-                    margin-bottom: 0px !important;
-                    ul{
-                        width: 100% !important;
-                    }
-                }
-            }
+@media screen and (max-width: 992px) {
+  .wpuf-dashboard-container {
+    max-width: 100% !important;
+    .profile-banner {
+      height: 10em;
+      img:nth-child(2) {
+        width: 6em;
+      }
+      .profile-welcome {
+        h2 {
+          color: white;
+          font-size: 2rem;
         }
+      }
+      .wpuf-dashboard-navigation {
+        margin-bottom: 0px !important;
+        ul {
+          width: 100% !important;
+        }
+      }
+    }
+  }
 }
 
+@media only screen and (min-width: 1400px) {
+  // Custom Container -------------------------
 
-@media only screen and (min-width: 1400px){
+  .wpuf-form-add {
+    max-width: 85% !important;
+    margin: auto;
+  }
 
-// Custom Container -------------------------
+  // ------------------------------------------
 
-    .wpuf-form-add{
-         max-width: 85% !important;
-        margin: auto;
+  // Home Page Start-------------------------------
+
+  .custom-container {
+    .featured-product-content {
+      position: relative;
+      height: 35%;
+      background: #004bace8;
+      top: -35%;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
     }
-    
+  }
 
-// ------------------------------------------
+  // -----------------------------
 
-// Home Page Start-------------------------------
-
-    .custom-container{
-        .featured-product-content{
-            position: relative;
-            height: 35%;
-            background: #004bace8;
-            top: -35%;
-            padding: 1em;
-            display: flex;
-            flex-direction: column;
-        }
+  // Product Page
+  .product-categories {
+    margin: 2em;
+    .product-category {
+      flex: 0 0 25% !important;
     }
+  }
+  // ---------------------------------------------------------
 
-
-// -----------------------------
-
-// Product Page 
-    .product-categories{
-        margin: 2em;
-        .product-category{
-            flex: 0 0 25% !important;
-       
-        }
-    }
-// ---------------------------------------------------------
-
-// Contact Page -------------------------------------------
-    .contact-container{
-        max-width: 70% !important;
-        .contact-box {
-        
-            width: 100% !important;
-            .contact-box-left{
-                .wpcf7-form{
-                    width: 75% !important;
-                    padding: 1em;
-                       textarea{
-                            background: none !important;
-                            border: none !important;
-                            border-bottom: 1px solid #222222 !important;
-                        }
-                    .contact-form-name{
-                        display: flex !important;
-                        line-height: 3em;
-                        .wpcf7-text{
-                            width: 90%;
-                            width: 90%;
-                            border: none;
-                            background: none;
-                            border-bottom: 1px solid #222222;
-                        }
-                      
-                       
-                    }
-                }
+  // Contact Page -------------------------------------------
+  .contact-container {
+    max-width: 70% !important;
+    .contact-box {
+      width: 100% !important;
+      .contact-box-left {
+        .wpcf7-form {
+          width: 75% !important;
+          padding: 1em;
+          textarea {
+            background: none !important;
+            border: none !important;
+            border-bottom: 1px solid #222222 !important;
+          }
+          .contact-form-name {
+            display: flex !important;
+            line-height: 3em;
+            .wpcf7-text {
+              width: 90%;
+              width: 90%;
+              border: none;
+              background: none;
+              border-bottom: 1px solid #222222;
             }
-            .contact-information-wrapper{
-                max-width: 40% !important;
-            }
+          }
         }
+      }
+      .contact-information-wrapper {
+        max-width: 40% !important;
+      }
     }
-
+  }
 }
-
-

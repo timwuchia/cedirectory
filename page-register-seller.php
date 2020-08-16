@@ -20,7 +20,7 @@ get_header();
 
 		<?php while ( have_posts() ) :the_post(); ?>
 
-            <div class='container py-5'>
+            <div class='container py-5 registration-page'>
 				<div class='register-box row'>
 					<div class='register-box-left col-md-4 p-4 text-white bg-primary'>
 					<?php

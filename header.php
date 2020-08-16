@@ -36,7 +36,7 @@
 			<nav id="site-navigation" class="navbar navbar-expand-lg px-0">
 
 				<?php if(get_field('ce_logo', 'options')) :?>
-					<a class='navbar-brand' href="/"><? echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'logo')?></a>
+					<a class='navbar-brand' href="/"><?php echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'logo')?></a>
 				<?php endif;?>
 				<div class='mobile-search d-lg-none'>
 				<?php

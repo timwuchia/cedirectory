@@ -1,0 +1,144 @@
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid theme-color("body-text");
+  width: 100%;
+}
+input[type="submit"] {
+  color: #fff;
+  background-color: theme-color("primary");
+  cursor: pointer;
+  padding: 8px 20px;
+  &:hover {
+    background-color: darken(theme-color("primary"), 15%);
+  }
+}
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid theme-color("body-text");
+  background-color: transparent;
+}
+label {
+  font-weight: 400;
+}
+@media screen and (min-width: 325px) {
+  .wpuf-form-add .wpuf-form .wpuf-fields .textfield {
+    width: 100% !important;
+  }
+}
+
+.ul.wpuf-form li.field-size-large .wpuf-fields {
+  width: 100%;
+}
+
+// registration pages style
+.registration-page {
+  ul.wpuf-form
+    .wpuf-field-columns
+    .wpuf-column-field-inner-columns
+    .wpuf-column
+    .wpuf-column-inner-fields {
+    width: 100% !important;
+    float: none;
+  }
+  ul.wpuf-form li.field-size-large .wpuf-fields {
+    width: 100%;
+    float: none;
+  }
+  .wpuf-form-add .wpuf-form .wpuf-fields .textfield {
+    width: 100% !important;
+    border: none;
+    border-bottom: 1px solid theme-color("body-text");
+    background-color: transparent;
+  }
+  .wpuf-form-add .wpuf-form .wpuf-fields .textareafield {
+    background-color: transparent;
+    border: 1px solid theme-color("body-text") !important;
+  }
+  .wpuf-submit {
+    .wpuf-label {
+      display: none;
+    }
+  }
+}
+
+// add product and blog style
+#primary ul.wpuf-form li.field-size-large .wpuf-fields {
+  float: none;
+  width: 100%;
+}
+
+#primary .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li .wpuf-label {
+  color: theme-color("body-text");
+}
+#primary .wpuf-form-add .wpuf-form .wpuf-label {
+  width: 100%;
+}
+
+#primary ul.wpuf-form li.field-size-small .wpuf-fields {
+  width: 100%;
+}
+
+#primary
+  .wpuf-form-add.wpuf-style
+  ul.wpuf-form
+  .wpuf-fields
+  input[type="text"] {
+  width: 100% !important;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid theme-color("body-text");
+  box-shadow: unset;
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+}
+
+#primary .wpuf-form-add .wpuf-form .wpuf-fields .textareafield {
+  border: none;
+  border-bottom: 1px solid theme-color("body-text");
+  border-color: theme-color("body-text") !important;
+  width: 100%;
+}
+
+#primary
+  .wpuf-form-add.wpuf-form-layout3
+  ul.wpuf-form
+  li
+  .wpuf-fields
+  input[type="checkbox"]:before {
+  left: 0;
+}
+
+@media screen and (min-width: 325px) {
+  #primary .wpuf-form-add .wpuf-form .wpuf-fields .textfield {
+    border-color: theme-color("body-text");
+  }
+}
+
+// dashboard form
+
+.wpuf-dashboard-container {
+  // .ul.wpuf-form .wpuf-field-columns .wpuf-column-field-inner-columns .wpuf-column .wpuf-column-inner-fields {
+  //   .column-1 {
+  //     width:
+  //   }
+  // }
+  @media screen and (min-width: 768px) {
+    ul.wpuf-form
+      .wpuf-field-columns
+      .wpuf-column-field-inner-columns
+      .wpuf-column
+      .wpuf-column-inner-fields {
+      width: 50% !important;
+    }
+  }
+  @media screen and (min-width: 325px) {
+    .wpuf-dashboard-container
+      .wpuf-dashboard-content
+      form
+      .wpuf-form
+      .wpuf-fields
+      .textfield {
+      width: 100% !important;
+    }
+  }
+}
