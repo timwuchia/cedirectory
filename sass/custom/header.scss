@@ -6,8 +6,11 @@ header {
     padding: 5px !important;
     padding-left: 5em !important;
   }
-  a {
+  a.nav-link {
     color: white;
+    &:hover {
+      color: theme-color("secondary");
+    }
   }
 
   .navbar-bottom {

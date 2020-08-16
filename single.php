@@ -15,23 +15,23 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
+			?>
+			<div class='container py-5'>
+				<div class='single-blog row'>
+					<div class='col-md-6'>
+					<?php
+					echo the_post_thumbnail('general-large');
+					?>
+					</div>
+					<div class='col-md-6'>
+					<h2><?php the_title(); ?></h2>
+					<?php the_content(); ?>
+					</div>
+				</div>
+			</div>
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'cedirectory' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'cedirectory' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
+			
+		<?php endwhile; // End of the loop. ?>
 
 	</main><!-- #main -->
 
