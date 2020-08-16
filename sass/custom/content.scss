@@ -371,14 +371,14 @@
         height: auto;
         margin: auto;
     }
-        .blog-container{
+        .post-container{
             margin-bottom: 3em;
             padding: .5em;
             img{
                 width: 100%;
                 height: auto;
             }
-            .the-blog-post{
+            .post-title{
                 background: #004aac; 
                 max-width: 100%;
                 height: auto;
@@ -389,7 +389,7 @@
                         color: #febc5a ;
                     }
                     a{
-                        color: #222222;
+                        color: #222222 !important;
                         text-align: center;
                     }
                 }   
@@ -557,14 +557,6 @@
     }
 
 
-// Dashboard Blog Page ------------------------------------------------
-
-    .current-user-posts {
-        width: 100%;
-        display: flex;
-        flex-flow: wrap;
-    }
-// ----------------------------------------------------------------------
 
 
 
