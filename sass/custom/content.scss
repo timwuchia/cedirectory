@@ -467,10 +467,36 @@
             .entry-summary{
                 background: #004aac;
                 padding: .5em;
+                
             }
         }
     }
+     article{
+            padding: 1em;
+            .entry-footer{
+                a{color: #febc5a}
+            }
+        }
 
+            #post-93{
+                position: relative;
+                bottom: 0;
+                margin: auto;
+                width: 100%;
+                height: auto;
+                h2{font-size: 1.5em;}
+                a{color: #febc5a;}
+                .entry-summary{
+                    display: none;
+                }   
+                .screen-reader-text{
+                    display: none;
+                }
+                footer a{
+                    display: none;
+                }
+            }
+// Search Result Page--------------------------------
 
 
 }
@@ -484,13 +510,7 @@
         /* width: 50%; */
         height: auto;
         grid-template-columns: 1fr 1fr;
-    
-        article{
-            padding: 1em;
-            .entry-footer{
-                a{color: #febc5a}
-            }
-        }
+
         .screen-reader-text{
             display: none;
         }
