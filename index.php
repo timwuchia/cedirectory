@@ -95,8 +95,6 @@ get_header();
 	</div><!--end of blog container	-->
 </div>
 
-
-
 		</main> 
 	</div>
 
