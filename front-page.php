@@ -63,7 +63,7 @@ get_header();
                 ) );
             ?>
             <div class='product-categories bg-light-gray py-4'>
-                <div class='container'>
+                <div>
                     <div class='product-cat-slider'> 
                         <?php foreach($terms as $key => $term) :?>
                         <?php 

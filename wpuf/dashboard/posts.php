@@ -1,4 +1,3 @@
-   
 <?php 
 if ( is_user_logged_in() ):
 
@@ -12,17 +11,11 @@ if ( is_user_logged_in() ):
         <div class='blog-container col-12 col-md-6 col-lg-4'>
             <div class='blog-image'>
             <?php the_post_thumbnail('medium');?>
-            </div>
-            <div class='the-blog-post'>
-            <h2>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-            </h2>
-            </div>
         </div>
-        
         <?php 
             endwhile; 
             wp_reset_query();
         ?>
-    
+    </div>
 <?php endif; ?>
