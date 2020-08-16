@@ -94,11 +94,11 @@ get_header();
 			?>
 	</div><!--end of blog container	-->
 </div>
-<!-- end of custom container 
+
 
 
 		</main> 
-	</div><!-- #primary -->
+	</div>
 
 <?php
 

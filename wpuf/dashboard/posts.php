@@ -8,8 +8,7 @@ if ( is_user_logged_in() ):
     $author_posts = new WP_Query($author_query);?>
     <div class='current-user-posts d-flex flex-wrap'>
         <?php while($author_posts->have_posts()) : $author_posts->the_post(); ?>
-        <div class='blog-container col-12 col-md-6 col-lg-4'>
-            <div class='blog-image'>
+        <div class='post'>
             <?php the_post_thumbnail('medium');?>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
         </div>
