@@ -185,7 +185,7 @@
             margin-bottom: 2em;
             .featured-product-image{
                 img{
-                    max-width: 100%;
+                    width: 100%;
                     height: auto;
                 }
             }
@@ -207,12 +207,15 @@
 
 
 // -------------------------------------------------------------------------------
-// Categories Page Start -------------------------------------------------------------------------
+// Categories Page Start ---------------------------------------------------------------
+
       .categories-title{
         width: 10em;
         border-bottom: 1px solid #222222;
-        margin: 2em;
-        margin-top: 5em;
+        margin: 0 auto !important;
+        text-align: center !important;
+        margin-top: 3em !important;
+        margin-bottom: 2em !important;
     }
     .product-categories{
         .product-category{
@@ -248,7 +251,7 @@
             display: none;
         }
     }
-// Single Product Page Start -----------------------------------
+// Single Product Page Start ------------------------------------------
     .single-product-container{
         #single-product-slider img {
         width: 100%;
@@ -261,11 +264,7 @@
             background-color: #dadadb !important;
         }
     }
-// Single Product Page Ends ------------------------------------
-
-
-// Categories Page Ends --------------------------------------------------------------
-
+// ----------------------------------------
 
 
 
@@ -345,7 +344,7 @@
                 margin: auto;
                 .wpcf7-form{
                     margin: auto;
-                    width: 90%;
+                    width: 100% !important;
                     .wpcf7-submit{
                         width: 7em;
                         height: auto;
@@ -766,3 +765,6 @@
     }
 
 }
+
+
+@media screen and 
