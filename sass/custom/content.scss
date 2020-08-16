@@ -340,9 +340,15 @@
             .contact-box{
                 display: flex !important;
                 flex-wrap: wrap-reverse !important;
-                width: 90% !important;
+                width: 100% !important;
                 margin: auto;
+                .the-contact-info{
+                    max-width: 100% !important;
+                    margin-left: 1em;
+                    
+                }
                 .wpcf7-form{
+                     
                     margin: auto;
                     width: 100% !important;
                     .wpcf7-submit{
@@ -350,19 +356,28 @@
                         height: auto;
                         padding-left: 1em;
                         padding-right: 1em;
-                        background-color: #222222 !important;
+                        background-color: #004aac !important;
                         border: none !important;
                         color: white;
                         :focus{
-                            background: #004aac !important;
-
+                            background: #febc5a !important;
                         }
-                        
-                    }
+                    }   
                 }
-
             }
         }
+        .wpcf7-form.textarea{
+            width: 80% !important;
+        }
+
+.contact-container .contact-box .contact-box-left .wpcf7-form .contact-form-name .wpcf7-text {
+    width: 90%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #222222;
+}
+
+
 
 // Dashboard Blog/product Page ------------------------------------------------
 
@@ -555,6 +570,10 @@
         }
     }
 
+    .wpcf7-form{
+        width: 60%;
+    }
+
 
 
 
@@ -657,11 +676,28 @@
 // -------------------------------------------------------
 
 // Dashboard Page --------------------------------------------------
-.wpuf-dashboard-container{
-    max-width: 90% !important;
+    .wpuf-dashboard-container{
+        max-width: 90% !important;
+    }
+    .contact-container .contact-box {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
 }
 
+// Contact Page-------------------------------------------
+    .the-contact-info{
+        width: 100% !important;
+        margin: auto;
+        padding-left: 5em;
+        padding-top: 10em;
+    }
+
 }
+// ----------------------------------------------------------
+
+
+
 
 @media screen and (max-width: 992px){
     
@@ -732,7 +768,7 @@
     .contact-container{
         max-width: 70% !important;
         .contact-box {
-            flex-wrap: nowrap!important;
+        
             width: 100% !important;
             .contact-box-left{
                 .wpcf7-form{
@@ -767,4 +803,3 @@
 }
 
 
-@media screen and 

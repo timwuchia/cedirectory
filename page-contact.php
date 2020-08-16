@@ -24,7 +24,8 @@ get_header();
                 <?php endif; ?>
                 </div>
                 <div class='contact-box-right contact-information-wrapper col-md-4 bg-dark-gray p-4'>
-                    <h2 class='text-primary'>CE Directory</h2>
+                    <div class='the-contact-info'>
+                    <h1 class='text-primary'>CE Directory</h1>
                     <?php 
                     if(get_field('ce_address', 'options')){
                         echo '<p>';
@@ -58,6 +59,7 @@ get_header();
                         <?php endwhile;?>
                     </div>
                     <?php endif;?>
+                    </div>
                 </div>
             </div>
         </div>
