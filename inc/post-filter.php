@@ -10,7 +10,7 @@
         <option value='ASC'>ASC</option>
     </select>
     
-    <?php if(is_tax('directory') || is_tax('industry')) : ?>
+    <?php if(is_tax('directive') || is_tax('industry')) : ?>
         <?php $countries =  acf_get_field('country')['choices']; ?>
         <?php if($countries) : ?>
             <select name="country" class="country-options mr-3">

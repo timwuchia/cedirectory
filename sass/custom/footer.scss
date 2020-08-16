@@ -1,37 +1,47 @@
 // Above footer --------------------------------
-.footer-above{
-
-    p{
-        color: #212529;
-        margin: 0 auto;
-        font-size: 1.5rem;
-    }
-    .btn{
-        border-radius: 0 !important;
-    }
+.footer-above {
+  p {
+    color: #212529;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  .btn {
+    border-radius: 0 !important;
+  }
 }
 
 // Footer ------------------------
 footer {
-    a {
-        font-size: 15px;
-        color: #fff;
-        &:hover {
-            color: theme-color('secondary');
-        }
+  a {
+    font-size: 15px;
+    color: #fff;
+    i {
+      font-size: 30px;
     }
-    .menu {
-        margin-bottom: 0;
-        li {
-            &:not(:last-child){
-                margin-bottom: 10px;
-            }
-        }
+    &:hover {
+      color: theme-color("secondary");
+      i {
+        color: theme-color("secondary");
+      }
     }
+  }
+  .footer-social-media {
+    > a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  .menu {
+    margin-bottom: 0;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 .footer-above-ctas {
-    > a:not(:last-child){
-        margin-right: 10px;
-    }
+  > a:not(:last-child) {
+    margin-right: 10px;
+  }
 }

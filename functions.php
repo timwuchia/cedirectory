@@ -376,3 +376,9 @@ function admin_style() {
 	wp_enqueue_style('admin-styles', get_template_directory_uri().'/admin/admin.css');
   }
 add_action('admin_enqueue_scripts', 'admin_style');
+
+// change excerpt length
+function my_excerpt_length($length){
+	return 20;
+	}
+add_filter('excerpt_length', 'my_excerpt_length');

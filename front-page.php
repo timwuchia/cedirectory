@@ -57,7 +57,7 @@ get_header();
             <?php
                 $post_type = ('product'); 
                 $terms = get_terms( array(
-                    'taxonomy' => 'directory',
+                    'taxonomy' => 'directive',
                     'hide_empty' => false,
                     'parent' => 0
                 ) );
@@ -68,8 +68,8 @@ get_header();
                         <?php foreach($terms as $key => $term) :?>
                         <?php 
                         $link = get_term_link($term);
-                        $featured_image = get_field("product_category_featured_image", 'directory_' . $term->term_id);
-                        $excerpt = get_field("product_category_excerpt", 'directory_' . $term->term_id);
+                        $featured_image = get_field("product_category_featured_image", 'directive_' . $term->term_id);
+                        $excerpt = get_field("product_category_excerpt", 'directive_' . $term->term_id);
                         print_r($featured_image);
                         ?>
                         <a class='product-cat-slide d-block' href="<?php echo $link; ?>">
