@@ -3,6 +3,11 @@ input[type="text"] {
   border-bottom: 1px solid theme-color("body-text");
   width: 100%;
 }
+
+.wpuf-form .required {
+  color: theme-color("body-text");
+}
+
 input[type="submit"] {
   color: #fff;
   background-color: theme-color("primary");

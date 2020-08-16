@@ -247,8 +247,8 @@
         },
         {
             "key": "field_5f3847c42ed77",
-            "label": "Directory Image",
-            "name": "directory_image",
+            "label": "Directive Image",
+            "name": "directive_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -271,8 +271,8 @@
         },
         {
             "key": "field_5f3847df2ed78",
-            "label": "Directory Link",
-            "name": "directory_link",
+            "label": "Directive Link",
+            "name": "directive_link",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -341,5 +341,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1597525205
+    "modified": 1597613410
 }
