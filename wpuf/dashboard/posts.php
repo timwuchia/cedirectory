@@ -21,4 +21,13 @@ if ( is_user_logged_in() ):
             wp_reset_query();
         ?>
     </div>
+    <?php 
+    $add_blog_link = get_field('add_blog_link');
+    if( $add_blog_link ): 
+        $add_blog_link_url = $add_blog_link['url'];
+        $add_blog_link_title = $add_blog_link['title'];
+        $add_blog_link_target = $add_blog_link['target'] ? $add_blog_link['target'] : '_self';
+        ?>
+        <p><a class="btn btn-primary" href="<?php echo esc_url( $add_blog_link_url ); ?>" target="<?php echo esc_attr( $add_blog_link_target ); ?>"><?php echo esc_html( $add_blog_link_title ); ?></a>
+    <?php endif; ?></p>
 <?php endif; ?>
