@@ -43,6 +43,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_5f39b0c53d642",
+            "label": "About Us First Content Title",
+            "name": "about_us_first_content_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5f36fd33c51eb",
             "label": "About Us Content Description One",
             "name": "about_us_content_description_one",
@@ -100,6 +119,25 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_5f39b10b3d643",
+            "label": "About Us Second Content Title",
+            "name": "about_us_second_content_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5f36fe26c51ee",
@@ -307,5 +345,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1597442834
+    "modified": 1597617182
 }

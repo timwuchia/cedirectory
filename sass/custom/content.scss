@@ -178,6 +178,72 @@
   // }
   // // ---------------------------------------------------------
 
+
+//  ABOUT PAGE ---------------------------------------------
+
+
+    .about-container{
+        width: 100%;
+        height: auto;
+        .about-image-banner-container{
+            width: 100%;
+            height: auto;
+            margin-bottom: 2em;
+            img{
+                height: 90%;
+            }
+        }
+        .about-content-container{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            margin-bottom: 2em;
+            .about-content-one{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .layer{
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+            .description{
+                width: 90%;
+                height: auto;
+                margin: auto;
+            }
+            .btm-description{
+                width: 100%;
+                height: auto;
+                padding: .5em;
+                margin-top: 1em;
+             
+            }
+            .about-layer-three{
+                    width: 90%;
+                    height: auto;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+            }
+        }
+
+
+
+
+    }
+    // end of about-container
+
+
+
+
+
+
+
+
   //  Buttons-------------------------------------------------
   .btn,
   .wpuf-submit-button,
@@ -214,6 +280,20 @@
       }
     }
   }
+    .product-cat-slider .product-cat-slide{
+      padding: 0 !important;
+    }
+    .slick-slide >div{
+      padding: 1em;
+    }
+    .product-cat-slider .product-cat-slide .content{
+      bottom: -110%;
+      h3{
+        text-align: center;
+        color: #febc5a ;
+      }
+    }
+
 
   // -------------------------------------------------------------------------------
   // Categories Page Start ---------------------------------------------------------------
@@ -592,6 +672,41 @@
 }
 
 @media screen and (min-width: 768px) {
+
+
+
+// About Page-----------------------------------------------
+   .about-content-container{
+    .about-layer-one, .about-layer-two{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        img{
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+    }
+
+    
+
+    .about-layer-three{
+        width: 90% !important;
+        .layer-three-images, .btm-description{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        span{
+            padding: 1em;
+        }
+    }
+}
+
+// ---------------------------------------------------------
+
+
   //Home Page -----------------------------------------------
   .featured-product-container {
     max-width: 55% !important;
@@ -681,6 +796,26 @@
 }
 
 @media only screen and (min-width: 992px) {
+
+
+
+
+// About Page ------------------------------------------
+
+    .about-content-one{
+        img{
+            width: 70% !important;
+            height: auto;
+        }
+    }
+
+    .about-layer-three{
+        img{
+            padding: 1em;
+        }
+    }
+
+
   // Search Result page -------------------------------
 
   .search-result-content {
