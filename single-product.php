@@ -70,10 +70,19 @@ get_header();
             </div>
             <?php //echo do_shortcode('[wpuf_dashboard post_type="product"]')?>
             <?php //echo do_shortcode('[wpuf_edit]')?>
-            <?php
-            echo 'test';
-            edit_post_link('edit');
-            ?>
+            <div class='single-blog-nav'>
+				<?php  
+					$prev_post = get_previous_post();
+					$next_post = get_next_post(); 
+				?>
+				<div class='d-flex justify-content-between'>
+				<?php if (!empty($prev_post)): ?>
+					<a class="py-1" href="<?php echo $prev_post->guid ?>"><i class="fas fa-chevron-left"></i>&nbsp; <?php echo $prev_post->post_title; ?></a>
+				<?php endif ?>	
+				<?php if (!empty($next_post)): ?>
+					<a class="py-1" href="<?php echo $next_post->guid ?>"><?php echo $next_post->post_title; ?> &nbsp;<i class="fas fa-chevron-right"></i></a>
+				<?php endif ?>
+				</div>
         </div>
 
         <?php   // If comments are open or we have at least one comment, load up the comment template.
@@ -82,7 +91,7 @@ get_header();
                 endif;
             endwhile; // End of the loop.
 		?>
-
+        
     </main><!-- #main -->
     
 

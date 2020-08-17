@@ -28,10 +28,31 @@ get_header();
 					<?php the_content(); ?>
 					</div>
 				</div>
+				<div class='single-blog-nav'>
+				<?php  
+					$prev_post = get_previous_post();
+					$next_post = get_next_post(); 
+				?>
+				<div class='d-flex justify-content-between'>
+				<?php if (!empty($prev_post)): ?>
+					<a class="py-1" href="<?php echo $prev_post->guid ?>"><i class="fas fa-chevron-left"></i>&nbsp; <?php echo $prev_post->post_title; ?></a>
+				<?php endif ?>	
+				<?php if (!empty($next_post)): ?>
+					<a class="py-1" href="<?php echo $next_post->guid ?>"><?php echo $next_post->post_title; ?> &nbsp;<i class="fas fa-chevron-right"></i></a>
+				<?php endif ?>
+				</div>
 			</div>
-
+			<div class='container pb-5'>
+			<?php
+			
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+			?>
+			</div>
 			
 		<?php endwhile; // End of the loop. ?>
+		
 
 	</main><!-- #main -->
 

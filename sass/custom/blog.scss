@@ -4,3 +4,40 @@
     height: auto;
   }
 }
+
+.single-blog-nav {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+    .fa,
+    .fas {
+      font-family: "Font awesome\ 5 Free";
+      color: theme-color("primary");
+      font-size: 1rem;
+      &:hover {
+        color: darken(theme-color("primary"), 15%);
+      }
+    }
+  }
+}
+
+#comments {
+  footer a {
+    color: theme-color("primary");
+  }
+  .comment-author {
+    margin-bottom: 0.75rem;
+  }
+  ol.comment-list {
+    padding-left: 1rem;
+  }
+  .comment-form-comment {
+    label {
+      display: block;
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+}
