@@ -199,7 +199,12 @@
   }
 
 // Single Blog Nav---------------------------------
+  .single-blog{
+    p{word-break: break-word;}
+  }
    .single-blog-nav {
+     padding: 1em;
+     margin-bottom: 3em;
      a .fa-chevron-right{
        color: #222222 !important;
      }
@@ -263,14 +268,7 @@
 
 
     }
-    // end of about-container
-
-
-
-
-
-
-
+  //----------------------------------------------------------
 
   //  Buttons-------------------------------------------------
   .btn,
@@ -308,6 +306,7 @@
       }
     }
   }
+  // Category slidder on the home page -------------
     .product-cat-slider .product-cat-slide{
       padding: 0 !important;
     }
@@ -315,14 +314,11 @@
       padding: 1em;
     }
     .product-cat-slider .product-cat-slide .content{
-      bottom: -110%;
-      h3{
-        text-align: center;
-        color: #febc5a ;
-      }
+      bottom: 0;
+      // background: rgb(0 46 107 / 60%);
+      width: 100%;
+      h2 {text-align: center;}
     }
-
-
   // -------------------------------------------------------------
 // Taxonomy Page ----------------------------------------------
   .taxonomy-container{
@@ -696,11 +692,15 @@
     header {
       text-align: center;
       text-decoration: underline;
+      padding-left: 0 !important;
 
       .entry-title {
         a {
           color: #222222;
         }
+      }
+      .entry-meta{
+        span{padding-right: .5em;}
       }
     }
     .search-result-content {
@@ -711,7 +711,10 @@
       }
       .entry-summary {
         background: #004aac;
-        padding: 0.5em;
+        padding: 1em;
+        color: #febc5a;
+        p{word-break: break-word;}
+        
       }
     }
   }
@@ -719,7 +722,8 @@
     padding: 1em;
     .entry-footer {
       a {
-        color: #febc5a;
+        color: #004aac;
+        padding: 1em;
       }
     }
   }
@@ -767,10 +771,10 @@
 
 @media screen and (min-width: 768px) {
 
-  // breadcrumbs and Post filters ---------------
-    .site-breadcrumb, .post-filters{
+// breadcrumbs and Post filters ---------------
+  .site-breadcrumb, .post-filters{
       padding-left: 3em;
-    }
+  }
 
 
 // Taxonomy Page-----------------------------
@@ -784,31 +788,27 @@
   }
 
 // About Page-----------------------------------------------
-   .about-content-container{
+  .about-content-container{
     .about-layer-one, .about-layer-two{
-        width: 100%;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      img{
+        width: 90%;
         height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       
-        img{
-            width: 90%;
-            height: auto;
-            margin: auto;
-        }
+        margin: auto;
+      }
     }
-
-    
-
     .about-layer-three{
-        width: 90% !important;
-        .layer-three-images, .btm-description{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        span{
-            padding: 1em;
-        }
+      width: 90% !important;
+      .layer-three-images, .btm-description{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      span{
+        padding: 1em;
+      }
     }
 }
 
@@ -1068,6 +1068,10 @@
       flex-direction: column;
     }
   }
+
+   .product-cat-slider .product-cat-slide .content{
+      bottom: -110%;
+    }
 
   // -----------------------------
 

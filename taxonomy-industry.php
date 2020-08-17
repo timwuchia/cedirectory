@@ -28,7 +28,9 @@ get_header();
                 $image = get_field("product_category_featured_image", $term);
                 $excerpt = get_field('product_category_excerpt', $term); 
             ?>
+        <div class='taxonomy-filter'>
             <?php get_template_part('inc/post-filter'); ?>
+        </div>
             <?php if(have_posts()) : ?>
             <div class='taxonomy-container'>
             <?php while(have_posts()) : the_post(); ?>

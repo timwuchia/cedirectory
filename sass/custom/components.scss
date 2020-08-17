@@ -26,6 +26,9 @@
             .content {
                 bottom: 0;
             }
+            a{
+                color: #febc5a;
+            }
         }
         @include media-breakpoint-up('xs'){
             padding: 0 1rem;
