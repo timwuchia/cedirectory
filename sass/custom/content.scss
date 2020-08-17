@@ -176,12 +176,15 @@
 // Start of Product / Industry --------
 
 @media screen and (min-width: 325px) {
-  // Custom Container-----------------------------------------
-  // .custom-container, .single-product-container{
-  //     max-width: 100% !important;
-  // }
-  // // ---------------------------------------------------------
-
+// Single Blog Nav---------------------------------
+   .single-blog-nav {
+     a .fa-chevron-right{
+       color: #222222 !important;
+     }
+      a{
+      color: #9a9a9a;
+    }
+    }
 
 //  ABOUT PAGE ---------------------------------------------
 
