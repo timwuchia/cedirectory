@@ -176,6 +176,28 @@
 // Start of Product / Industry --------
 
 @media screen and (min-width: 325px) {
+
+// Blog Page ------------------------------------------
+  .blog-container{
+    width: 100%;
+    padding: 1em;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .blog-content{
+      word-wrap: break-word;
+      width: 100%;
+      height: auto;
+      background: #004aac;
+      padding: 1em;
+      a{
+        color: #febc5a;
+      }
+    }
+  
+  }
+
 // Single Blog Nav---------------------------------
    .single-blog-nav {
      a .fa-chevron-right{
@@ -187,7 +209,6 @@
     }
 
 //  ABOUT PAGE ---------------------------------------------
-
 
     .about-container{
         width: 100%;
@@ -827,6 +848,14 @@
   .wpcf7-form {
     width: 60%;
   }
+// Blog Page---------------------------------------------
+
+   .blog-page-container{
+     padding: 3em;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+
 }
 // end of @media min-width 768px----------------------
 
@@ -963,6 +992,17 @@
     padding-left: 5em;
     padding-top: 10em;
   }
+
+// Blog Page---------------------------------------------
+
+   .blog-page-container{
+     width: 90%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+
+
+
 }
 // ----------------------------------------------------------
 
@@ -1073,4 +1113,16 @@
       }
     }
   }
+
+  // Blog Page---------------------------------------------
+
+   .blog-page-container{
+     width: 90%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+
+
+
+
 }
