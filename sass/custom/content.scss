@@ -90,10 +90,10 @@
         height: auto;
         margin: auto;
         :hover {
-          background: #004aac;
+          background: #febc5a;
         }
         li {
-          background: #222222;
+          background: #004aac;
           width: 100%;
           height: auto;
           margin: auto;
@@ -102,6 +102,9 @@
 
           a {
             color: white;
+            :hover{
+              color: #004aac;
+            }
           }
         }
       }
@@ -120,7 +123,7 @@
       margin: auto;
       padding: 3em;
       .wpuf-submit-button {
-        background: #222222 !important;
+        background: #004aac !important;
         border: 0px !important;
         border-radius: 0 !important;
         box-shadow: 0 !important;
@@ -129,10 +132,11 @@
         color: white !important;
         width: auto;
         margin: auto;
-        :hover {
-          background: #004aac;
-        }
+         a:active{
+        color: #febc5a;
       }
+      }
+     
       .profile_image,
       .profile_banner {
         display: flex;
@@ -295,8 +299,74 @@
     }
 
 
-  // -------------------------------------------------------------------------------
-  // Categories Page Start ---------------------------------------------------------------
+  // -------------------------------------------------------------
+// Taxonomy Page ----------------------------------------------
+  .taxonomy-container{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+
+  .industry-content-container, .directive-content-container{
+    margin-bottom: 2em;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      .industry-description, .industry-description{
+        width: 100%;
+        height: auto;
+        background: #004aac;
+        padding: 1em;
+      
+        p{
+          color: #febc5a;
+        }
+        a{
+          color: #222222;
+        }
+        .contact-button{
+          width: 8em;
+          margin: auto;
+        }
+      }
+    }
+// ------------------------------------------------------------
+// Pagination / Breakcrumbs-------------------------------------------------
+
+    .post-filters, .site-breadcrumb{
+      width: 100%;
+      padding-left: 1em;
+    }
+
+    .pagination{
+      width: 20em;
+      height: auto;
+      margin: auto;
+      margin-top: 3em;
+      margin-bottom: 3em;
+      ul{
+        display: flex;
+        li{
+          padding-right: .5em;
+          a{color: #dadadb !important;}
+        }
+      }
+            a:hover{
+              color: #febc5a !important;
+            }
+            a:active{
+              color: #004aac;
+            }
+    }
+  
+    .site-breadcrumb{
+      color: #dadadb;
+    }
+
+
+
+  // Categories Page Start -------------------------------------------------------------
 
   .categories-title {
     width: 10em;
@@ -673,7 +743,21 @@
 
 @media screen and (min-width: 768px) {
 
+  // breadcrumbs and Post filters ---------------
+    .site-breadcrumb, .post-filters{
+      padding-left: 3em;
+    }
 
+
+// Taxonomy Page-----------------------------
+  .taxonomy-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+  }
+  .industry-content-container, .directive-content-container{
+    margin: 1em;
+  }
 
 // About Page-----------------------------------------------
    .about-content-container{
@@ -797,8 +881,17 @@
 
 @media only screen and (min-width: 992px) {
 
+  // breadcrumbs and Post filters ---------------
+    .site-breadcrumb, .post-filters{
+      padding-left: 5em;
+    }
 
-
+// Taxonomy  Page-----------------------------
+ .taxonomy-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+ 
+  }
 
 // About Page ------------------------------------------
 
@@ -895,8 +988,21 @@
 }
 
 @media only screen and (min-width: 1400px) {
-  // Custom Container -------------------------
 
+  // breadcrumbs and Post filters ---------------
+    .site-breadcrumb, .post-filters{
+      padding-left: 8em;
+    }
+
+// Taxonomy  Page-----------------------------
+ .taxonomy-container{
+   padding-left: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+  }
+
+// Custom Container -------------------------
   .wpuf-form-add {
     max-width: 85% !important;
     margin: auto;
@@ -907,6 +1013,8 @@
   // Home Page Start-------------------------------
 
   .custom-container {
+    padding-left: 5em;
+    padding-right: 5em;
     .featured-product-content {
       position: relative;
       height: 35%;
@@ -922,7 +1030,8 @@
 
   // Product Page
   .product-categories {
-    margin: 2em;
+    padding-left:5em;
+    padding-right: 5em;
     .product-category {
       flex: 0 0 25% !important;
     }

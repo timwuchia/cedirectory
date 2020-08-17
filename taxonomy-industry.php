@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <div class='container py-5'>
+            
             <div class='site-breadcrumb mb-4'>
             <?php
                 echo do_shortcode( '[wpseo_breadcrumb]');
@@ -30,14 +30,16 @@ get_header();
             ?>
             <?php get_template_part('inc/post-filter'); ?>
             <?php if(have_posts()) : ?>
-            <div class='row category-products'>
+            <div class='taxonomy-container'>
             <?php while(have_posts()) : the_post(); ?>
-            <div class='col-md-6 col-lg-4 product'>
+            <div class='industry-content-container'>
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('general'); ?></a>
-                <div class='product-desc'>
+                <div class='industry-description'>
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3>
                     <p><?php the_excerpt(); ?></p>
+                    <div class="contact-button">
                     <a class='btn btn-secondary' href="mailto: <?php echo get_the_author_meta('user_email', $author_id)?>">Contact Seller</a>
+                </div>
                 </div>
             </div>
             <?php endwhile; ?>
@@ -46,7 +48,7 @@ get_header();
 
             <?php ce_pagination(); ?>
 
-            </div>
+           
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
