@@ -280,6 +280,20 @@
       }
     }
   }
+    .product-cat-slider .product-cat-slide{
+      padding: 0 !important;
+    }
+    .slick-slide >div{
+      padding: 1em;
+    }
+    .product-cat-slider .product-cat-slide .content{
+      bottom: -110%;
+      h3{
+        text-align: center;
+        color: #febc5a ;
+      }
+    }
+
 
   // -------------------------------------------------------------------------------
   // Categories Page Start ---------------------------------------------------------------
