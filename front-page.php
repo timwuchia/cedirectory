@@ -39,11 +39,11 @@ get_header();
                                 <div class='featured-product-content d-flex justify-content-between align-items-center'>
                                     <div>
                                        <h3><?php the_title(); ?></h3>
-                                       <?php the_excerpt(); ?>
+                                     
                                     </div>
                                     <div>
                                         <a class='btn btn-secondary mb-3' href="#">Contact Seller</a>
-                                        <a class='btn btn-secondary' href="#">Show Industry</a>
+                                        
                                     </div>
                                 </div>
                             </div>
