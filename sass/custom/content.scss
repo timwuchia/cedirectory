@@ -754,11 +754,23 @@
 //---------------------------------------------------------------------
 // FAQ Page -------------------------------------------------------------------
 
-  .faq-page-container{
+  .faq-page-container, .resource-page-container{
     width: 100%;
     height: auto;
     padding: 2em;
     background: #F4F4F4;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .resource-content{
+      margin-bottom: 3em;
+    }
+    .cstm-resource-title{
+      margin-bottom: 3em;
+      text-align: center;
+      h2{text-decoration: underline;}
+    }
     .ans-container{
       background: #9a9a9a;
       padding: 1em;
@@ -766,8 +778,15 @@
         color: #004aac;
       }
     }
+    .resource-description{
+      padding: 1em;
+    }
 
   }
+
+// Resources Page -----------------------------------------------------------------
+
+
 
 }
 // @media 325px Ends ----------------------------------
@@ -777,7 +796,7 @@
 
 // FAQ Page -------------------------------------------------------------------
 
-  .faq-page-container{
+  .faq-page-container, .resource-page-container{
     width: 90%;
     height: auto;
     margin: auto;
@@ -801,10 +820,14 @@
 
 // FAQ Page -------------------------------------------------------------------
 
-  .faq-page-container{
+  .faq-page-container, .resource-page-container{
     width: 70%;
     height: auto;
     margin: auto;
+    img{
+      width: 70%;
+      height: auto;
+    }
   }
 
   
@@ -950,6 +973,7 @@
 
 @media only screen and (min-width: 992px) {
 
+
   // breadcrumbs and Post filters ---------------
     .site-breadcrumb, .post-filters{
       padding-left: 5em;
@@ -965,6 +989,9 @@
 // About Page ------------------------------------------
 
     .about-content-one{
+      .description{
+        padding: 3em;
+      }
         img{
             width: 70% !important;
             height: auto;
@@ -1071,10 +1098,14 @@
 
 // FAQ Page -------------------------------------------------------------------
 
-  .faq-page-container{
+  .faq-page-container, .resource-page-container{
     width: 60%;
     height: auto;
     margin: auto;
+    img{
+      width: 50%;
+      height: auto;
+    }
   }
 
 
@@ -1172,6 +1203,17 @@
      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
 
+//  About Page --------------------------------------------------------
+  
+  .about-content-one{
+    .description{
+      padding: 5em;
+      h2{margin-bottom: 1em;}
+      p{
+        word-break: break-all;
+      }
+    }
+  }
 
 
 
