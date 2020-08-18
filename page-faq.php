@@ -17,15 +17,15 @@ get_header();
 		<?php 
 
 						if (have_rows("faq")){
-							echo '<div class="faq-content">';
+							
 							while(have_rows("faq")){
+								echo '<div class="faq-content">';
 							the_row();
 							echo '<div class="qtn-container">';
-								echo '<h4> Question';
-								echo '</h4>';
-							echo '<p>';
-								echo get_sub_field("faq_question");
-							echo '</p>';
+							
+								echo '<p>';
+									echo get_sub_field("faq_question");
+								echo '</p>';
 							echo '</div>';
 
 							echo '<div class="ans-container">';
