@@ -45,6 +45,14 @@ get_header();
                 single-product-description-container bg-dark-gray col-lg-4 p-4'>
                 <div class='single-product-description'>
                     <h2><?php the_title(); ?></h2>
+                       <?php
+                    if(get_field('hs_code')){
+                        echo '<p style="color: #9a9a9a; font-size: .8em; " >HS Code:';
+                        echo '<span style="padding-left: .8em;">';
+                        echo the_field('hs_code');
+                        echo '</p>';
+                    }
+                    ?>
                     <?php the_content(); ?>
                     <?php
                     $countries = get_field('country');
@@ -56,14 +64,7 @@ get_header();
                         <?php endforeach; ?>
                     </ul>
                     <?php endif; ?>
-                    <?php
-                    if(get_field('hs_code')){
-                        echo '<p>';
-                        the_field('hs_code');
-                        echo '</p>';
-                    }
-                    ?>
-
+                 
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email', $author_id);  ?>">Contact Seller</a>
                     </div>
                 </div>
