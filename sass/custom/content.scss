@@ -190,7 +190,7 @@
       word-wrap: break-word;
       width: 100%;
       height: auto;
-      background: #004aac;
+      background: #004bac94;
       padding: 1em;
       a{
         color: #febc5a;
@@ -294,10 +294,19 @@
         }
       }
       .featured-product-content {
-        background: #004bace8;
+        height: 30%;
+        position: relative;
+        z-index: 5;
+        top: -30%;
+        background: #004bac94;
         padding: 0.5em;
         display: flex;
         flex-direction: column;
+        h3{
+          color: white;
+          text-transform: uppercase;
+          text-align: center;
+        }
 
         .btn {
           border-radius: 0;
@@ -316,7 +325,6 @@
     }
     .product-cat-slider .product-cat-slide .content{
       bottom: 0;
-      // background: rgb(0 46 107 / 60%);
       width: 100%;
       h2 {text-align: center;}
     }
@@ -337,11 +345,11 @@
       .industry-description, .industry-description{
         width: 100%;
         height: auto;
-        background: #004aac;
+        background: #F4F4F4;
         padding: 1em;
-      
+        h3{text-align: center; color: white;}
         p{
-          color: #febc5a;
+          color: #222222;
         }
         a{
           color: #222222;
@@ -625,7 +633,7 @@
       height: auto;
     }
     .post-title {
-      background: #004aac;
+      background: #004bac94;
       max-width: 100%;
       height: auto;
       padding: 1em;
@@ -649,7 +657,7 @@
       height: auto;
     }
     .the-product-description {
-      background: #004aac;
+      background: #004bac94;
       max-width: 100%;
       height: auto;
       padding: 1em;
@@ -711,7 +719,7 @@
         height: auto !important;
       }
       .entry-summary {
-        background: #004aac;
+        background: #004bac94;
         padding: 1em;
         color: #febc5a;
         p{word-break: break-word;}
@@ -1138,7 +1146,7 @@
     .featured-product-content {
       position: relative;
       height: 35%;
-      background: #004bace8;
+      background: #004bac94;
       top: -35%;
       padding: 1em;
       display: flex;

@@ -34,12 +34,15 @@ get_header();
                         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
                             <div class='featured-product col-lg-4'>
                                 <div class='featured-product-image'>
+                                      <a href="<?php the_permalink(); ?>">
                                     <?php the_post_thumbnail('general'); ?>
+                                    </a>
                                 </div>
                                 <div class='featured-product-content d-flex justify-content-between align-items-center'>
                                     <div>
+                                    <a href="<?php the_permalink(); ?>">
                                        <h3><?php the_title(); ?></h3>
-                                     
+                                    </a>
                                     </div>
                                     <div>
                                         <a class='btn btn-secondary mb-3' href="#">Contact Seller</a>
