@@ -72,7 +72,7 @@
       width: 50%;
       position: absolute;
       top: 2em;
-      left: 25%;
+      left: 45%;
       h2 {
         color: white;
         font-size: 3rem;
@@ -176,6 +176,7 @@
 // Start of Product / Industry --------
 
 @media screen and (min-width: 325px) {
+
 
 // Blog Page ------------------------------------------
   .blog-container{
@@ -750,13 +751,40 @@
       display: none;
     }
   }
-  // Search Result Page--------------------------------
+//---------------------------------------------------------------------
+// FAQ Page -------------------------------------------------------------------
+
+  .faq-page-container{
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    background: #F4F4F4;
+    .ans-container{
+      background: #9a9a9a;
+      padding: 1em;
+      h4{
+        color: #004aac;
+      }
+    }
+
+  }
+
 }
 // @media 325px Ends ----------------------------------
 
 @media screen and (min-width: 576px) {
-  // Search Result Page -----------------------------------
 
+
+// FAQ Page -------------------------------------------------------------------
+
+  .faq-page-container{
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+
+// Search Result Page --------------------------------------
   .search-result-content {
     display: grid;
     /* width: 50%; */
@@ -771,6 +799,15 @@
 
 @media screen and (min-width: 768px) {
 
+// FAQ Page -------------------------------------------------------------------
+
+  .faq-page-container{
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+
+  
 // breadcrumbs and Post filters ---------------
   .site-breadcrumb, .post-filters{
       padding-left: 3em;
@@ -1032,10 +1069,19 @@
 
 @media only screen and (min-width: 1400px) {
 
-  // breadcrumbs and Post filters ---------------
-    .site-breadcrumb, .post-filters{
-      padding-left: 8em;
-    }
+// FAQ Page -------------------------------------------------------------------
+
+  .faq-page-container{
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+
+
+// breadcrumbs and Post filters ---------------
+  .site-breadcrumb, .post-filters{
+    padding-left: 8em;
+  }
 
 // Taxonomy  Page-----------------------------
  .taxonomy-container{
