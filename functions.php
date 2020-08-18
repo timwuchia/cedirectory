@@ -382,3 +382,21 @@ function my_excerpt_length($length){
 	return 20;
 	}
 add_filter('excerpt_length', 'my_excerpt_length');
+
+// dequeue recaptcha scripts
+add_action('wp_print_scripts', function () {
+	wp_dequeue_script( 'google-recaptcha' );
+	wp_dequeue_script( 'wpcf7-recaptcha' );
+});
+
+// enqueue recaptcha scripts
+add_action('wp_print_scripts', function () {
+	if(is_page('contact')){
+		wp_enqueue_script( 'google-recaptcha' );
+		wp_enqueue_script( 'wpcf7-recaptcha' );
+	}
+	if(get_field('enable_recaptcha')){
+		wp_enqueue_script( 'google-recaptcha' );
+	}
+	
+});

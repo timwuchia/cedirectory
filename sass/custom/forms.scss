@@ -148,3 +148,14 @@ label {
     }
   }
 }
+
+.wpuf-login-form {
+  input[type="text"] {
+    width: auto;
+  }
+}
+
+ul.wpuf-form li .wpuf-fields ul.wpuf-attachment-list {
+  // fix invisible uploaded featured image
+  overflow: unset;
+}
