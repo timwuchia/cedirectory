@@ -155,6 +155,7 @@
           background: none;
           border: none;
           border-bottom: 1px solid black;
+          
         }
       }
       .pass-strength-result {
@@ -347,7 +348,7 @@
         height: auto;
         background: #F4F4F4;
         padding: 1em;
-        h3{text-align: center; color: white;}
+        h3{text-align: center;}
         p{
           color: #222222;
         }
@@ -454,21 +455,24 @@
   }
   // ----------------------------------------
 
-  //  Add Product Page Start --------------------------------------------------------------
+  //  Add Product Page Start ---------------------------------------------------------
   .wpuf-form-add {
     padding: 1em;
     padding-top: 3em;
-    // border: 1px solid #2222220f;
+    background: #F4F4F4;
+    .hs_code {
+        width: 40%;
+      }
     .wpuf-form {
       display: grid;
       .wpuf-label {
         width: 60%;
       }
       .wpuf-fields {
-        width: 100%;
+        // width: 100%;
         .textfield {
-          // width: auto !important;
           border-color: #2222220f;
+          background: none;
         }
         .textareafield {
           border: 1px solid #2222220f !important;
@@ -476,102 +480,105 @@
       }
     }
   }
+  .directive .wpuf_directive_42{
+    width: 40%;
+  }
 
   // Form Color Over Ride--------------------------------------------------------
 
-  .wpuf-form-add.wpuf-form-layout3
-    ul.wpuf-form
-    li
-    .wp-editor-wrap:hover
-    .mce-statusbar,
-  .wpuf-form-add.wpuf-form-layout3
-    ul.wpuf-form
-    li
-    .wp-editor-wrap:hover
-    .mce-toolbar-grp,
-  .wpuf-form-add.wpuf-form-layout3
-    ul.wpuf-form
-    li
-    .wp-editor-wrap:hover
-    .wp-editor-container {
-    border-color: #2222220f !important;
-  }
+  // .wpuf-form-add.wpuf-form-layout3
+  //   ul.wpuf-form
+  //   li
+  //   .wp-editor-wrap:hover
+  //   .mce-statusbar,
+  // .wpuf-form-add.wpuf-form-layout3
+  //   ul.wpuf-form
+  //   li
+  //   .wp-editor-wrap:hover
+  //   .mce-toolbar-grp,
+  // .wpuf-form-add.wpuf-form-layout3
+  //   ul.wpuf-form
+  //   li
+  //   .wp-editor-wrap:hover
+  //   .wp-editor-container {
+  //   border-color: #2222220f !important;
+  // }
 
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
-    font-size: 15px;
-  }
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
+  //   font-size: 15px;
+  // }
 
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
-    border-color: #2222220f !important;
-  }
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
+  //   border-color: #2222220f !important;
+  // }
 
-  .wpuf-form-add.wpuf-form-layout3
-    ul.wpuf-form
-    li.wpuf-submit
-    input[type="submit"] {
-    background: #222222 !important;
-    border-color: #222222 !important;
-    -moz-box-shadow: 0 1px 0 #8726d3 !important;
-    -webkit-box-shadow: 0 1px 0 #8726d3 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    border-radius: 0 !important;
-  }
-  .wpuf-form-add li .wpuf-submit:active {
-    background: #004aac;
-  }
+  // .wpuf-form-add.wpuf-form-layout3
+  //   ul.wpuf-form
+  //   li.wpuf-submit
+  //   input[type="submit"] {
+  //   background: #222222 !important;
+  //   border-color: #222222 !important;
+  //   -moz-box-shadow: 0 1px 0 #8726d3 !important;
+  //   -webkit-box-shadow: 0 1px 0 #8726d3 !important;
+  //   box-shadow: none !important;
+  //   text-shadow: none !important;
+  //   border-radius: 0 !important;
+  // }
+  // .wpuf-form-add li .wpuf-submit:active {
+  //   background: #004aac;
+  // }
 
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
-    background: #004aac;
-  }
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
+  //   background: #004aac;
+  // }
 
-  .mce-container,
-  .mce-container *,
-  .mce-widget,
-  .mce-widget *,
-  .mce-reset,
-  .wpuf-form-add.wpuf-form-layout3
-    ul.wpuf-form
-    li
-    .wpuf-fields
-    a.file-selector {
-    border: none !important;
-    box-shadow: none !important;
-  }
+  // .mce-container,
+  // .mce-container *,
+  // .mce-widget,
+  // .mce-widget *,
+  // .mce-reset,
+  // .wpuf-form-add.wpuf-form-layout3
+  //   ul.wpuf-form
+  //   li
+  //   .wpuf-fields
+  //   a.file-selector {
+  //   border: none !important;
+  //   box-shadow: none !important;
+  // }
 
-  .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
-    display: grid;
-  }
+  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
+  //   display: grid;
+  // }
   // ----------------------------------------------------
 
   // Contact Us Page ------------------------------------
