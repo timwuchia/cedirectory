@@ -277,9 +277,9 @@ function ce_custom_query( $query ) {
 			$orderby = $_GET['orderby'];
 			$query->set( 'orderby', $orderby );
 		}
-		if (isset($_GET['sortby'])){
-			$sortby = $_GET['sortby'];
-			$query->set( 'sortby', $sortby );
+		if (isset($_GET['order'])){
+			$sortby = $_GET['order'];
+			$query->set( 'order', $sortby );
 		}
 		// get meta query
 	$meta_query = $query->get('meta_query');
@@ -293,6 +293,7 @@ function ce_custom_query( $query ) {
 			),
 		);
 	}	
+	print_r($query);
 	
 	// update meta query
 	$query->set('meta_query',$meta_query);

@@ -1,13 +1,14 @@
 <form class='post-filters d-flex flex-wrap mb-3'>
-    <select name='sortby' class="sort-options mr-3">
-        <option value="" disabled selected> - Sort By - </option>
+    
+    <select name='orderby' class="orderby-options mr-3">
+        <option value="" disabled selected> - Order By - </option>
         <option value='title'>Title</option>
         <option value='date'>Date</option>
     </select>
-    <select name='orderby' class="order-options mr-3">
+    <select name='order' class="order-options mr-3">
         <option value="" disabled selected> - Order - </option>
-        <option value='DESC'>DESC</option>
-        <option value='ASC'>ASC</option>
+        <option value='asc'>ASC</option>
+        <option value='desc'>DESC</option>
     </select>
     
     <?php if(is_tax('directive') || is_tax('industry')) : ?>

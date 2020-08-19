@@ -81,16 +81,16 @@
       );
     }
 
-    $(".sort-options").on("change", function (e) {
+    $(".orderby-options").on("change", function (e) {
       const valueSelected = e.target.value;
       postFilterURL;
       // var urlParams = new URLSearchParams(window.location.search);
-      postFilterURL = replaceUrlParam(postFilterURL, "sortby", valueSelected);
+      postFilterURL = replaceUrlParam(postFilterURL, "orderby", valueSelected);
     });
     $(".order-options").on("change", function (e) {
       const valueSelected = e.target.value;
       // var urlParams = new URLSearchParams(window.location.search);
-      postFilterURL = replaceUrlParam(postFilterURL, "orderby", valueSelected);
+      postFilterURL = replaceUrlParam(postFilterURL, "order", valueSelected);
     });
     $(".country-options").on("change", function (e) {
       const valueSelected = e.target.value;
