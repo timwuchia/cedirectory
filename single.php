@@ -18,12 +18,12 @@ get_header();
 			?>
 			<div class='container py-5'>
 				<div class='single-blog row'>
-					<div class='col-md-6'>
+					<div class='blog-image col-md-6'>
 					<?php
 					echo the_post_thumbnail('general-large');
 					?>
 					</div>
-					<div class='col-md-6'>
+					<div class='blog-content col-md-6'>
 					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 					</div>
