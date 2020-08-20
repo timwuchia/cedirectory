@@ -39,7 +39,12 @@
 				<?php if(get_field('ce_logo', 'options')) :?>
 					<a class='navbar-brand' href="/"><?php echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'logo')?></a>
 				<?php endif;?>
-				
+				<div class='header-search d-lg-none'>
+				<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
 				<?php
 					wp_nav_menu(
 						array(
@@ -54,12 +59,10 @@
 						)
 					);
 				?>
-				<div class='header-search'>
+				<div class='header-search d-none d-lg-block'>
 				<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fas fa-bars"></i>
-				</button>
+				
 				<?php
 					wp_nav_menu(
 						array(
