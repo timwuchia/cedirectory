@@ -23,7 +23,7 @@ get_header();
             <?php
                 $term = get_queried_object();
                 $image = get_field("product_category_featured_image", $term);
-                $excerpt = get_field('product_category_excerpt', $term);
+               
             ?>
             <?php get_template_part('inc/post-filter'); ?>
             <?php if(have_posts()) : ?>

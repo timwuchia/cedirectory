@@ -26,7 +26,7 @@ get_header();
             <?php
                 $term = get_queried_object();
                 $image = get_field("product_category_featured_image", $term);
-                $excerpt = get_field('product_category_excerpt', $term); 
+             
             ?>
         <div class='taxonomy-filter'>
             <?php get_template_part('inc/post-filter'); ?>
@@ -38,6 +38,7 @@ get_header();
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('general'); ?></a>
                 <div class='industry-description'>
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3>
+                    
                     <div class="contact-button">
                     <a class='btn btn-secondary' href="mailto: <?php echo get_the_author_meta('user_email', $author_id)?>">Contact Seller</a>
                 </div>
