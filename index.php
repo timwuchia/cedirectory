@@ -14,11 +14,8 @@
 
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-
 		<?php
 			$args = array(
 				'numberposts' => 1,
@@ -34,49 +31,32 @@ get_header();
 				'post_status' => 'draft, publish, future, pending, private',
 				'suppress_filters' => true
 			);
-
 		$recent_posts = wp_get_recent_posts( $args, ARRAY_A );
-
 	?>
-
-
-
 <div class="blog-page-container">
-	
-
-			<?php
+		<?php
 			if ( have_posts() ) :
-
 				while ( have_posts() ) :
 					echo "<div class = 'blog-container' >";
-						echo the_post();
-					echo '<a href="';
-						echo the_permalink($post->ID);
-						echo '">';
-						echo the_post_thumbnail('work-img');
-					
-
-	
+							echo the_post();
+						echo '<a href="';
+							echo the_permalink($post->ID);
+							echo '">';
+							echo the_post_thumbnail('work-img');
 						echo '<div class = "blog-content" >';
-						
 							echo '<h3>';
 								echo get_the_title();
 							echo '</h3>';
-									echo '<p>';
+						echo '</a>';
+							echo '<p>';
 								echo get_the_date();
 							echo '</p>';
-						
-								echo '</a>';
-					
-					
 						echo '</div>';
-
-						echo "</div>";//end of blog-wrapper
-			endwhile; 
+					echo "</div>";//end of blog-container
+				endwhile; 
 			endif;
 			?>
 </div>
-
 
 		</main> 
 	</div>

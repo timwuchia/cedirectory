@@ -190,13 +190,16 @@
     .blog-content{
       word-wrap: break-word;
       width: 100%;
-      height: auto;
-      background: #F4F4F4;
+      height: 6em;
+      position: relative;
+      top: -6em;
+      background: #004bac94;
       padding: 1em;
       a{
-        color: #222222;
+        color: #febc5a;
+        text-decoration: none;
         :hover{
-          color: #004aac;
+          color: white;
         }
       }
     }
