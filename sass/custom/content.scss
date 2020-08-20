@@ -191,13 +191,28 @@
       word-wrap: break-word;
       width: 100%;
       height: auto;
-      background: #004bac94;
+      background: #F4F4F4;
       padding: 1em;
       a{
-        color: #febc5a;
+        color: #222222;
+        :hover{
+          color: #004aac;
+        }
       }
     }
   
+  }
+
+  .single-blog{
+    padding: 1em;
+    .blog-image, .blog-content{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .blog-content{
+      padding: 1em !important;
+      background: #dadadb;
+    }
   }
 
 // Single Blog Nav---------------------------------
@@ -214,6 +229,8 @@
       color: #9a9a9a;
     }
     }
+// Single Blog Page --------------------------------
+
 
 //  ABOUT PAGE ---------------------------------------------
 
@@ -225,7 +242,9 @@
             height: auto;
             margin-bottom: 2em;
             img{
-                height: 90%;
+                width: 100%;
+                height: auto;
+                padding: 1em;
             }
         }
         .about-content-container{
@@ -237,6 +256,7 @@
                 img{
                     width: 100%;
                     height: auto;
+                    padding: 1em;
                 }
             }
             .layer{
@@ -262,12 +282,10 @@
                     img{
                         width: 100%;
                         height: auto;
+                        padding: 1em;
                     }
             }
         }
-
-
-
 
     }
   //----------------------------------------------------------
@@ -383,10 +401,10 @@
         }
       }
             a:hover{
-              color: #febc5a !important;
+              color:#004aac!important;
             }
             a:active{
-              color: #004aac;
+              color:  #febc5a;
             }
     }
   
@@ -432,6 +450,9 @@
             bottom: 0;
             font-size: 1.2rem;
             font-weight: 100;
+            :hover{
+              color: #004aac;
+            }
           }
         }
       }
@@ -644,14 +665,13 @@
       max-width: 100%;
       height: auto;
       padding: 1em;
-      h2 {
-        text-align: center;
-        :hover {
-          color: #febc5a;
-        }
+ 
+    
         a {
           color: #222222 !important;
           text-align: center;
+          :hover {
+            color: #febc5a;
         }
       }
     }
@@ -712,7 +732,7 @@
 
       .entry-title {
         a {
-          color: #222222;
+          color: #004aac;
         }
       }
       .entry-meta{
@@ -726,7 +746,7 @@
         height: auto !important;
       }
       .entry-summary {
-        background: #004bac94;
+        // background: #004bac94;
         padding: 1em;
         color: #febc5a;
         p{word-break: break-word;}
@@ -744,7 +764,7 @@
     }
   }
 
-  #post-93 {
+  article {
     position: relative;
     bottom: 0;
     margin: auto;
