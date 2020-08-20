@@ -154,12 +154,12 @@
         .password {
           background: none;
           border: none;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid #9a9a9a;
           
         }
       }
       .pass-strength-result {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #9a9a9a;
         float: left;
         margin: 0;
         padding: 3px 5px;
@@ -313,19 +313,28 @@
         }
       }
       .featured-product-content {
-        height: 30%;
+        height: 25%;
         position: relative;
         z-index: 5;
-        top: -30%;
+        top: -25%;
         background: #004bac94;
         padding: 0.5em;
         display: flex;
         flex-direction: column;
         h3{
-          color: white;
-          text-transform: uppercase;
+          color: #febc5a;
           text-align: center;
+          font-size: 1.5rem;
+          font-weight: 100;
+          padding: .5em;
+          :hover{
+            color: white;
+          }
         }
+          a:hover{
+            text-decoration: none;
+          }
+        
 
         .btn {
           border-radius: 0;
@@ -345,7 +354,7 @@
     .product-cat-slider .product-cat-slide .content{
       bottom: 0;
       width: 100%;
-      h2 {text-align: center;}
+      text-align: center;
     }
   // -------------------------------------------------------------
 // Taxonomy Page ----------------------------------------------
@@ -363,13 +372,21 @@
       }
       .industry-description, .industry-description{
         width: 100%;
-        height: auto;
-        background: #F4F4F4;
+        height:25%;
+        position: relative;
+        top: -27.3%;
+        background: #004bac94;
         padding: 1em;
-        h3{text-align: center;}
-        p{
-          color: #222222;
+        h3{
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 100;
+          padding: .5em;
+          a{color: #febc5a;}
         }
+          
+        
+   
         a{
           color: #222222;
         }
@@ -418,7 +435,7 @@
 
   .categories-title {
     width: 10em;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #9a9a9a;
     margin: 0 auto !important;
     text-align: center !important;
     margin-top: 3em !important;
@@ -445,14 +462,16 @@
           padding: 0.5em;
           text-align: center;
           padding-top: 1em;
+           :hover{
+              color: white !important;
+              text-decoration: none;
+            }
           a {
             color: #febc5a;
             bottom: 0;
             font-size: 1.2rem;
             font-weight: 100;
-            :hover{
-              color: #004aac;
-            }
+           
           }
         }
       }
@@ -604,14 +623,25 @@
 
   // Contact Us Page ------------------------------------
   .contact-container {
+    h2{
+      text-align: center;
+      border-bottom: 1px solid #9a9a9a;
+      width: 5em;
+      padding-bottom: .5em;
+      margin: auto;
+    }
     .contact-box {
       display: flex !important;
       flex-wrap: wrap-reverse !important;
       width: 100% !important;
       margin: auto;
+      margin-top: 3em;
       .the-contact-info {
         max-width: 100% !important;
         margin-left: 1em;
+        h1{
+          color: #222222 !important;
+        }
       }
       .wpcf7-form {
         margin: auto;
@@ -644,7 +674,7 @@
     width: 90%;
     border: none;
     background: none;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #9a9a9a;
   }
 
   // Dashboard Blog/product Page ------------------------------------------------
@@ -684,17 +714,21 @@
       height: auto;
     }
     .the-product-description {
+      position: relative;
       background: #004bac94;
       max-width: 100%;
-      height: auto;
-      padding: 1em;
+      height: 30%;
+      top: -28.5%;
+      
       h2 {
         text-align: center;
+        padding-top: 1em;
+        font-size: 1.2rem;
         :hover {
-          color: #febc5a;
+          color: white;
         }
         a {
-          color: #222222;
+          color: #febc5a;
           text-align: center;
         }
       }
@@ -790,27 +824,34 @@
 // FAQ Page -------------------------------------------------------------------
 
   .faq-page-container, .resource-page-container{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 2em;
-    background: #F4F4F4;
+    margin: auto;
+    margin-bottom: 3em;
     img{
       width: 100%;
       height: auto;
     }
     .resource-content, .faq-content{
       margin-bottom: 3em;
+      margin-top: 3em;
     }
     .cstm-resource-title{
       margin-bottom: 3em;
       text-align: center;
-      h2{text-decoration: underline;}
+      h2{
+        border-bottom: 1px solid #9a9a9a;
+        padding-bottom: .5em;
+        width: 50%;
+        margin: auto;
+      }
     }
     .ans-container{
-      background: #9a9a9a;
+      background: #dadadb;
       padding: 1em;
       h4{
-        color: #004aac;
+        color: #222222;
       }
     }
     .resource-description{
@@ -818,6 +859,26 @@
     }
 
   }
+
+  // FAQ Animation ---------------------------------------------------
+  .panel{
+    display: none;
+  }
+  .accordion{
+    width: 50px;
+    padding: .5em;
+    .fa-plus{
+      color: #9a9a9a !important;
+   
+    }
+    .fas{
+         :hover{
+        color: white;
+      }
+    }
+  }
+  
+
 
 // Resources Page -----------------------------------------------------------------
 
@@ -1209,7 +1270,7 @@
           textarea {
             background: none !important;
             border: none !important;
-            border-bottom: 1px solid #222222 !important;
+            border-bottom: 1px solid #9a9a9a !important;
           }
           .contact-form-name {
             display: flex !important;
@@ -1219,7 +1280,7 @@
               width: 90%;
               border: none;
               background: none;
-              border-bottom: 1px solid #222222;
+              border-bottom: 1px solid #9a9a9a;
             }
           }
         }

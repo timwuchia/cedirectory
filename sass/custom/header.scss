@@ -12,10 +12,12 @@ header {
       color: theme-color("secondary");
     }
   }
-
-  #ajaxsearchlite1 .probox .proinput input,
-  div.asl_w .probox .proinput input {
-    color: #222 !important;
+  .header-search {
+    flex-grow: 1;
+    #ajaxsearchlite1 .probox .proinput input,
+    div.asl_w .probox .proinput input {
+      color: #222 !important;
+    }
   }
 
   .navbar-bottom {

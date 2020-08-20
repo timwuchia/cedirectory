@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src='/js/faq.js' type='text/javascript'></script>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -38,12 +39,7 @@
 				<?php if(get_field('ce_logo', 'options')) :?>
 					<a class='navbar-brand' href="/"><?php echo wp_get_attachment_image(get_field('ce_logo', 'options')['id'], 'logo')?></a>
 				<?php endif;?>
-				<div class='mobile-search'>
-				<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fas fa-bars"></i>
-				</button>
+				
 				<?php
 					wp_nav_menu(
 						array(
@@ -58,6 +54,12 @@
 						)
 					);
 				?>
+				<div class='header-search'>
+				<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
 				<?php
 					wp_nav_menu(
 						array(

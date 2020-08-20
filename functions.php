@@ -49,7 +49,7 @@ if ( ! function_exists( 'cedirectory_setup' ) ) :
 		add_image_size('general', 480, 360, true);
 		add_image_size('general-large', 600, 450, true);
 		add_image_size('product', 800, 500, true);
-		add_image_size('banner', 1920, 600, true);
+		add_image_size('banner', 1920, 1000, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -165,6 +165,7 @@ function cedirectory_scripts() {
 	wp_enqueue_script( 'cedirectory-slick', get_template_directory_uri() . '/src/js/slick.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'cedirectory-custom-script', get_template_directory_uri() . '/src/js/custom.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'cedirectory-bootstrapjs', get_template_directory_uri() . '/src/js/bootstrap.js', array('jquery'), _S_VERSION, true );
+		wp_enqueue_script( 'cedirectory-faqjs', get_template_directory_uri() . '/js/faq.js', array('jquery'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
