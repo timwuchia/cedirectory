@@ -12,6 +12,13 @@ header {
       color: theme-color("secondary");
     }
   }
+  .header-search {
+    flex-grow: 1;
+    #ajaxsearchlite1 .probox .proinput input,
+    div.asl_w .probox .proinput input {
+      color: #222 !important;
+    }
+  }
 
   .navbar-bottom {
     background-color: white !important;
@@ -38,6 +45,16 @@ header {
     height: auto;
     left: -5em;
     top: -3.3em;
+  }
+
+  ul.dropdown-menu {
+    a.dropdown-item {
+      &:hover,
+      &:active {
+        background-color: theme-color("primary");
+        color: #fff;
+      }
+    }
   }
   .navbar-brand img {
     width: 100%;
