@@ -313,19 +313,28 @@
         }
       }
       .featured-product-content {
-        height: 30%;
+        height: 25%;
         position: relative;
         z-index: 5;
-        top: -30%;
+        top: -25%;
         background: #004bac94;
         padding: 0.5em;
         display: flex;
         flex-direction: column;
         h3{
-          color: white;
-          text-transform: uppercase;
+          color: #febc5a;
           text-align: center;
+          font-size: 1.5rem;
+          font-weight: 100;
+          padding: .5em;
+          :hover{
+            color: white;
+          }
         }
+          a:hover{
+            text-decoration: none;
+          }
+        
 
         .btn {
           border-radius: 0;
@@ -345,7 +354,7 @@
     .product-cat-slider .product-cat-slide .content{
       bottom: 0;
       width: 100%;
-      h2 {text-align: center;}
+      text-align: center;
     }
   // -------------------------------------------------------------
 // Taxonomy Page ----------------------------------------------

@@ -22,7 +22,7 @@ get_header();
 
 
 			echo '<div class="about-image-banner-container">';
-					echo wp_get_attachment_image( get_field('about_us_banner_image', "option"), 'full' );
+					echo wp_get_attachment_image( get_field('about_us_banner_image', "option"), 'banner' );
 			echo '</div>';
 
 	echo'<div class="about-content-container">';
