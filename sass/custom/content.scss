@@ -210,8 +210,19 @@
       padding-right: 0 !important;
     }
     .blog-content{
-      padding: 1em !important;
+      padding: .5em !important;
       background: #dadadb;
+      p{
+        padding-left: 1em;
+        padding-right:1em;
+        word-break: break-word;
+      }
+      h2{
+        padding-top: 1em;
+        padding-bottom: .5em;
+        padding-left: .5em;
+        padding-right:.5em
+      }
     }
   }
 
