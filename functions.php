@@ -293,7 +293,6 @@ function ce_custom_query( $query ) {
 			),
 		);
 	}	
-	print_r($query);
 	
 	// update meta query
 	$query->set('meta_query',$meta_query);
