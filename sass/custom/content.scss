@@ -732,7 +732,7 @@
 
       .entry-title {
         a {
-          color: #222222;
+          color: #004aac;
         }
       }
       .entry-meta{
@@ -746,7 +746,7 @@
         height: auto !important;
       }
       .entry-summary {
-        background: #004bac94;
+        // background: #004bac94;
         padding: 1em;
         color: #febc5a;
         p{word-break: break-word;}
@@ -764,7 +764,7 @@
     }
   }
 
-  #post-93 {
+  article {
     position: relative;
     bottom: 0;
     margin: auto;
