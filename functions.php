@@ -162,8 +162,6 @@ function cedirectory_scripts() {
 	wp_enqueue_style( 'cedirectory-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'cedirectory-style', 'rtl', 'replace' );
 	wp_enqueue_script( 'ce-main-script', get_template_directory_uri() . '/dist/js/devwp.js', array('jquery'), _S_VERSION, true );
-		wp_enqueue_script( 'cedirectory-faqjs', get_template_directory_uri() . '/js/faq.js', array('jquery'), _S_VERSION, true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

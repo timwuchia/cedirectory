@@ -42,7 +42,7 @@ get_header();
 						echo '<a href="';
 							echo the_permalink($post->ID);
 							echo '">';
-							echo the_post_thumbnail('work-img');
+							echo the_post_thumbnail('general');
 						echo '<div class = "blog-content" >';
 							echo '<h3>';
 								echo get_the_title();
