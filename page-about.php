@@ -31,7 +31,7 @@ get_header();
 
 			echo '<div class="about-layer-one layer ">';
 				echo '<div class="description">';
-					echo '<h2> hello';
+					echo '<h2>';
 						echo the_field("about_us_first_content_title", "option");
 					echo '</h2>';
 					echo '<p>';
