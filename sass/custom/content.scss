@@ -419,7 +419,7 @@
     }
 
     .pagination{
-      width: 20em;
+      width: 30em;
       height: auto;
       margin: auto;
       margin-top: 3em;
@@ -427,8 +427,8 @@
       ul{
         display: flex;
         li{
-          padding-right: .5em;
-          a{color: #dadadb !important;}
+          padding-right: .8em;
+          a{color: #2222220f !important;}
         }
       }
             a:hover{
@@ -440,7 +440,7 @@
     }
   
     .site-breadcrumb{
-      color: #dadadb;
+      color: #2222220f;
     }
 
 
