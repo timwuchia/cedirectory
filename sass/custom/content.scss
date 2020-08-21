@@ -178,6 +178,33 @@
 
 @media screen and (min-width: 325px) {
 
+//  Main Nav ---------------------------------------------------------------------
+
+  .sub-menu{
+    ul:nth-child(2){
+      border-radius: 0;
+      width: 100%;
+      overflow: hidden;
+      background:#004aac;
+      padding: 0;
+      border: none;
+      margin-left: -1em;
+      
+      li{
+        border-radius: 0;
+          a:hover{
+          background: #febc5a;
+          color: #004aac;
+        }
+        a{
+          color: #febc5a;
+          border-radius: 0;
+        }
+      }
+    
+    }
+  }
+
 
 // Blog Page ------------------------------------------
   .blog-container{
