@@ -176,7 +176,7 @@
 
 // Start of Product / Industry --------
 
-@media screen and (min-width: 325px) {
+@media screen and (min-width: 320px) {
 
 //  Main Nav ---------------------------------------------------------------------
 
@@ -285,7 +285,6 @@
             img{
                 width: 100%;
                 height: auto;
-                padding: 1em;
             }
         }
         .about-content-container{
@@ -354,10 +353,10 @@
         }
       }
       .featured-product-content {
-        height: 30%;
+        height: 35%;
         position: relative;
         z-index: 5;
-        top: -30%;
+        top: -35%;
         background: #004bac94;
         padding: 0.5em;
         display: flex;
@@ -385,6 +384,14 @@
       }
     }
   }
+
+  .top-banner{
+    div:not([id='']){
+      padding: 0 !important;
+    }
+  }
+
+
   // Category slidder on the home page -------------
     .product-cat-slider .product-cat-slide{
       padding: 0 !important;
@@ -396,8 +403,16 @@
       bottom: 0;
       width: 100%;
       text-align: center;
+      line-height: 2rem;
+      
     }
   // -------------------------------------------------------------
+// Archive Prodcts Page ------------------------------------------------
+    .row img{
+      width: 100%;
+      height: auto;
+    }
+
 // Taxonomy Page ----------------------------------------------
   .taxonomy-container{
     width: 100%;
@@ -411,13 +426,21 @@
         width: 100%;
         height: auto;
       }
-      .industry-description, .industry-description{
-        width: 100%;
-        height:25%;
-        position: relative;
-        top: -27.3%;
-        background: #004bac94;
-        padding: 1em;
+    .industry-description, .industry-description{
+      height: 8em;
+      position: relative;
+      z-index: 5;
+      top: -8em;
+      background: #004bac94;
+      padding: 0.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
         h3{
           text-align: center;
           font-size: 1.5rem;
@@ -425,9 +448,6 @@
           padding: .5em;
           a{color: #febc5a;}
         }
-          
-        
-   
         a{
           color: #222222;
         }
@@ -436,7 +456,7 @@
           margin: auto;
         }
       }
-    }
+    
 // ------------------------------------------------------------
 // Pagination / Breakcrumbs-------------------------------------------------
 
@@ -446,31 +466,42 @@
     }
 
     .pagination{
-      width: 30em;
+      width: 100%;
       height: auto;
       margin: auto;
       margin-top: 3em;
       margin-bottom: 3em;
       ul{
         display: flex;
+        width: 15em;
+        margin: auto;
         li{
-          padding-right: .8em;
-          a{color: #2222220f !important;}
+          padding-right: 1em;
+          a{color: #9a9a9a !important;}
         }
       }
             a:hover{
               color:#004aac!important;
+              text-decoration: none;
             }
             a:active{
               color:  #febc5a;
             }
     }
-  
     .site-breadcrumb{
-      color: #2222220f;
+      color: #9a9a9a;
+      font-size: .8rem;
+      a{
+        color: #222222;
+        font-size: .8rem;
+      }
     }
-
-
+    .taxonomy-filter{
+      .orderby-options, .order-options, .country-options{
+        border: none;
+        border-bottom: 1px solid #9a9a9a;
+      }
+    }
 
   // Categories Page Start -------------------------------------------------------------
 
@@ -512,7 +543,6 @@
             bottom: 0;
             font-size: 1.2rem;
             font-weight: 100;
-           
           }
         }
       }
@@ -548,6 +578,7 @@
       display: grid;
       .wpuf-label {
         width: 60%;
+        font-size: 1.3rem;
       }
       .wpuf-fields {
         // width: 100%;
@@ -561,104 +592,8 @@
       }
     }
   }
- 
 
-  // Form Color Over Ride--------------------------------------------------------
 
-  // .wpuf-form-add.wpuf-form-layout3
-  //   ul.wpuf-form
-  //   li
-  //   .wp-editor-wrap:hover
-  //   .mce-statusbar,
-  // .wpuf-form-add.wpuf-form-layout3
-  //   ul.wpuf-form
-  //   li
-  //   .wp-editor-wrap:hover
-  //   .mce-toolbar-grp,
-  // .wpuf-form-add.wpuf-form-layout3
-  //   ul.wpuf-form
-  //   li
-  //   .wp-editor-wrap:hover
-  //   .wp-editor-container {
-  //   border-color: #2222220f !important;
-  // }
-
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
-  //   font-size: 15px;
-  // }
-
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
-  //   border-color: #2222220f !important;
-  // }
-
-  // .wpuf-form-add.wpuf-form-layout3
-  //   ul.wpuf-form
-  //   li.wpuf-submit
-  //   input[type="submit"] {
-  //   background: #222222 !important;
-  //   border-color: #222222 !important;
-  //   -moz-box-shadow: 0 1px 0 #8726d3 !important;
-  //   -webkit-box-shadow: 0 1px 0 #8726d3 !important;
-  //   box-shadow: none !important;
-  //   text-shadow: none !important;
-  //   border-radius: 0 !important;
-  // }
-  // .wpuf-form-add li .wpuf-submit:active {
-  //   background: #004aac;
-  // }
-
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li input:visited,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li textarea:visited,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li select:visited,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:active,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:hover,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:focus,
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li a:visited {
-  //   background: #004aac;
-  // }
-
-  // .mce-container,
-  // .mce-container *,
-  // .mce-widget,
-  // .mce-widget *,
-  // .mce-reset,
-  // .wpuf-form-add.wpuf-form-layout3
-  //   ul.wpuf-form
-  //   li
-  //   .wpuf-fields
-  //   a.file-selector {
-  //   border: none !important;
-  //   box-shadow: none !important;
-  // }
-
-  // .wpuf-form-add.wpuf-form-layout3 ul.wpuf-form li {
-  //   display: grid;
-  // }
-  // ----------------------------------------------------
 
   // Contact Us Page ------------------------------------
   .contact-container {
@@ -926,9 +861,13 @@
     }
   }
   
-
-
-// Resources Page -----------------------------------------------------------------
+// Cookie------------------------------------------------------------       
+  #cookie-law-info-again{
+    opacity: .4;
+    box-shadow: none;
+    background-color: #dadadb !important;
+    right: 0 !important;
+  }
 
 
 
@@ -1022,6 +961,9 @@
   //Home Page -----------------------------------------------
   .featured-product-container {
     max-width: 55% !important;
+  }
+    .product-cat-slider .product-cat-slide .content{
+    font-size: 1.2rem;
   }
 
   // Search Result Page ------------------------------------
@@ -1236,6 +1178,9 @@
       }
     }
   }
+
+
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1276,22 +1221,11 @@
 
   // Home Page Start-------------------------------
 
-  // .custom-container {
-  //   padding-left: 5em;
-  //   padding-right: 5em;
-  //   .featured-product-content {
-  //     position: relative;
-  //     height: 30%;
-  //     background: #004bac94;
-  //     top: -30%;
-  //     padding: 1em;
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  // }
 
    .product-cat-slider .product-cat-slide .content{
       bottom: -110%;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
 
   // -----------------------------
