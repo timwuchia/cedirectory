@@ -1,4 +1,4 @@
-<div class='footer-above'>
+<div id='footer-above' class='footer-above'>
     <div class='bg-secondary text-white py-4'>
         <div class='container'>
             <?php

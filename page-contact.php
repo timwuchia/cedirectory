@@ -10,7 +10,7 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <div class='py-5 container contact-container'>
+        <div id='primary' class='py-5 container contact-container'>
             <h2>Inquire</h2>
             <div class='contact-box row'>
                 

@@ -10,7 +10,7 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <div class='py-5 container registration-page'>
+        <div id='primary' class='py-5 container registration-page'>
             <?php if(function_exists('get_field')) : ?>
             <?php 
                 $registration_form_page_title = get_field('registration_form_page_title');

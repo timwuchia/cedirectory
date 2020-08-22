@@ -1,12 +1,27 @@
 (function ($) {
   $(document).ready(function () {
+    // initialize min height
+    $site_header_height = $("header").height();
+    $site_footer_height = $("footer").height();
+    $site_footer_above_height = $(".footer-above").height();
+    init_primary_minheight =
+      "calc(100vh - " +
+      $site_header_height +
+      "px - " +
+      $site_footer_height +
+      "px - " +
+      $site_footer_above_height +
+      "px)";
+    console.log(init_primary_minheight);
+    $("#primary").css("min-height", init_primary_minheight);
+
     $(".single-image-slider-wrapper").slick({
       arrows: true,
       dots: false,
     });
     $(".top-banner").slick({
       arrows: true,
-      dots: true,
+      dots: false,
     });
     $(".product-cat-slider").slick({
       dots: false,
