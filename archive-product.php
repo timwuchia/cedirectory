@@ -25,12 +25,12 @@ get_header();
             ?>
             </div>
 			<?php
-            $directory_image = get_field('directory_image', 'options');
-            $directory_link = get_field('directory_link', 'options');
-            if($directory_link){
-                $directory_link_url = $directory_link['url'];
-                $directory_link_title = $directory_link['title'];
-                $directory_link_target = $directory_link['target'] ? $directory_link['target'] : '_self';
+            $directive_image = get_field('directive_image', 'options');
+            $directive_link = get_field('directive_link', 'options');
+            if($directive_link){
+                $directive_link_url = $directive_link['url'];
+                $directive_link_title = $directive_link['title'];
+                $directive_link_target = $directive_link['target'] ? $directive_link['target'] : '_self';
             }
             $industry_image = get_field('industry_image', 'options');
             $industry_link = get_field('industry_link', 'options');
@@ -41,10 +41,10 @@ get_header();
             }
             ?>
                 <div class='row'>
-                    <?php if($directory_link) : ?>
-                        <a class="d-block col-md-6" href="<?php echo esc_url( $directory_link_url ); ?>" target="<?php echo esc_attr( $directory_link_target ); ?>">
-                        <?php echo wp_get_attachment_image($directory_image['ID'], 'general-large'); ?>
-                        <h3 class='mt-3 text-center'><?php echo esc_html( $directory_link_title ); ?></h3>
+                    <?php if($directive_link) : ?>
+                        <a class="d-block col-md-6" href="<?php echo esc_url( $directive_link_url ); ?>" target="<?php echo esc_attr( $directive_link_target ); ?>">
+                        <?php echo wp_get_attachment_image($directive_image['ID'], 'general-large'); ?>
+                        <h3 class='mt-3 text-center'><?php echo esc_html( $directive_link_title ); ?></h3>
                         </a>
                     <?php endif; ?>
                     <?php if($industry_link) : ?>
