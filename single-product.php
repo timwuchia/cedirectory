@@ -65,7 +65,7 @@ get_header();
                     </ul>
                     <?php endif; ?>
                  
-                    <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email', $author_id);  ?>">Contact Seller</a>
+                    <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>
                     </div>
                 </div>
             </div>
