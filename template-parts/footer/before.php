@@ -8,6 +8,9 @@
                 <div class='col-md-8 pr-3'><?php echo $content; ?></div>
                 <?php if(have_rows('footer_cta_buttons', 'options')) : ?>
                     <div class='footer-above-ctas d-flex'>
+                    <?php if(!is_user_logged_in()) : ?>
+                        <a class="btn btn-primary" href="/register-user">Register</a>
+                    <?php endif; ?>
                     <?php while(have_rows('footer_cta_buttons', 'options')) : the_row(); ?>
                         <?php 
                         $link = get_sub_field('link', 'options');
