@@ -39,12 +39,12 @@ get_header();
 					echo '</p>';
 				echo '</div>';
 					
-						echo wp_get_attachment_image( get_field('about_us_layer_one_image', "option"), 'full' );
+						echo wp_get_attachment_image( get_field('about_us_layer_one_image', "option"), 'general-large' );
 			echo '</div>';
 
 			echo '<div class="about-layer-two layer">';
 							
-						echo wp_get_attachment_image( get_field('about_us_layer_two_image', "option"), 'full' );
+						echo wp_get_attachment_image( get_field('about_us_layer_two_image', "option"), 'general-large' );
 					echo '<div class="description">';
 						echo '<h2>';
 						echo the_field("about_us_second_content_title", "option");
@@ -58,9 +58,9 @@ get_header();
 
 			echo '<div class="about-layer-three layer">';
 					echo '<div class="layer-three-images">';
-						echo wp_get_attachment_image( get_field('image_one', "option"), 'full' );
-						echo wp_get_attachment_image( get_field('image_two', "option"), 'full' );
-						echo wp_get_attachment_image( get_field('image_three', "option"), 'full' );
+						echo wp_get_attachment_image( get_field('image_one', "option"), 'general' );
+						echo wp_get_attachment_image( get_field('image_two', "option"), 'general' );
+						echo wp_get_attachment_image( get_field('image_three', "option"), 'general' );
 					echo '</div>';
 
 					echo '<div class="btm-description description layer">';
