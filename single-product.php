@@ -55,14 +55,11 @@ get_header();
                     ?>
                     <?php the_content(); ?>
                     <?php
-                    $countries = get_field('country');
-                    if( $countries ): ?>
-                    <p>Countries: </p>
-                    <ul>
-                        <?php foreach( $countries as $country ): ?>
-                            <li><span class="color-<?php echo $country['value']; ?>"><?php echo $country['label']; ?></span></li>
-                        <?php endforeach; ?>
-                    </ul>
+                    $country = get_field_object('country');
+                    $value = $country['value'];
+                    $label = $country['choices'][ $value ];
+                    if( $country ): ?>
+                    <p>Country: <span class="color-<?php echo esc_attr($value); ?>"><?php echo esc_html($label); ?></p>
                     <?php endif; ?>
                  
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>
