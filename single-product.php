@@ -59,7 +59,7 @@ get_header();
                     $value = $country['value'];
                     $label = $country['choices'][ $value ];
                     if( $country ): ?>
-                    <p>Country: <span class="color-<?php echo esc_attr($value); ?>"><?php echo esc_html($label); ?></p>
+                    <p>Country: <span><?php echo esc_html($label); ?></span></p>
                     <?php endif; ?>
                  
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>
