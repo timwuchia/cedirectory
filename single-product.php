@@ -23,19 +23,20 @@ get_header();
                 <div class='bg-light-gray col-lg-8 p-4'>
                     <?php 
                     $product_gallery = get_field('product_gallery');
+                    print_r($product_gallery);
                     $size = 'product'; // (thumbnail, medium, large, full or custom size)
                     if( $product_gallery ): ?>
                         <ul id="single-product-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+                                    <?php echo wp_get_attachment_image( $image_id['ID'], $size ); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
                         <ul id="thumbnail-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+                                    <?php echo wp_get_attachment_image( $image_id['ID'], $size ); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -55,11 +56,9 @@ get_header();
                     ?>
                     <?php the_content(); ?>
                     <?php
-                    $country = get_field_object('country');
-                    $value = $country['value'];
-                    $label = $country['choices'][ $value ];
+                    $country = get_field('country');
                     if( $country ): ?>
-                    <p>Country: <span><?php echo esc_html($label); ?></span></p>
+                    <p>Country: <span><?php echo esc_html($country['label']); ?></span></p>
                     <?php endif; ?>
                  
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>
