@@ -39,6 +39,9 @@ get_header();
 		<?php endif; ?>
 
 	<?php endwhile; ?>
+	<?php
+	echo ce_pagination();
+	?>
 	</div>
 <?php else: ?>
         <div class='container py-5 text-center'>
