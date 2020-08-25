@@ -55,8 +55,11 @@ get_header();
                     ?>
                     <?php the_content(); ?>
                     <?php
-                    $country = get_field('country');
-                    if( $country ): ?>
+                    $selected_country = get_field('country');
+                    $countries =  acf_get_field('country')['choices'];
+                    print_r($selected_country);
+                    print_r($countries);
+                    if( $selected_country ): ?>
                     <p>Country: <span><?php echo esc_html($country); ?></span></p>
                     <?php endif; ?>
                  
