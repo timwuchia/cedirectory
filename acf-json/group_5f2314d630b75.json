@@ -95,7 +95,7 @@
             "allow_null": 1,
             "multiple": 0,
             "ui": 0,
-            "return_format": "array",
+            "return_format": "value",
             "ajax": 0,
             "placeholder": ""
         },
@@ -136,5 +136,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1598368258
+    "modified": 1598368584
 }

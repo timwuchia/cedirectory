@@ -57,10 +57,8 @@ get_header();
                     <?php
                     $selected_country = get_field('country');
                     $countries =  acf_get_field('country')['choices'];
-                    print_r($selected_country);
-                    print_r($countries);
                     if( $selected_country ): ?>
-                    <p>Country: <span><?php echo esc_html($country); ?></span></p>
+                    <p>Country: <span><?php echo esc_html($countries[$selected_country]); ?></span></p>
                     <?php endif; ?>
                  
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>
