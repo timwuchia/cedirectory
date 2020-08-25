@@ -44,9 +44,10 @@ get_header();
 			</div>
 			<div class='container pb-5'>
 			<?php
-			
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
+			if(is_user_logged_in()) : 
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
 			endif;
 			?>
 			</div>
