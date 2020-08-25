@@ -60,7 +60,7 @@
 					);
 				?>
 				<div class='header-search d-none d-lg-block'>
-				<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+				<?php echo do_shortcode('[wpdreams_ajaxsearchpro id=1]'); ?>
 				</div>
 				
 				<?php
