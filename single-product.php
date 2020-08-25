@@ -82,6 +82,10 @@ get_header();
 				<?php endif ?>
 				</div>
         </div>
+
+        <?php  
+            endwhile; // End of the loop.
+		?>
         
     </main><!-- #main -->
     
