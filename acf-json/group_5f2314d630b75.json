@@ -62,17 +62,40 @@
                 "id": ""
             },
             "choices": {
-                "uk": "UK",
-                "germany": "Germany",
+                "austria": "Austria",
+                "belgium": "Belgium",
+                "bulgaria": "Bulgaria",
+                "croatia": "Croatia",
+                "republic_of_cyprus": "Republic of Cyprus",
+                "czech_republic": "Czech Republic",
+                "denmark": "Denmark",
+                "estonia": "Estonia",
+                "finland": "Finland",
                 "france": "France",
+                "germany": "Germany",
+                "greece": "Greece",
+                "hungary": "Hungary",
+                "ireland": "Ireland",
+                "italy": "Italy",
+                "latvia": "Latvia",
+                "lithuania": "Lithuania",
+                "luxembourg": "Luxembourg",
+                "malta": "Malta",
+                "netherlands": "Netherlands",
+                "poland": "Poland",
+                "portugal": "Portugal",
+                "romania": "Romania",
+                "slovakia": "Slovakia",
+                "slovenia": "Slovenia",
                 "spain": "Spain",
-                "italy": "Italy"
+                "sweden": "Sweden",
+                "uk": "UK"
             },
             "default_value": false,
             "allow_null": 1,
             "multiple": 0,
             "ui": 0,
-            "return_format": "label",
+            "return_format": "array",
             "ajax": 0,
             "placeholder": ""
         },
@@ -113,5 +136,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1598363688
+    "modified": 1598365325
 }
