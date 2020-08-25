@@ -351,19 +351,20 @@
         }
       }
       .featured-product-content {
-        height: 35%;
+        height: 25%;
         position: relative;
         z-index: 5;
-        top: -35%;
+        top: -25%;
         background: #004bac94;
-        padding: 0.5em;
+        padding: 1em;
         display: flex;
         flex-direction: column;
+        margin: auto;
         h3 {
           color: #febc5a;
           text-align: center;
           font-size: 1.5rem;
-          font-weight: 100;
+          font-weight: 400;
           padding-top: 0.5em;
           :hover {
             color: white;
