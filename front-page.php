@@ -45,7 +45,7 @@ get_header();
                                     </a>
                                     </div>
                                     <div>
-                                        <a class='btn btn-secondary mb-3' href="#">Contact Seller</a>
+                                         <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>
                                         
                                     </div>
                                 </div>
