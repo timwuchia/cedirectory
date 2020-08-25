@@ -62,31 +62,6 @@
                 "param": "current_user",
                 "operator": "==",
                 "value": "viewing_back"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "post"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "page"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "product"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "wpuf_coupon"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "wpuf_subscription"
             }
         ]
     ],
@@ -98,5 +73,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1597621594
+    "modified": 1598316381
 }
