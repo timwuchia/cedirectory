@@ -58,7 +58,7 @@ get_header();
                     $country = get_field('country');
                     print_r( $country);
                     if( $country ): ?>
-                    <p>Country: <span><?php echo esc_html($country['label']); ?></span></p>
+                    <p>Country: <span><?php echo esc_html($country); ?></span></p>
                     <?php endif; ?>
                  
                     <a class='btn btn-secondary' href="mailto:<?php echo get_the_author_meta('user_email');  ?>">Contact Seller</a>

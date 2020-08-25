@@ -68,11 +68,11 @@
                 "spain": "Spain",
                 "italy": "Italy"
             },
-            "default_value": [],
+            "default_value": false,
             "allow_null": 1,
             "multiple": 0,
             "ui": 0,
-            "return_format": "array",
+            "return_format": "label",
             "ajax": 0,
             "placeholder": ""
         },
@@ -113,5 +113,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1598360898
+    "modified": 1598363688
 }
