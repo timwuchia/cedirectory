@@ -15,10 +15,12 @@
                 "class": "",
                 "id": ""
             },
-            "min": "",
-            "max": "",
+            "return_format": "id",
+            "preview_size": "medium",
             "insert": "append",
             "library": "uploadedTo",
+            "min": "",
+            "max": "",
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -109,7 +111,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1598336217
+    "modified": 1598360898
 }

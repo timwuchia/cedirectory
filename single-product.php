@@ -28,14 +28,14 @@ get_header();
                         <ul id="single-product-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $image_id['ID'], $size ); ?>
+                                    <?php echo wp_get_attachment_image( $image_id, $size ); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
                         <ul id="thumbnail-slider">
                             <?php foreach( $product_gallery as $image_id ): ?>
                                 <li>
-                                    <?php echo wp_get_attachment_image( $image_id['ID'], $size ); ?>
+                                    <?php echo wp_get_attachment_image( $image_id, $size ); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -56,6 +56,7 @@ get_header();
                     <?php the_content(); ?>
                     <?php
                     $country = get_field('country');
+                    print_r( $country);
                     if( $country ): ?>
                     <p>Country: <span><?php echo esc_html($country['label']); ?></span></p>
                     <?php endif; ?>
