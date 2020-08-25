@@ -32,7 +32,7 @@ get_header();
 			<div class="article-content">
 				<p><?php the_excerpt(); ?></p>
 			</div>
-			<a class="d-inline-block mt-4 text-start text-secondary" href="<?php the_permalink(); ?>">Learn More</a>
+		
         </div>
         <?php if (($wp_query->current_post +1) != ($wp_query->post_count)): ?>
 			<hr class="lg d-none d-md-block">
