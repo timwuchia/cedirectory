@@ -56,7 +56,6 @@ get_header();
                     <?php the_content(); ?>
                     <?php
                     $country = get_field('country');
-                    print_r( $country);
                     if( $country ): ?>
                     <p>Country: <span><?php echo esc_html($country); ?></span></p>
                     <?php endif; ?>
