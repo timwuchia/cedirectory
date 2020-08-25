@@ -57,11 +57,6 @@
                 "param": "current_user",
                 "operator": "==",
                 "value": "logged_in"
-            },
-            {
-                "param": "current_user",
-                "operator": "==",
-                "value": "viewing_back"
             }
         ]
     ],
@@ -73,5 +68,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1598322445
+    "modified": 1598331664
 }
