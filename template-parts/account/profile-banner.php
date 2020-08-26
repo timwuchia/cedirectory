@@ -12,7 +12,7 @@ if(function_exists('get_field')){
     };
      
 	if($profile_image){
-        echo wp_get_attachment_image($profile_image, 'general');
+        echo wp_get_attachment_image($profile_image, 'medium');
     };
        echo '<div class="profile-welcome">';
        echo '<h2> Welcome </h2>';
