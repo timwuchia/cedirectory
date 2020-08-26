@@ -26,7 +26,8 @@ get_header();
             <?php
                 $term = get_queried_object();
                 $image = get_field("product_category_featured_image", $term);
-             
+                $author_id = get_the_author_id();
+                
             ?>
         <div class='taxonomy-filter'>
             <?php get_template_part('inc/post-filter'); ?>
@@ -34,15 +35,10 @@ get_header();
             <?php if(have_posts()) : ?>
             <div class='taxonomy-container'>
             <?php while(have_posts()) : the_post(); ?>
-            <div class='industry-content-container'>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('general'); ?></a>
-                <div class='industry-description'>
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3>
-                    
-                    <div class="contact-button">
-                    <a class='btn btn-secondary' href="mailto: <?php echo get_the_author_meta('user_email', $author_id)?>">Contact Seller</a>
-                </div>
-                </div>
+            <div class='directive-content pb-4'>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <p class='mb-3'><?php the_author_meta('display_name', $author_id);?></p>
+                <p><a class='btn btn-secondary' href="mailto: <?php echo get_the_author_meta('user_email', $author_id)?>">Contact Seller</a></p>
             </div>
             <?php endwhile; ?>
             </div>
