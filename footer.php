@@ -64,7 +64,7 @@
 						<h3 class='text-secondary'>Newsletter</h3>
 						
 						    <?php
-                echo do_shortcode( '[hubspot type=form portal=8336528 id=b78a59fd-8fc2-4f4d-97b4-ce18cb2cbbf7]');
+                echo do_shortcode( '[hubspot type=form portal=8002821 id=9aa91df9-6432-4fbf-92ce-fa8ca2279160]');
             ?>
 						
 					
