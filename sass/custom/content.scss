@@ -415,13 +415,16 @@
     }
   
   .taxonomy-container {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-top: 3em;
     padding: 1em;
     .industry-content{
       display: block;
       justify-content: space-between;
+      margin-bottom: 2em;
+      border-bottom: 1px solid #F4F4F4;
+      margin-left: 3em;
       h3{
         word-break: break-all;
       }
@@ -960,8 +963,8 @@
     .industry-content{
       display: flex;
       justify-content: space-between;
-      padding-left: 7em;
-      padding-right: 1em;
+      margin-left: 7em;
+      margin-right: 1em;
       :nth-child(3){
         padding-right: 1em;
       }

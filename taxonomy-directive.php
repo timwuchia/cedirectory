@@ -33,10 +33,20 @@ get_header();
             <?php get_template_part('inc/post-filter'); ?>
         </div>
         <div class='list-title'>
-            <h3>Product</h3>
-            <h3>Seller</h3>
-            <h3>Date</h3>
+            <div>
+                <h3>Product</h3>
+                <div class='list-title-line'></div>
+            </div>
+            <div>
+                <h3>Seller</h3>
+                <div class='list-title-line'></div>
+            </div>
+            <div>
+                <h3>Date</h3>
+                <div class='list-title-line'></div>
+            </div>
         </div>
+
             <?php if(have_posts()) : ?>
             <div class='taxonomy-container'>
             <?php while(have_posts()) : the_post(); ?>
