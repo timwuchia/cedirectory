@@ -38,7 +38,7 @@ get_header();
                 <div class='list-title-line'></div>
             </div>
             <div>
-                <h3>Seller</h3>
+                <h3>Country</h3>
                 <div class='list-title-line'></div>
             </div>
             <div>
@@ -52,7 +52,12 @@ get_header();
             <?php while(have_posts()) : the_post(); ?>
             <div class='industry-content pb-4'>
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <p class='mb-3'><?php the_author_meta('display_name', $author_id);?></p>
+                        <?php
+                    $selected_country = get_field('country');
+                    $countries =  acf_get_field('country')['choices'];
+                    if( $selected_country ): ?>
+                    <p><?php echo esc_html($countries[$selected_country]); ?></p>
+                    <?php endif; ?>
                  <p><?php echo get_the_date(); ?></p>
           
             </div>
