@@ -169,10 +169,7 @@
         border-color: none !important;
       }
     }
-    .products .btn-primary{
-      position: relative;
-      left: 50vw;
-    }
+  
   }
   .page-head{
     display: none;
@@ -696,11 +693,19 @@
     .post-title {
       background: #004bac94;
       max-width: 100%;
-      height: auto;
-      padding: 1em;
+      height: 30%;
+      position: relative;
+      top: -28%;
+
+
+      h2{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 1em;
+      }
 
       a {
-        color: #222222 !important;
+        color: #febc5a !important;
         text-align: center;
         :hover {
           color: #febc5a;
