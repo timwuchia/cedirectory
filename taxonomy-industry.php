@@ -37,6 +37,7 @@ get_header();
             <?php while(have_posts()) : the_post(); ?>
             <div class='industry-content pb-4'>
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <p><?php echo get_the_date(); ?></p>
                 <p class='mb-3'><?php the_author_meta('display_name', $author_id);?></p>
                 <p><a class='btn btn-secondary' href="mailto: <?php echo get_the_author_meta('user_email', $author_id)?>">Contact Seller</a></p>
             </div>
