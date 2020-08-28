@@ -410,10 +410,33 @@
   }
 
   // Taxonomy Page ----------------------------------------------
+    .list-title{
+      width: 100%;
+      display: flex;
+      padding: 1em;
+      justify-content: space-between; 
+      padding-right: 1em;
+      text-align: center;
+      h3{
+        font-weight: 100;
+        font-size: 1rem;
+      }
+    }
+    .list-title-line{
+      border-bottom: 1px solid #9a9a9a;
+      width: 5em;
+      position: relative;
+      margin: auto;
+    }
+    
   .taxonomy-container {
     width: 100%;
     height: auto;
     padding: 1em;
+    .industry-content{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .industry-content-container,
@@ -917,9 +940,16 @@
   }
 
   // Taxonomy Page-----------------------------
+  .list-title{
+    width: 90%;
+    display: flex;
+    padding-left: 8em;
+  }
   .taxonomy-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    .industry-content{
+      padding-left: 7em;
+    }
   }
   .industry-content-container,
   .directive-content-container {
@@ -1061,10 +1091,10 @@
   }
 
   // Taxonomy  Page-----------------------------
-  .taxonomy-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  // .taxonomy-container {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
 
   // About Page ------------------------------------------
 
@@ -1191,11 +1221,7 @@
   }
 
   // Taxonomy  Page-----------------------------
-  .taxonomy-container {
-    padding-left: 5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+
 
   // Custom Container -------------------------
   .wpuf-form-add {
