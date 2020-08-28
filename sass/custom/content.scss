@@ -419,7 +419,7 @@
     height: auto;
     margin-top: 3em;
     padding: 1em;
-    .industry-content{
+    .industry-content, .directive-content{
       display: block;
       justify-content: space-between;
       margin-bottom: 2em;
@@ -960,7 +960,7 @@
     width: 90%;
     height: auto;
     padding: 1em;
-    .industry-content{
+    .industry-content, .directive-content{
       display: flex;
       justify-content: space-between;
       margin-left: 7em;
