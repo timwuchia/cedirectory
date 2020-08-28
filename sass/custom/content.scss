@@ -169,7 +169,19 @@
         border-color: none !important;
       }
     }
+    .products .btn-primary{
+      position: relative;
+      left: 50vw;
+    }
   }
+  .page-head{
+    display: none;
+  }
+  .items-table-container{
+    padding-left: 5em;
+    padding-top: 2em;
+  }
+
 }
 // end of Dashboard -----------
 
