@@ -175,7 +175,6 @@
     display: none;
   }
   .items-table-container{
-    padding-left: 5em;
     padding-top: 2em;
   }
 
@@ -185,6 +184,21 @@
 // Start of Product / Industry --------
 
 @media screen and (min-width: 320px) {
+
+
+  .wpuf-dashboard-container{
+    .items-table{
+      td{
+         &:last-child{
+          >a{
+            &:first-child{
+              display: none;
+            }
+          }
+        }
+      }
+    } 
+  }
   //  Main Nav ---------------------------------------------------------------------
 
   .sub-menu {
@@ -1068,6 +1082,10 @@
     padding: 3em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+    .items-table-container{
+    padding-left: 5em;
   }
 }
 // end of @media min-width 768px----------------------
