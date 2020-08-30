@@ -32,13 +32,34 @@ get_header();
         <div class='taxonomy-filter'>
             <?php get_template_part('inc/post-filter'); ?>
         </div>
+        <div class='list-title'>
+            <div>
+                <h3>Product</h3>
+                <div class='list-title-line'></div>
+            </div>
+            <div>
+                <h3>Country</h3>
+                <div class='list-title-line'></div>
+            </div>
+            <div>
+                <h3>Date</h3>
+                <div class='list-title-line'></div>
+            </div>
+        </div>
+
             <?php if(have_posts()) : ?>
             <div class='taxonomy-container'>
             <?php while(have_posts()) : the_post(); ?>
             <div class='directive-content pb-4'>
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <p class='mb-3'><?php the_author_meta('display_name', $author_id);?></p>
-                <p><a class='btn btn-secondary' href="mailto: <?php echo get_the_author_meta('user_email', $author_id)?>">Contact Seller</a></p>
+                   <?php
+                    $selected_country = get_field('country');
+                    $countries =  acf_get_field('country')['choices'];
+                    if( $selected_country ): ?>
+                    <p><?php echo esc_html($countries[$selected_country]); ?></p>
+                    <?php endif; ?>
+                 <p><?php echo get_the_date(); ?></p>
+            
             </div>
             <?php endwhile; ?>
             </div>

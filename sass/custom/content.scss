@@ -170,12 +170,31 @@
       }
     }
   }
+  .page-head {
+    display: none;
+  }
+  .items-table-container {
+    padding-top: 2em;
+  }
 }
 // end of Dashboard -----------
 
 // Start of Product / Industry --------
 
 @media screen and (min-width: 320px) {
+  .wpuf-dashboard-container {
+    .items-table {
+      td {
+        &:last-child {
+          > a {
+            &:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
   //  Main Nav ---------------------------------------------------------------------
 
   .sub-menu {
@@ -410,10 +429,26 @@
   }
 
   // Taxonomy Page ----------------------------------------------
+  .list-title {
+    display: none;
+  }
+
   .taxonomy-container {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin-top: 3em;
     padding: 1em;
+    .industry-content,
+    .directive-content {
+      display: block;
+      justify-content: space-between;
+      margin-bottom: 2em;
+      border-bottom: 1px solid #f4f4f4;
+      margin-left: 3em;
+      h3 {
+        word-break: break-all;
+      }
+    }
   }
 
   .industry-content-container,
@@ -669,11 +704,18 @@
     .post-title {
       background: #004bac94;
       max-width: 100%;
-      height: auto;
-      padding: 1em;
+      height: 30%;
+      position: relative;
+      top: -28%;
+
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 1em;
+      }
 
       a {
-        color: #222222 !important;
+        color: #febc5a !important;
         text-align: center;
         :hover {
           color: #febc5a;
@@ -917,10 +959,50 @@
   }
 
   // Taxonomy Page-----------------------------
-  .taxonomy-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+  .list-title {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8em;
+    padding-right: 3em;
+    padding-top: 2em;
+    text-align: center;
+    h3 {
+      font-weight: 100;
+      font-size: 1rem;
+    }
+    :nth-child(2) {
+      padding-left: 8em;
+    }
   }
+  .list-title-line {
+    border-bottom: 1px solid #9a9a9a;
+    width: 5em;
+    position: relative;
+    margin: auto;
+  }
+
+  .taxonomy-container {
+    width: 90%;
+    height: auto;
+    padding: 1em;
+    .industry-content,
+    .directive-content {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 7em;
+      margin-right: 1em;
+      :nth-child(3) {
+        padding-right: 1em;
+      }
+      h3 {
+        width: 10em;
+        word-break: break-all;
+      }
+    }
+  }
+
   .industry-content-container,
   .directive-content-container {
     margin: 1em;
@@ -998,6 +1080,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .items-table-container {
+    padding-left: 5em;
+  }
 }
 // end of @media min-width 768px----------------------
 
@@ -1061,10 +1147,10 @@
   }
 
   // Taxonomy  Page-----------------------------
-  .taxonomy-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  // .taxonomy-container {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  // }
 
   // About Page ------------------------------------------
 
@@ -1191,11 +1277,6 @@
   }
 
   // Taxonomy  Page-----------------------------
-  .taxonomy-container {
-    padding-left: 5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 
   // Custom Container -------------------------
   .wpuf-form-add {
