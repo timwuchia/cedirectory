@@ -35,7 +35,7 @@ get_header();
                             <div class='featured-product col-lg-4'>
                                 <div class='featured-product-image'>
                                       <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail('general'); ?>
+                                    <?php the_post_thumbnail('full'); ?>
                                     </a>
                                 </div>
                                 <div class='featured-product-content d-flex justify-content-between align-items-center'>

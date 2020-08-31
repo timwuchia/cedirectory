@@ -366,7 +366,8 @@
       .featured-product-image {
         img {
           width: 100%;
-          height: auto;
+          height: 300;
+          object-fit: cover;
         }
       }
       .featured-product-content {
