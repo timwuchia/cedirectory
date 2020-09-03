@@ -101,8 +101,8 @@
         },
         {
             "key": "field_5f3c7725ec703",
-            "label": "Product Certification",
-            "name": "product_certification",
+            "label": "Manufacturer's Declaration",
+            "name": "manufacturers_declaration",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -136,5 +136,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1598368584
+    "modified": 1599175505
 }
