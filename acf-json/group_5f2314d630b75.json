@@ -338,6 +338,25 @@
             "min_size": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5f5271d1dc539",
+            "label": "Additional File",
+            "name": "additional_file",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -357,5 +376,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1599229764
+    "modified": 1599238641
 }
