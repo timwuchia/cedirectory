@@ -44,7 +44,19 @@ get_header();
                 <div class='
                 single-product-description-container bg-dark-gray col-lg-4 p-4'>
                 <div class='single-product-description'>
+                    <?php
+                    if(function_exists('get_field')){
+                        $author_id = get_the_author_meta('ID');
+                        $author_id_acf_params = 'user_' . $author_id;
+                        $company_name = get_field('company_name', $author_id_acf_params);
+                    }
+                    ?>
                     <h2><?php the_title(); ?></h2>
+                    <?php
+                    if($company_name){
+                        echo '<p>' . $company_name . '</p>';
+                    }
+                    ?>
                        <?php
                     if(get_field('hs_code')){
                         echo '<p style="color: #9a9a9a; font-size: .8em; " >HS Code:';
