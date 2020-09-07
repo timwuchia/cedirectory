@@ -182,19 +182,6 @@
 // Start of Product / Industry --------
 
 @media screen and (min-width: 320px) {
-  .wpuf-dashboard-container {
-    .items-table {
-      td {
-        &:last-child {
-          > a {
-            &:first-child {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
   //  Main Nav ---------------------------------------------------------------------
 
   .sub-menu {
