@@ -2,7 +2,7 @@
 /**
  * The template for displaying contact page.
  *
- * @package Hip_Creations
+ * @package cedirectory
  */
 
 get_header();

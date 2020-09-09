@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying resources page.
+ * The template for displaying FAQ page.
  *
- * @package Hip_Creations
+ * @package cedirectory
  */
 
 get_header();

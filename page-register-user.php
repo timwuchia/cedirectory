@@ -2,7 +2,7 @@
 /**
  * The template for displaying register user page
  *
- * @package Hip_Creations
+ * @package cedirectory
  */
 
 get_header();

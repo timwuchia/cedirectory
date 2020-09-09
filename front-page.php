@@ -1,15 +1,10 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays the home page.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * The template for the front page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Hip_Creations
+ * @package cedirectory
  */
 
 get_header();
@@ -29,6 +24,7 @@ get_header();
                 $products = new WP_Query( $productArgs ); ?>
                 <?php if($products->have_posts()) : ?>
                 <div class='featured-product-container container'>
+                        <h2 class='pb-4 text-center text-primary'>Featured Products</h2>
                         <div class='d-flex flex-wrap featured-products'>
                         
                         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
@@ -64,6 +60,7 @@ get_header();
             ?>
             <div class='product-categories bg-light-gray py-4'>
                 <div>
+                    <h2 class='pb-4 text-center text-primary'>Directives</h2>
                     <div class='product-cat-slider'> 
                         <?php foreach($terms as $key => $term) :?>
                         <?php 

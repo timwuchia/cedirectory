@@ -2,7 +2,7 @@
 /**
  * The template for displaying about page.
  *
- * @package Hip_Creations
+ * @package cedirectory
  */
 
 get_header();

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive product page pages
+ * The template for displaying the industries
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

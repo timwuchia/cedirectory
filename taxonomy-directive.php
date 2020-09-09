@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The taxonomy template for displaying all directives
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package test
+ * @package cedirectory
  */
 
 get_header();

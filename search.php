@@ -1,6 +1,6 @@
 <?php
 /**
- * Main template file
+ * Search template file
  *
  * This page shows the search result.
  *
