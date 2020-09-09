@@ -54,35 +54,24 @@ get_header();
 						echo '</p>';
 					echo '</div>';
 			echo '</div>';
-		echo '</div>';
+		echo '</div>'; ?>
+			<div class="about-layer-three layer row">
+				<div class='col-lg-4'>
+					<?php echo wp_get_attachment_image( get_field('image_one', "option"), 'general' ); ?>
+					<p><?php echo the_field("layer_three_description_one", "option"); ?></p>
+				</div>
+				<div class='col-lg-4'>
+					<?php echo wp_get_attachment_image( get_field('image_two', "option"), 'general' ); ?>
+					<p><?php echo the_field("layer_three_description_two", "option"); ?></p>
+				</div>
+				<div class='col-lg-4'>
+					<?php echo wp_get_attachment_image( get_field('image_three', "option"), 'general' ); ?>
+					<p><?php echo the_field("layer_three_description_three", "option"); ?></p>
+				</div>
+			</div>
 
-			echo '<div class="about-layer-three layer">';
-					echo '<div class="layer-three-images">';
-						echo wp_get_attachment_image( get_field('image_one', "option"), 'general' );
-						echo wp_get_attachment_image( get_field('image_two', "option"), 'general' );
-						echo wp_get_attachment_image( get_field('image_three', "option"), 'general' );
-					echo '</div>';
+			<?php
 
-					echo '<div class="btm-description description layer">';
-					echo '<span>';
-							echo '<p>';
-								echo the_field("layer_three_description_one", "option");
-							echo '</p>';
-					echo '</span>';
-					echo '<span>';
-							echo '<p>';
-								echo the_field("layer_three_description_two", "option");
-							echo '</p>';
-					echo '</span>';
-						echo '<span>';
-							echo '<p>';
-								echo the_field("layer_three_description_three", "option");
-							echo '</p>';
-					echo '</span>';
-					echo '</div>';
-			echo '</div>';
-
-echo '</div>';
 // end of about-content-container
 				}
 				}
