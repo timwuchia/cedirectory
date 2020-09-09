@@ -69,6 +69,40 @@ get_header();
 					<p><?php echo the_field("layer_three_description_three", "option"); ?></p>
 				</div>
 			</div>
+
+			<?php
+
+			echo '<div class="about-layer-three layer">';
+					echo '<div class="layer-three-images">';
+						echo wp_get_attachment_image( get_field('image_one', "option"), 'general' );
+						echo wp_get_attachment_image( get_field('image_two', "option"), 'general' );
+						echo wp_get_attachment_image( get_field('image_three', "option"), 'general' );
+					echo '</div>';
+
+					echo '<div class="btm-description description layer">';
+					echo '<span>';
+							echo '<p>';
+								echo the_field("layer_three_description_one", "option");
+							echo '</p>';
+					echo '</span>';
+					echo '<span>';
+							echo '<p>';
+								echo the_field("layer_three_description_two", "option");
+							echo '</p>';
+					echo '</span>';
+						echo '<span>';
+							echo '<p>';
+								echo the_field("layer_three_description_three", "option");
+							echo '</p>';
+					echo '</span>';
+					echo '</div>';
+			echo '</div>';
+
+echo '</div>';
+// end of about-content-container
+				}
+				}
+     ?>
 </div>
 <!-- about-container -->
     	<?php endwhile; // End of the loop.?>
