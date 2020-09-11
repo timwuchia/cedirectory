@@ -54,6 +54,7 @@ get_header();
                     <h2><?php the_title(); ?></h2>
                     <?php
                     if($company_name){
+                        echo '<p>Company Name</p>';
                         echo '<p>' . $company_name . '</p>';
                     }
                     ?>
@@ -62,6 +63,7 @@ get_header();
                         echo '<p style="color: #9a9a9a; font-size: .8em; " >HS Code:';
                         echo '<span style="padding-left: .8em;">';
                         echo the_field('hs_code');
+                        echo '</span>';
                         echo '</p>';
                     }
                     ?>
