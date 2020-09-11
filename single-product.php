@@ -54,7 +54,7 @@ get_header();
                     <h2><?php the_title(); ?></h2>
                     <?php
                     if($company_name){
-                        echo '<p>Company Name</p>';
+                        echo '<p>Company Name:</p>';
                         echo '<p>' . $company_name . '</p>';
                     }
                     ?>
