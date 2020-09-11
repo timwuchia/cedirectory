@@ -49,6 +49,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5f5baf24c472b",
+            "label": "Agent Code",
+            "name": "agent_code",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5f2dd57eb98fc",
             "label": "Country",
             "name": "country",
@@ -376,5 +395,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1599238641
+    "modified": 1599844161
 }
