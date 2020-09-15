@@ -11,7 +11,7 @@ get_header();
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-<div class='resource-page-container'>
+		<div class='resource-page-container'>
 		<?php while ( have_posts() ) :the_post(); ?>
 
 		<div class="cstm-resource-title">
@@ -45,14 +45,13 @@ get_header();
 						echo '<a href=" ' . esc_html($resource_link) . '"> Further reading';
 						echo '</a>';
 						echo '</div>';
-				echo '</div>';
+				
 							}
+							echo '</div>';
 					}
 		 ?>
-		 </div>
 		 
-</div>
-<!-- resource-page-container -->
+		</div> <!-- resource-page-container -->
     	<?php endwhile; // End of the loop.?>
 			</main><!-- #main -->
 	</div><!-- #primary -->
