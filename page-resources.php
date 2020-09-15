@@ -49,6 +49,7 @@ get_header();
 							}
 					}
 		 ?>
+		 </div>
 		 
 </div>
 <!-- resource-page-container -->
