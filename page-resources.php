@@ -42,7 +42,7 @@ get_header();
 						echo '<p>';
 							echo get_sub_field("resource_content");
 						echo '</p>';
-						echo '<a href=" ' . esc_html($resource_link) . '"> Further reading';
+						echo '<a target="_blank" href=" ' . esc_html($resource_link) . '"> Further reading';
 						echo '</a>';
 						echo '</div>';
 				
